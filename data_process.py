@@ -38,7 +38,7 @@ REQUIRED_FILES_GOODREADS = [
 def load_data(file_path):
     """Load JSON data into a Pandas DataFrame with progress bar."""
     data = []
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         for line in tqdm(file, desc=f"Loading {file_path}", unit=" lines"):
             data.append(json.loads(line))
     return pd.DataFrame(data)
@@ -62,7 +62,8 @@ def filter_data(top_cities, business_df, user_df, review_df):
 
 def check_required_files(input_dir):
     """Check if all required files exist in the input directory."""
-    all_required_files = REQUIRED_FILES_YELP + REQUIRED_FILES_AMAZON + REQUIRED_FILES_GOODREADS
+    # all_required_files = REQUIRED_FILES_YELP + REQUIRED_FILES_AMAZON + REQUIRED_FILES_GOODREADS
+    all_required_files = REQUIRED_FILES_YELP
     missing_files = []
     
     for file in all_required_files:
@@ -250,30 +251,34 @@ def create_unified_users(yelp_users, amazon_reviews, goodreads_reviews, output_f
                 f.write(json.dumps(item) + '\n')
 
 def main():
-    """Main function with updated processing logic."""
-    parser = argparse.ArgumentParser(description="Process multiple datasets for analysis.")
-    parser.add_argument('--input_dir', required=True, help="Path to the input directory containing all dataset files.")
+    """Main function for processing only Yelp dataset."""
+    parser = argparse.ArgumentParser(description="Process Yelp dataset for analysis.")
+    parser.add_argument('--input_dir', required=True, help="Path to the input directory containing Yelp dataset files.")
     parser.add_argument('--output_dir', required=True, help="Path to the output directory for saving processed data.")
     args = parser.parse_args()
 
-    # Check required files
+    # Check required files (only Yelp)
     if not check_required_files(args.input_dir):
         return
 
-    # Process Yelp data
+    # Process Yelp data only
     filtered_businesses, filtered_reviews, filtered_users = load_and_process_yelp_data(args.input_dir)
-    
-    # Process Amazon data
-    amazon_reviews, amazon_meta = load_and_process_amazon_data(args.input_dir)
-    
-    # Process Goodreads data
-    goodreads_books, goodreads_reviews = load_and_process_goodreads_data(args.input_dir)
-    
-    # Merge all data
+
+    # Output only Yelp data
     os.makedirs(args.output_dir, exist_ok=True)
-    merge_business_data(filtered_businesses, amazon_meta, goodreads_books, os.path.join(args.output_dir, 'item.json'))
-    merge_review_data(filtered_reviews, amazon_reviews, goodreads_reviews, os.path.join(args.output_dir, 'review.json'))
-    create_unified_users(filtered_users, amazon_reviews, goodreads_reviews, os.path.join(args.output_dir, 'user.json'))
+    # 只保存yelp的item、review、user
+    filtered_businesses.rename(columns={'business_id': 'item_id'}, inplace=True)
+    filtered_businesses['source'] = 'yelp'
+    filtered_businesses['type'] = 'business'
+    filtered_businesses.to_json(os.path.join(args.output_dir, 'item.json'), orient='records', lines=True, force_ascii=False)
+
+    filtered_reviews.rename(columns={'business_id': 'item_id'}, inplace=True)
+    filtered_reviews['source'] = 'yelp'
+    filtered_reviews['type'] = 'business'
+    filtered_reviews.to_json(os.path.join(args.output_dir, 'review.json'), orient='records', lines=True, force_ascii=False)
+
+    filtered_users['source'] = 'yelp'
+    filtered_users.to_json(os.path.join(args.output_dir, 'user.json'), orient='records', lines=True, force_ascii=False)
 
     logging.info("Data processing completed successfully.")
 

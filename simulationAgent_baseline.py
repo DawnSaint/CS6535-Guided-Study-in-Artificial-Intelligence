@@ -5,7 +5,6 @@ from websocietysimulator.agent.modules.planning_modules import PlanningBase
 from websocietysimulator.agent.modules.reasoning_modules import ReasoningBase
 from websocietysimulator.agent.modules.memory_modules import MemoryDILU
 import json
-import time
 
 class PlanningBaseline(PlanningBase):
     """Inherit from PlanningBase"""
@@ -90,6 +89,12 @@ class MySimulationAgent(SimulationAgent):
 
         # 将 user_info 转换为字符串
         item_info_str = str(item_info)
+        """
+        请用自然语言撰写一段约100字的描述，涵盖商家名称、所在地址（街道、城市和州）、业务类型、评分（星级）及评论数量。
+        如有具体数字，请尽量体现。同时说明其是否提供外卖、外带、预订服务，以及是否配备电视或停车位。
+        还需提及氛围、噪音水平和主要客群特征（如适合团体、休闲聚会等）。
+        描述应客观公正，体现该商家的特色、顾客体验与整体氛围。
+        """
 
         # 创建提示词
         prompt_filled = f"""The following is a business data of the {source} dataset after processing. 
@@ -118,6 +123,19 @@ Your description should be fair and just, and keep your reply to around 100 word
         # 将 user_info 转换为字符串
         item_review_info = str(item_review_info)
 
+        """
+        以下内容是来自 {source} 数据集的该商家用户评论合集。
+        请用自然语言撰写一篇全面的评论摘要。
+        你的描述应满足以下要求：
+
+        概括评论中普遍表达的情绪倾向（正面或负面）。
+        突出反复出现的主题或问题（例如服务差、食物质量、氛围等）。
+        提及多位评论者指出的具体优点或缺点（例如员工友善、上菜慢、菜品美味等）。
+        如适用，请包含最常见的评分或投诉内容（例如平均评分、卫生或价格方面的问题）。
+        避免重复相同信息，并保持摘要的平衡与公正，同时反映正面与负面反馈。
+        请确保评论摘要清晰、简洁且信息丰富，字数控制在300字左右。
+        """
+
         # 创建提示词
         prompt_filled = f"""The following is a collection of user reviews for the business  from the {source} dataset. 
         Please write a comprehensive summary of the reviews in natural language. 
@@ -145,6 +163,18 @@ Your description should be fair and just, and keep your reply to around 100 word
 
         # 将 user_info 转换为字符串
         user_review_info = str(user_review_info)
+
+        """
+        以下是你在 {source} 数据集中撰写的历史评论合集。  
+        请分析你的评论风格并总结其特点，重点关注以下方面：  
+        1. 你的语气和用词（例如正式、随意、批判性、幽默等）；  
+        2. 你经常评论的主题或内容（例如食物质量、服务、氛围等）；  
+        3. 评论的详细程度（例如是否提供具体例子，还是较为笼统）；  
+        4. 你的情绪倾向（例如客观平衡、过于积极或过于消极）；  
+        5. 评分中的任何规律（例如倾向于给中等分数、极端分数，或评分一贯稳定）；  
+        6. 你如何评价体验中的优点与不足。  
+        基于以上分析，请用第二人称写一段约100字的自然语言总结，突出你撰写评论的典型风格。
+        """
 
         # 创建提示词
         prompt_filled = f"""The following is a collection of historical reviews written by a user from the {source} dataset. 
@@ -192,6 +222,32 @@ Your description should be fair and just, and keep your reply to around 100 word
             item_description = self.generate_item_description(item_info, source)
             item_reviews_text = self.generate_item_review_description(item_reviews, source)
             user_reviews_text = self.generate_user_review_description(user_reviews, source)
+
+            """
+            你是在 {source} 数据集上的一位真实人类用户，该平台是一个众包商业评论网站。以下是你的一些背景信息，包括你在平台上的部分活动：  
+            {after_user_info}，{user_reviews_text}。  
+            ###该商家的整体情况：{item_description}###  
+            ###以下是该商家过往收到的评论摘要：{item_reviews_text}###  
+
+            你需要为这家商家撰写一条评论，请仔细分析以下方面：  
+            1. 根据你的用户画像和评论风格，你会给这家商家打多少分？请注意，许多用户在体验远超预期时会给出5星，而在体验极差、连基本标准都未达到时会给出1星。  
+            2. 结合商家详情和你过去的经历，你会具体评论哪些方面？请聚焦于让这家商家脱颖而出的优点，或严重影响体验的缺点。  
+
+            要求：  
+            - 星级评分必须为以下之一：1.0、2.0、3.0、4.0、5.0  
+            - 若商家在关键方面达到或超出预期，可考虑给5星  
+            - 若商家在关键方面严重不足，可考虑给1星  
+            - 评论正文应为2至4句话，聚焦你的个人体验和情感反应  
+            - “有用/有趣/酷”计数应为非负整数，反映可能的用户互动程度  
+            - 保持与你历史评论风格和评分习惯的一致性  
+            - 聚焦商家的具体细节，而非泛泛而谈  
+            - 当商家提供优质服务或产品时，请大方给高分  
+            - 当商家未达基本标准时，请明确指出并给予低分  
+
+            请严格按照以下格式输出你的回复：  
+            stars: [你的评分]  
+            review: [你的评论]
+            """
 
             task_description = f'''
         You are a real human user on {source} dataset, a platform for crowd-sourced business reviews. Here is some description of your past, including some of your activities on the platform: 
@@ -243,8 +299,7 @@ Your description should be fair and just, and keep your reply to around 100 word
 if __name__ == "__main__":
     # Set the data
     task_set = "yelp"
-    number_of_tasks = 5
-    simulator = Simulator(data_dir="./dataset", device="cpu", cache=True)
+    simulator = Simulator(data_dir="./dataset", device="gpu", cache=True)
     simulator.set_task_and_groundtruth(task_dir=f"./example/track1/{task_set}/tasks",
                                        groundtruth_dir=f"./example/track1/{task_set}/groundtruth")
 
@@ -255,34 +310,12 @@ if __name__ == "__main__":
 
     # Run the simulation
     # If you don't set the number of tasks, the simulator will run all tasks.
-    outputs = simulator.run_simulation(number_of_tasks, enable_threading=True, max_workers=5)
-    
+    outputs = simulator.run_simulation(number_of_tasks=1, enable_threading=True, max_workers=5)
+
     # Evaluate the agent
     evaluation_results = simulator.evaluate()
-    evaluation_history = simulator.get_evaluation_history()
-
-    task_info = []
-    
-    # Save each output with task, groundtruth, user_info, item_info
-    for idx, output in enumerate(outputs):
-
-        task = simulator.tasks[idx].to_dict() if hasattr(simulator.tasks[idx], 'to_dict') else simulator.tasks[idx]
-        groundtruth = simulator.groundtruth_data[idx]
-        user_id = task.get('user_id')
-        item_id = task.get('item_id')
-        user_info = simulator.interaction_tool.get_user(user_id) if user_id else None
-        item_info = simulator.interaction_tool.get_item(item_id) if item_id else None
-        # 组织保存内容
-        task_info.append({
-            'task': task,
-            'groundtruth': groundtruth,
-            'user_info': user_info,
-            'item_info': item_info,
-            'model_output': output['output'] if isinstance(output, dict) and 'output' in output else output
-        })
-
-    evaluation_results["task_info"] = task_info
-    # evaluation_results["evaluation_history"] = evaluation_history
-
-    with open(f'./evaluation_results/{task_set}_track1_{number_of_tasks}tasks_{time.time()}.json', 'w') as f:
+    with open(f'./evaluation_results_track1_{task_set}.json', 'w') as f:
         json.dump(evaluation_results, f, indent=4)
+
+    # Get evaluation history
+    evaluation_history = simulator.get_evaluation_history()
