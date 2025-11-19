@@ -60,6 +60,56 @@ class MySimulationAgent(SimulationAgent):
         self.planning = PlanningBaseline(llm=self.llm)
         self.reasoning = ReasoningBaseline(profile_type_prompt='', llm=self.llm)
         self.memory = MemoryDILU(llm=self.llm)
+        
+        # 定义商家类别及其关键评价维度
+        self.category_dimensions = {
+            'Restaurant': {
+                'keywords': ['restaurant', 'food', 'cafe', 'coffee', 'bar', 'pub', 'dining', 'pizza', 'chinese', 'mexican', 'italian', 'burger', 'sandwich', 'bakery', 'breakfast', 'lunch', 'dinner'],
+                'focus_areas': ['food quality', 'taste', 'portion size', 'menu variety', 'service speed', 'staff friendliness', 'ambiance', 'cleanliness', 'price-value ratio', 'wait time']
+            },
+            'Shopping': {
+                'keywords': ['shopping', 'store', 'mall', 'boutique', 'retail', 'shop', 'market', 'grocery'],
+                'focus_areas': ['product variety', 'product quality', 'pricing', 'staff helpfulness', 'store layout', 'checkout speed', 'return policy', 'cleanliness']
+            },
+            'Services': {
+                'keywords': ['salon', 'beauty', 'spa', 'gym', 'fitness', 'hair', 'nail', 'massage', 'car wash', 'auto'],
+                'focus_areas': ['service quality', 'staff professionalism', 'results', 'cleanliness', 'appointment scheduling', 'price-value ratio', 'facility conditions']
+            },
+            'Travel': {
+                'keywords': ['hotel', 'motel', 'hostel', 'resort', 'inn', 'accommodation', 'lodging', 'attraction', 'tour'],
+                'focus_areas': ['location', 'cleanliness', 'room conditions', 'facilities', 'staff service', 'check-in/out experience', 'amenities', 'value for money', 'noise level']
+            },
+            'Health': {
+                'keywords': ['dentist', 'doctor', 'medical', 'clinic', 'health', 'dental', 'physician', 'hospital'],
+                'focus_areas': ['professional expertise', 'wait time', 'staff courtesy', 'cleanliness', 'appointment availability', 'insurance handling', 'explanation clarity', 'treatment results']
+            },
+            'Others': {
+                'keywords': ['education', 'school', 'pet', 'veterinary', 'service', 'repair', 'home'],
+                'focus_areas': ['service quality', 'professionalism', 'price', 'results', 'customer service']
+            }
+        }
+    
+    def detect_item_category(self, item_info) -> str:
+        """
+        根据商家信息检测其类别
+        
+        :param item_info: 商家信息字典
+        :return: 检测到的类别名称
+        """
+        categories = item_info.get('categories', '').lower()
+        name = item_info.get('name', '').lower()
+        
+        combined_text = f"{categories} {name}"
+        
+        # 计算每个类别的匹配分数
+        category_scores = {}
+        for category, config in self.category_dimensions.items():
+            score = sum(1 for keyword in config['keywords'] if keyword in combined_text)
+            category_scores[category] = score
+        
+        # 返回得分最高的类别,如果都是0则返回"Others"
+        max_category = max(category_scores.items(), key=lambda x: x[1])
+        return max_category[0] if max_category[1] > 0 else 'Others'
 
     def generate_user_description(self, user_info, source) -> str:
         """
@@ -106,29 +156,36 @@ Your description should be fair and just, and keep your reply to around 100 word
         response = self.reasoning(prompt_filled)
         return response
 
-    def generate_item_review_description(self, item_review_info, source: str) -> str:
+    def generate_item_review_description(self, item_review_info, source: str, item_info: dict) -> str:
         """
-        生成用户描述并返回响应。
+        生成商家评论总结并返回响应。
 
-        :param user_info: 包含用户信息的字典
-        :param source: 数据源（例如 'yelp'）
+        :param item_review_info: 包含商家评论信息的字典
+        :param source: 数据源(例如 'yelp')
+        :param item_info: 商家信息字典,用于检测类别
         :return: 模型生成的自然语言描述
         """
+        # 检测商家类别
+        category = self.detect_item_category(item_info)
+        focus_areas = self.category_dimensions.get(category, {}).get('focus_areas', [])
+        focus_areas_str = ', '.join(focus_areas)
 
-        # 将 user_info 转换为字符串
-        item_review_info = str(item_review_info)
+        # 将 item_review_info 转换为字符串
+        item_review_info_str = str(item_review_info)
 
-        # 创建提示词
-        prompt_filled = f"""The following is a collection of user reviews for the business  from the {source} dataset. 
+        # 创建提示词,根据类别动态调整
+        prompt_filled = f"""The following is a collection of user reviews for a {category} business from the {source} dataset. 
         Please write a comprehensive summary of the reviews in natural language. 
         Your description should:
         1. Summarize the general sentiment (positive or negative) expressed across the reviews.
-        2. Highlight recurring themes or issues (e.g., poor service, food quality, atmosphere).
-        3. Mention any specific strengths or weaknesses pointed out by multiple reviewers (e.g., friendly staff, slow service, great food).
-        4. If applicable, include the most common ratings or complaints (e.g., average rating, issues with cleanliness or pricing).
+        2. Highlight recurring themes or issues particularly related to: {focus_areas_str}.
+        3. Mention any specific strengths or weaknesses pointed out by multiple reviewers.
+        4. If applicable, include the most common ratings or complaints.
         5. Avoid repeating the same information and keep the summary balanced and fair, reflecting both positive and negative feedback.
+        6. Focus on the key aspects that matter most for this type of business.
         Please ensure the review summary is clear, concise, and informative, with a word limit of around 300 words:
-        {item_review_info}"""
+        {item_review_info_str}"""
+        
         # 调用模型生成响应
         response = self.reasoning(prompt_filled)
 
@@ -190,7 +247,7 @@ Your description should be fair and just, and keep your reply to around 100 word
             source = user_info.get('source')
             after_user_info = self.generate_user_description(user_info, source)
             item_description = self.generate_item_description(item_info, source)
-            item_reviews_text = self.generate_item_review_description(item_reviews, source)
+            item_reviews_text = self.generate_item_review_description(item_reviews, source, item_info)
             user_reviews_text = self.generate_user_review_description(user_reviews, source)
 
             task_description = f'''
@@ -243,7 +300,7 @@ Your description should be fair and just, and keep your reply to around 100 word
 if __name__ == "__main__":
     # Set the data
     task_set = "yelp"
-    number_of_tasks = 5
+    number_of_tasks = 10
     simulator = Simulator(data_dir="./dataset", device="cpu", cache=True)
     simulator.set_task_and_groundtruth(task_dir=f"./example/track1/{task_set}/tasks",
                                        groundtruth_dir=f"./example/track1/{task_set}/groundtruth")
