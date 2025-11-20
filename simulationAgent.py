@@ -38,13 +38,13 @@ class ReasoningBaseline(ReasoningBase):
         """Initialize the reasoning module"""
         super().__init__(profile_type_prompt=profile_type_prompt, memory=None, llm=llm)
 
-    def __call__(self, task_description: str):
+    def __call__(self, task_description: str, temperature=0.0):
         """Override the parent class's __call__ method"""
 
         messages = [{"role": "user", "content": task_description}]
         reasoning_result = self.llm(
             messages=messages,
-            temperature=0.0,
+            temperature=temperature,
             max_tokens=1000
         )
 
@@ -61,7 +61,7 @@ class MySimulationAgent(SimulationAgent):
         self.reasoning = ReasoningBaseline(profile_type_prompt='', llm=self.llm)
         self.memory = MemoryDILU(llm=self.llm)
         
-        # 定义商家类别及其关键评价维度
+        # Define business categories and their key evaluation dimensions
         self.category_dimensions = {
             'Restaurant': {
                 'keywords': ['restaurant', 'food', 'cafe', 'coffee', 'bar', 'pub', 'dining', 'pizza', 'chinese', 'mexican', 'italian', 'burger', 'sandwich', 'bakery', 'breakfast', 'lunch', 'dinner'],
@@ -90,33 +90,31 @@ class MySimulationAgent(SimulationAgent):
         }
     
     def detect_item_category(self, item_info) -> str:
-        """
-        根据商家信息检测其类别
+        """Detect the business category based on item information.
         
-        :param item_info: 商家信息字典
-        :return: 检测到的类别名称
+        :param item_info: Dictionary containing business information
+        :return: Detected category name
         """
         categories = item_info.get('categories', '').lower()
         name = item_info.get('name', '').lower()
         
         combined_text = f"{categories} {name}"
         
-        # 计算每个类别的匹配分数
+        # Compute a matching score for each category
         category_scores = {}
         for category, config in self.category_dimensions.items():
             score = sum(1 for keyword in config['keywords'] if keyword in combined_text)
             category_scores[category] = score
         
-        # 返回得分最高的类别,如果都是0则返回"Others"
+        # Return the category with the highest score; if all are 0, return "Others"
         max_category = max(category_scores.items(), key=lambda x: x[1])
         return max_category[0] if max_category[1] > 0 else 'Others'
 
     def generate_user_description(self, user_info, source) -> str:
-        """
-        生成用户描述并返回响应。
+        """Generate a natural language description of the user.
 
-        :param user_info: 包含用户信息的字典
-        :param source: 数据源（例如 'yelp'）
+        :param user_info: Dictionary containing user information
+        :param source: Data source (e.g., 'yelp')
         """
 
         stats = {
@@ -151,18 +149,17 @@ class MySimulationAgent(SimulationAgent):
         return self.reasoning(prompt_filled)
 
     def generate_item_description(self, item_info, source: str) -> str:
-        """
-        生成用户描述并返回响应。
+        """Generate a natural language description of the business.
 
-        :param user_info: 包含用户信息的字典
-        :param source: 数据源（例如 'yelp'）
+        :param item_info: Dictionary containing business information
+        :param source: Data source (e.g., 'yelp')
         """
 
-        # 将 user_info 转换为字符串
+        # Convert item_info to string
         item_info_str = str(item_info)
 
-        # 创建提示词
-        prompt_filled = f"""The following is a business data of the {source} dataset after processing. 
+        # Create prompt
+        prompt_filled = f"""The following is business data from the {source} dataset after processing. 
 Please write a paragraph in natural language describing the business. 
 If there are numbers in it, it is best to describe them.
 The description should cover the name of the business, its location (address, city, and state), the type of business, its rating (stars), and the number of reviews. 
@@ -172,28 +169,27 @@ Make sure to describe the business in a way that reflects its character, custome
 Your description should be fair and just, and keep your reply to around 100 words:
 {item_info_str}"""
 
-        # 调用模型生成响应
+        # Call the model to generate a response
         response = self.reasoning(prompt_filled)
         return response
 
     def generate_item_review_description(self, item_review_info, source: str, item_info: dict) -> str:
-        """
-        生成商家评论总结并返回响应。
+        """Generate a summary of business reviews in natural language.
 
-        :param item_review_info: 包含商家评论信息的字典
-        :param source: 数据源(例如 'yelp')
-        :param item_info: 商家信息字典,用于检测类别
-        :return: 模型生成的自然语言描述
+        :param item_review_info: Dictionary containing business review information
+        :param source: Data source (e.g., 'yelp')
+        :param item_info: Business information dictionary used to detect category
+        :return: Model-generated natural language description
         """
-        # 检测商家类别
+        # Detect business category
         category = self.detect_item_category(item_info)
         focus_areas = self.category_dimensions.get(category, {}).get('focus_areas', [])
         focus_areas_str = ', '.join(focus_areas)
 
-        # 将 item_review_info 转换为字符串
+        # Convert item_review_info to string
         item_review_info_str = str(item_review_info)
 
-        # 创建提示词,根据类别动态调整
+        # Create prompt dynamically based on category
         prompt_filled = f"""The following is a collection of user reviews for a {category} business from the {source} dataset. 
         Please write a comprehensive summary of the reviews in natural language. 
         Your description should:
@@ -206,24 +202,23 @@ Your description should be fair and just, and keep your reply to around 100 word
         Please ensure the review summary is clear, concise, and informative, with a word limit of around 300 words:
         {item_review_info_str}"""
         
-        # 调用模型生成响应
+        # Call the model to generate a response
         response = self.reasoning(prompt_filled)
 
         return response
 
     def generate_user_review_description(self, user_review_info, source: str) -> str:
-        """
-        生成用户描述并返回响应。
+        """Generate a natural language description of the user's reviewing style.
 
-        :param user_info: 包含用户信息的字典
-        :param source: 数据源（例如 'yelp'）
-        :return: 模型生成的自然语言描述
+        :param user_review_info: Dictionary containing user review information
+        :param source: Data source (e.g., 'yelp')
+        :return: Model-generated natural language description
         """
 
-        # 将 user_info 转换为字符串
+        # Convert user_review_info to string
         user_review_info = str(user_review_info)
 
-        # 创建提示词
+        # Create prompt
         prompt_filled = f"""The following is a collection of historical reviews written by a user from the {source} dataset. 
         Please analyze the user's reviewing style and summarize their characteristics. 
         Focus on the following aspects:
@@ -233,45 +228,44 @@ Your description should be fair and just, and keep your reply to around 100 word
         4. The user's sentiment (e.g., balanced, overly positive, overly negative).
         5. Any patterns in the user's ratings (e.g., tends to give moderate scores, extremes, or consistent ratings).
         6. How the user evaluates positives and negatives in the experience.
-        Based on this analysis, provide a concise summary of the user's reviewing style in natural language, highlighting their typical approach to writing reviews. Limit the summary to around 100 words,Please describe in the second person:
+        Based on this analysis, provide a concise summary of the user's reviewing style in natural language, highlighting their typical approach to writing reviews. Limit the summary to around 100 words, and describe in the second person:
         {user_review_info}"""
 
-        # 调用模型生成响应
+        # Call the model to generate a response
         response = self.reasoning(prompt_filled)
 
         return response
 
     def workflow(self):
-        """
-        Simulate user behavior
+        """Simulate user behavior.
         Returns:
-            tuple: (star (float), useful (float), funny (float), cool (float), review_text (str))
+            dict: {"stars" (float), "review" (str)}
         """
         try:
             user_id = self.task.get('user_id')
             item_id = self.task.get('item_id')
 
-            # 获取相关评论
+            # Get related reviews
             item_reviews = self.interaction_tool.get_reviews(item_id=item_id)
             user_reviews = self.interaction_tool.get_reviews(user_id=user_id)
             user_info = self.interaction_tool.get_user(user_id=user_id)
             item_info = self.interaction_tool.get_item(item_id=item_id)
 
-            # 获取用户来源信息
+            # Get user source information
             source = user_info.get('source')
             after_user_info = self.generate_user_description(user_info, source)
             item_description = self.generate_item_description(item_info, source)
             item_reviews_text = self.generate_item_review_description(item_reviews, source, item_info)
             user_reviews_text = self.generate_user_review_description(user_reviews, source)
 
-            # 引入统计数据以减少对纯文本摘要的依赖
+            # Introduce statistics to reduce reliance on plain-text summaries
             user_avg_stars = user_info.get('average_stars', 'unknown')
             item_avg_stars = item_info.get('stars', 'unknown')
 
-            # 构建 Few-shot 示例
+            # Build few-shot examples
             examples_str = ""
             if user_reviews:
-                # 取前3条作为示例
+                # Take the first 3 reviews as examples
                 selected_reviews = user_reviews[:3] 
                 examples_str = "### Your Past Review Examples\nTo help you stay in character, here are a few reviews you have written in the past:\n"
                 for r in selected_reviews:
@@ -307,20 +301,43 @@ Your description should be fair and just, and keep your reply to around 100 word
             stars: [your rating]
             review: [your review]
         '''
-            result = self.reasoning(task_description)
+            # Introduce a voting mechanism
+            candidates = []
+            num_votes = 3
+            
+            for _ in range(num_votes):
+                try:
+                    # Use higher temperature to increase diversity
+                    result = self.reasoning(task_description, temperature=0.7)
 
-            stars_line = [line for line in result.split('\n') if 'stars:' in line][0]
-            review_line = [line for line in result.split('\n') if 'review:' in line][0]
+                    stars_line = [line for line in result.split('\n') if 'stars:' in line][0]
+                    review_line = [line for line in result.split('\n') if 'review:' in line][0]
 
-            stars = float(stars_line.split(':')[1].strip())
-            review_text = review_line.split(':')[1].strip()
+                    stars = float(stars_line.split(':')[1].strip())
+                    review_text = review_line.split(':')[1].strip()
 
-            if len(review_text) > 512:
-                review_text = review_text[:512]
+                    if len(review_text) > 512:
+                        review_text = review_text[:512]
+                    
+                    candidates.append({'stars': stars, 'review': review_text})
+                except Exception as e:
+                    continue
+            
+            if not candidates:
+                return {
+                    "stars": 3,
+                    "review": ""
+                }
+
+            # Compute the average rating
+            avg_stars = sum(c['stars'] for c in candidates) / len(candidates)
+            
+            # Select the review whose rating is closest to the average as the final result
+            best_candidate = min(candidates, key=lambda x: abs(x['stars'] - avg_stars))
 
             return {
-                "stars": stars,
-                "review": review_text
+                "stars": best_candidate['stars'],
+                "review": best_candidate['review']
             }
         except Exception as e:
             print(f"Error in workflow: {e}")
@@ -362,7 +379,7 @@ if __name__ == "__main__":
         item_id = task.get('item_id')
         user_info = simulator.interaction_tool.get_user(user_id) if user_id else None
         item_info = simulator.interaction_tool.get_item(item_id) if item_id else None
-        # 组织保存内容
+        # Organize saved content
         task_info.append({
             'task': task,
             'groundtruth': groundtruth,
