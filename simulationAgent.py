@@ -119,16 +119,36 @@ class MySimulationAgent(SimulationAgent):
         :param source: 数据源（例如 'yelp'）
         """
 
-        # 将 user_info 转换为字符串
-        user_info_str = str(user_info)
+        stats = {
+            "review_count": user_info.get("review_count"),
+            "useful": user_info.get("useful"),
+            "funny": user_info.get("funny"),
+            "cool": user_info.get("cool"),
+            "elite": user_info.get("elite"),
+            "friends": len(user_info.get("friends", [])) if isinstance(user_info.get("friends"), list) else user_info.get("friends")
+        }
 
-        # 创建提示词
-        prompt_filled = f"""The following is a user data of the {source} dataset after processing. Please write a paragraph in natural language describing the user. The description should cover their review activity (how many reviews they have written and their impact on the community, such as "useful," "funny," and "cool" votes), their elite status (mention the years they were considered Elite), and any notable aspects of their social circle (such as the number of friends they have). Make sure to convey the user's personality and activity on the platform, without including raw data, and keep it in a conversational tone,Your description should be fair and just,Keep your reply to around 100 words,Please describe in the second person:{user_info_str}"""
+        stats_str = (
+            f"Reviews: {stats['review_count']}, "
+            f"Votes - useful: {stats['useful']}, funny: {stats['funny']}, cool: {stats['cool']}, "
+            f"Elite years: {stats['elite']}, "
+            f"Number of friends: {stats['friends']}"
+        )
 
-        # 调用模型生成响应
-        response = self.reasoning(prompt_filled)
+        prompt_filled = f"""You are given structured statistics of a user from the {source} dataset:
 
-        return response
+    {stats_str}
+
+    Write a short, fluent second-person description (around 80-120 words) that:
+    1. Explains how active you are (reviews, votes).
+    2. Mentions whether you look like an influential user (based on votes & elite years).
+    3. Mentions roughly how social you are (friends).
+    4. Avoids listing numbers mechanically; convert them to natural language.
+    5. Stays neutral and fair.
+
+    Return only the description, no bullet points, no quoting the raw stats.
+    """
+        return self.reasoning(prompt_filled)
 
     def generate_item_description(self, item_info, source: str) -> str:
         """
@@ -236,12 +256,6 @@ Your description should be fair and just, and keep your reply to around 100 word
             user_reviews = self.interaction_tool.get_reviews(user_id=user_id)
             user_info = self.interaction_tool.get_user(user_id=user_id)
             item_info = self.interaction_tool.get_item(item_id=item_id)
-            # 随机选择一些评论以供参考
-            # random_item_reviews = random.sample(item_reviews, min(len(item_reviews), 5))
-            # random_user_reviews = random.sample(user_reviews, min(len(user_reviews), 5))
-
-            item_reviews_text = ""
-            user_reviews_text = ""
 
             # 获取用户来源信息
             source = user_info.get('source')
@@ -250,27 +264,46 @@ Your description should be fair and just, and keep your reply to around 100 word
             item_reviews_text = self.generate_item_review_description(item_reviews, source, item_info)
             user_reviews_text = self.generate_user_review_description(user_reviews, source)
 
-            task_description = f'''
-        You are a real human user on {source} dataset, a platform for crowd-sourced business reviews. Here is some description of your past, including some of your activities on the platform: 
-        {after_user_info},{user_reviews_text}.
-            ###The overall situation of this business: {item_description}###
-            ###Here is a summary of the reviews this product has received in the past: {item_reviews_text}###
-            You need to write a review for this business,
-            Please analyze the following aspects carefully:
-            1. Based on your user profile and review style, what rating would you give this business? Remember that many users give 5-star ratings for excellent experiences that exceed expectations, and 1-star ratings for very poor experiences that fail to meet basic standards.
-            2. Given the business details and your past experiences, what specific aspects would you comment on? Focus on the positive aspects that make this business stand out or negative aspects that severely impact the experience.
-            Requirements:
-            - Star rating must be one of: 1.0, 2.0, 3.0, 4.0, 5.0
-            - If the business meets or exceeds expectations in key areas, consider giving a 5-star rating
-            - If the business fails significantly in key areas, consider giving a 1-star rating
-            - Review text should be 2-4 sentences, focusing on your personal experience and emotional response
-            - Useful/funny/cool counts should be non-negative integers that reflect likely user engagement
-            - Maintain consistency with your historical review style and rating patterns
-            - Focus on specific details about the business rather than generic comments
-            - Be generous with ratings when businesses deliver quality service and products
-            - Be critical when businesses fail to meet basic standards
+            # 引入统计数据以减少对纯文本摘要的依赖
+            user_avg_stars = user_info.get('average_stars', 'unknown')
+            item_avg_stars = item_info.get('stars', 'unknown')
 
-            Format your response exactly as follows:
+            # 构建 Few-shot 示例
+            examples_str = ""
+            if user_reviews:
+                # 取前3条作为示例
+                selected_reviews = user_reviews[:3] 
+                examples_str = "### Your Past Review Examples\nTo help you stay in character, here are a few reviews you have written in the past:\n"
+                for r in selected_reviews:
+                    r_stars = r.get('stars', 'N/A')
+                    r_text = r.get('text', '').strip().replace('\n', ' ')
+                    if len(r_text) > 200:
+                        r_text = r_text[:200] + "..."
+                    examples_str += f"- Rating: {r_stars}, Review: \"{r_text}\"\n"
+
+            task_description = f'''
+        You are a real human user on {source} dataset.
+        
+        ### User Profile
+        - **Description**: {after_user_info}
+        - **Review Style**: {user_reviews_text}
+        - **Historical Average Rating**: {user_avg_stars} (This indicates your baseline satisfaction level)
+        
+        {examples_str}
+
+        ### Business Profile
+        - **Description**: {item_description}
+        - **Public Rating**: {item_avg_stars} (This indicates the general quality of the business)
+        - **Community Feedback**: {item_reviews_text}
+        
+        ### Scenario
+        Imagine you have just visited this business. You need to write a review based on your personal experience, which should be consistent with your user profile and the business's actual quality.
+
+        ### Instructions & Constraints
+        1. **Rating**: Decide your rating (1.0-5.0). Carefully balance your personal standards (User Avg) with the business's quality (Item Avg). Refer to your past examples to calibrate your rating scale.
+        2. **Emotion & Tone**: Adopt the persona defined in "Review Style" and your past examples. Mimic your own writing style.
+        3. **Content**: Write 2-4 sentences. Focus on specific details (food, service, etc.) mentioned in the business description or feedback.
+        4. **Format**:
             stars: [your rating]
             review: [your review]
         '''
