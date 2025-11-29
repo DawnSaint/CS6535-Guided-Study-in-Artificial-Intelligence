@@ -1,3 +1,6 @@
+import os
+os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
+
 from websocietysimulator import Simulator
 from websocietysimulator.agent import SimulationAgent
 from websocietysimulator.llm import LLMBase, InfinigenceLLM
