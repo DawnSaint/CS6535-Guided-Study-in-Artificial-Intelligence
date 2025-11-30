@@ -1,0 +1,372 @@
+{
+    "type": "simulation",
+    "metrics": {
+        "preference_estimation": 0.92,
+        "review_generation": 0.9095298306530464,
+        "overall_quality": 0.9147649153265232
+    },
+    "data_info": {
+        "evaluated_count": 5,
+        "original_simulation_count": 5,
+        "original_ground_truth_count": 400
+    },
+    "task_info": [
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "wAo7casDFsbUR4O8Vb3u8A",
+                "item_id": "cVoyA9wrdF5E8OroBahxCg"
+            },
+            "groundtruth": {
+                "stars": 2.0,
+                "review": "I had mixed feelings about my experience with Mad Batter Bakery. While the cupcakes and desserts were indeed delicious and beautifully presented, the service was unreliable, which is a big deal for me. The owner, Chelle, was responsive at first but then became uncommunicative, especially when issues arose. This inconsistency and lack of professionalism, particularly for important events, is a significant drawback. I appreciate the free delivery and the reasonable prices, but the reliability issues and unprofessional behavior make it hard to recommend this bakery without reservation."
+            },
+            "user_info": {
+                "user_id": "wAo7casDFsbUR4O8Vb3u8A",
+                "name": "Jan",
+                "review_count": 1,
+                "yelping_since": "2018-05-28 19:34:58",
+                "useful": 4,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "None",
+                "fans": 0,
+                "average_stars": 1.0,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "cVoyA9wrdF5E8OroBahxCg",
+                "name": "Mad Batter Bakery",
+                "address": "",
+                "city": "Tucson",
+                "state": "AZ",
+                "postal_code": "85710",
+                "latitude": 32.2165669,
+                "longitude": -110.8195292,
+                "stars": 3.5,
+                "review_count": 28,
+                "is_open": 1,
+                "attributes": {
+                    "WiFi": "u'no'",
+                    "RestaurantsReservations": "False",
+                    "RestaurantsGoodForGroups": "True",
+                    "WheelchairAccessible": "False",
+                    "BusinessAcceptsCreditCards": "True",
+                    "BusinessAcceptsBitcoin": "False",
+                    "GoodForKids": "True",
+                    "OutdoorSeating": "False",
+                    "HasTV": "False",
+                    "RestaurantsTableService": "False",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': False, 'valet': False}",
+                    "BikeParking": "False",
+                    "RestaurantsDelivery": "True",
+                    "RestaurantsTakeOut": "False",
+                    "Caters": "True",
+                    "Alcohol": "u'none'",
+                    "RestaurantsPriceRange2": "2",
+                    "DogsAllowed": "False"
+                },
+                "categories": "Event Planning & Services, Food, Food Delivery Services, Caterers, Restaurants, Gluten-Free, Patisserie/Cake Shop, Desserts, Cupcakes, Bakeries",
+                "hours": {
+                    "Monday": "0:0-0:0",
+                    "Tuesday": "9:0-17:0",
+                    "Wednesday": "12:0-18:0",
+                    "Thursday": "9:0-17:0",
+                    "Friday": "9:0-17:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 3.0,
+                "review": "I visited Mad Batter Bakery for a special occasion and was impressed by the quality and taste of their cupcakes, especially the chocolate peanut butter. However, the delivery was significantly delayed, which caused some inconvenience. The bakery has potential, but they need to improve their reliability and communication to truly shine."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "tkSCd4gCwgh2XvDYmPlsPg",
+                "item_id": "T72WVqMPc67-DWCS8R_ASA"
+            },
+            "groundtruth": {
+                "stars": 1.0,
+                "review": "I had a terrible experience with Brighthouse Networks. The service is unreliable, with frequent outages and slow internet speeds. The customer service is a nightmare, with unhelpful representatives and long wait times. I also faced unexpected increases in my bill, and the company failed to honor promotions. It's frustrating to deal with a service provider that doesn't seem to care about their customers. I would strongly advise against using Brighthouse Networks."
+            },
+            "user_info": {
+                "user_id": "tkSCd4gCwgh2XvDYmPlsPg",
+                "name": "Jefri",
+                "review_count": 2,
+                "yelping_since": "2010-12-14 01:00:12",
+                "useful": 1,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "rA9oXjX9JkWxnz58jerwiQ",
+                "fans": 0,
+                "average_stars": 1.0,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "T72WVqMPc67-DWCS8R_ASA",
+                "name": "Brighthouse Networks",
+                "address": "5214 Linebaugh Ave",
+                "city": "Tampa",
+                "state": "FL",
+                "postal_code": "33624",
+                "latitude": 28.0399783,
+                "longitude": -82.5330207,
+                "stars": 1.5,
+                "review_count": 10,
+                "is_open": 1,
+                "attributes": null,
+                "categories": "Professional Services",
+                "hours": null,
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 1.0,
+                "review": "I'm thoroughly disappointed with Brighthouse (Spectrum). The service is unreliable, with frequent outages and slow speeds, and the customer service is unprofessional and unresponsive. The prices are also much higher than initially advertised, making it a frustrating and expensive experience."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "1q6v24bV-zYk9trWszBB4A",
+                "item_id": "9Ti9wdW4CGlF2b_ZuvtpdQ"
+            },
+            "groundtruth": {
+                "stars": 3.0,
+                "review": "Bar Asia offers a unique dining experience with its modern and chic decor, which I found very appealing. The outdoor seating area is a nice touch, making it a great spot for a casual dinner. However, the service was a bit hit or miss. While some servers were attentive and friendly, others were slow and understaffed, which affected the overall dining experience. The food was fresh and the portions were reasonable, but the prices were a bit steep for what was offered. Overall, it's a decent place to try, but there's room for improvement in service and value."
+            },
+            "user_info": {
+                "user_id": "1q6v24bV-zYk9trWszBB4A",
+                "name": "Sarah",
+                "review_count": 8,
+                "yelping_since": "2014-11-15 13:58:42",
+                "useful": 2,
+                "funny": 1,
+                "cool": 0,
+                "elite": "",
+                "friends": "rUjotRZrQVljbOd4rtAc2Q, -SIN3VzDghh0PelzRE-irQ, 7OVLDLIX-ZFmHhFy-FRqnw",
+                "fans": 0,
+                "average_stars": 3.5,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 1,
+                "compliment_plain": 1,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "9Ti9wdW4CGlF2b_ZuvtpdQ",
+                "name": "Bar Asia",
+                "address": "122 S Howard Ave",
+                "city": "Tampa",
+                "state": "FL",
+                "postal_code": "33606",
+                "latitude": 27.9434541073,
+                "longitude": -82.4828046674,
+                "stars": 3.5,
+                "review_count": 53,
+                "is_open": 0,
+                "attributes": {
+                    "GoodForKids": "True",
+                    "GoodForDancing": "False",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': True, 'valet': False}",
+                    "WiFi": "'free'",
+                    "HappyHour": "True",
+                    "RestaurantsGoodForGroups": "True",
+                    "OutdoorSeating": "True",
+                    "RestaurantsDelivery": "None",
+                    "HasTV": "True",
+                    "Ambience": "{'touristy': False, 'hipster': False, 'romantic': False, 'divey': False, 'intimate': False, 'trendy': False, 'upscale': False, 'classy': False, 'casual': False}",
+                    "RestaurantsTakeOut": "True",
+                    "RestaurantsPriceRange2": "2",
+                    "BusinessAcceptsCreditCards": "True",
+                    "RestaurantsReservations": "True",
+                    "GoodForMeal": "{'dessert': False, 'latenight': False, 'lunch': True, 'dinner': True, 'brunch': False, 'breakfast': False}"
+                },
+                "categories": "Restaurants, Bars, Nightlife, Asian Fusion",
+                "hours": {
+                    "Monday": "11:0-23:0",
+                    "Tuesday": "11:0-23:0",
+                    "Wednesday": "11:0-23:0",
+                    "Thursday": "11:0-1:0",
+                    "Friday": "11:0-1:0",
+                    "Saturday": "11:0-1:0",
+                    "Sunday": "11:0-23:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 4.0,
+                "review": "I had a delightful experience at Bar Asia! The lemongrass chicken bowl was packed with flavor, and the volcano roll was a standout, both fresh and satisfying. The staff was attentive and friendly, making the evening enjoyable despite a slight delay in service. The ambiance was modern and inviting, perfect for a casual night out."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "IXAcl59yp4JyifX9A4KWkw",
+                "item_id": "0-evjpRKnht75t9J3NE8Zw"
+            },
+            "groundtruth": {
+                "stars": 2.0,
+                "review": "Jet Rock Bar and Grill has a few redeeming qualities, such as its reasonable prices and good breakfast options, which align with my preference for affordability. However, the poor service, subpar food quality, and long wait times are significant drawbacks. The staff's inattentiveness and the unappealing menu options, especially for a casual dining bar, are particularly disappointing. While the place is clean and comfortable, the overall experience did not meet my expectations, and I would not recommend it to others."
+            },
+            "user_info": {
+                "user_id": "IXAcl59yp4JyifX9A4KWkw",
+                "name": "Lynn",
+                "review_count": 188,
+                "yelping_since": "2011-11-10 03:19:00",
+                "useful": 512,
+                "funny": 122,
+                "cool": 133,
+                "elite": "2013,2014,2015",
+                "friends": "C8A6Qe39QUOIKb6vD83Zvg, L4f6norK9ivORBuzCqfnFg, Dbc3h9mFAJ6XYUkWJsjpWA, agqCf3e8riY9uvAd0IG74w, _cnkcFIJZS-gf6uCF9eZmQ, 60XFRD-0MSrbNxjIMPHFvQ, zAbk9LczypGpjdb3YXB3vg, 8QkYr9ftTna9oZTcjHH0tA, BxhAvmGn4UzfPLAPoTPqhg, qJ9aD12usV4rHtxEapBS_Q, QOD_2prbRHUEY18OG0UVyg, p7OZx3RIeJPxSM4hP6wqEA, cYxQM_ZkOAFgivpR6P-Npg, 33_ba3krpFtQBJpC2C9KOQ, PHNawOl-z6X3RVYXST5TVQ, OZmiqcylFQ3Jxht-wuyJWQ, T4cflb-H2M5W8_hw1OqAUA, wEE-YMx5pmSuagLtNxMPKA, 8RkMK27RpMHjFuZdidGl1A, QaJbgj6-EQU8N7UjYKqfDw, 52VwCEiFXVcQiCltnAwaRw, 7WOfuNxzKaY_bhgzvE6wiA, Z9knrFNgKEqAcv1t0VDYNQ, uCsTJ2gNlfCizKMZDQG9zg, BkHkEZ6P6qZCyF7L-pXMRQ, eou4ETG8xtrtaRtTqBf8Lg, gnG1C-XU5sPjnWfWzlNt6Q, mqnBG001i8XaJiyijNOCuA, VxaCvv_VbC4k6wewXLw8tA, mZm0lEczbwFLdFreGqd74g, DLBNYnjJ3-lzgsr3AeXhAA, ncvgNeEsAIAuMWYFN2blhg, svKvXGcy2Gbm8tUOocuNWQ, aT0ipN5eUKmPnZmmXYouJA, 8Zocr6jVED5JQEBvqwEBZw, -RGgPpj05cxxcVVq28rIXg, dFiZKonxPWeancwryQe8Ug, wCWp_WaUgelZkDXoREc2iA, JIL-11F8saOkNg5e5FOSsw, MzBQxPzJPR_DCL_TWjTQog, a1SqPdDFe33f9gLWrVF6yw, NoOaVw8YAe4SlgWGLWMY8Q, YgTSl-H3SEM-D1GTrjcIhQ, peG3q2c2sMhSvKoXij4fTQ, 8bw9vD1Bkj8nUdPBUhgpug, -ByQQNRM-FGhAC0gsOJF1A, Bmfo84L4-ExHDQpn-ZNmvQ, 3viWuM6eHyI_Km1fd4UE-w, liymdX-2oYY7jy4py09Vog, EGqM1Zzdm6I3vv1fNvXTgA, fFI3goEBB0ywYNB4qZLu2g, HWGrt1MEXlzZ71NGx0YfkA, 0msRZVxjmRWIWXuiiLcw6g, Ehjg4D6ANqI1fTHsWYw5LA, 6ub5Ok9ahLomzlu6MD3TPw, MIQ5HSYCF22P95Luwxh1gQ, 4TTOknBZuKMXF-z218YQqw, ygxKTez7VxBclwD6TIEOBw, 16xIUxD8TbCJSOrBf7lnbw, eRKEFyUmQD8562fDJHTwIQ, qswKuJB5-JTmdhdPMiBxbg, 84t6jpyclA55TMfMV0X0kA, hhCjb2MKp5ludw3kKrTH8g, 4vavTfDI0A2Dc3xlowx2Rg, i7sZqIPkLWxZ08_wWejNZQ, Lf_0C2LiBc6FZJhSAwHk_A, e4QRzv0d43iq_RaEonqY3A, _6qzYTyQ3lV9DJqoep7_og, ZjPh6VnxV1Twb4bmd6wXdw, YSb8JRyI75M8FkbYWLH4UA, K73tPv89_EWRs_oo8HBn7Q, UGpQAXJ3hG4M_0Vijq6fEA, c37ExETACU9zVWxfdb3F4g, KJjShiD6qnG4WyzRnmKqOw, gPZ-qR6Zc93jWKbTSwuQaQ, AYgZchbVYpc1tsCJjMhnVQ, ZY58g2vAU0wAt8cM26sR1Q, SzAT0j2jvt6vS6TWHylMUw, _NikLf2J8VosVcENf5uVtg, YAnas1lwVMrAhc99_-rufA, f_k-QaIBracdL7BMUoCzdg, eboQt60JSNbZ6fdI5hPlSA, MPFxLd1-ieQ1cRrPQwTklg, BkUBe-6cDaVVhJ3yNRS3jQ, al186jXxeyJye0EOMW4rDA, 0whjB2QtWoyyvVC2MjBTaA, IY87lQQIrnx5pUGD08R2FA",
+                "fans": 14,
+                "average_stars": 3.81,
+                "compliment_hot": 11,
+                "compliment_more": 2,
+                "compliment_profile": 2,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 10,
+                "compliment_plain": 18,
+                "compliment_cool": 20,
+                "compliment_funny": 20,
+                "compliment_writer": 16,
+                "compliment_photos": 2,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "0-evjpRKnht75t9J3NE8Zw",
+                "name": "Jet Rock Bar and Grill",
+                "address": "7250 Tucson Blvd",
+                "city": "Tucson",
+                "state": "AZ",
+                "postal_code": "85756",
+                "latitude": 32.12028,
+                "longitude": -110.937725,
+                "stars": 2.0,
+                "review_count": 11,
+                "is_open": 0,
+                "attributes": {
+                    "RestaurantsDelivery": "False",
+                    "HasTV": "True",
+                    "RestaurantsReservations": "False",
+                    "RestaurantsPriceRange2": "2",
+                    "RestaurantsTakeOut": "True",
+                    "RestaurantsAttire": "'casual'",
+                    "BusinessAcceptsCreditCards": "True",
+                    "Ambience": "{'romantic': False, 'intimate': False, 'touristy': False, 'hipster': False, 'divey': False, 'classy': False, 'trendy': False, 'upscale': False, 'casual': False}",
+                    "NoiseLevel": "u'average'",
+                    "GoodForKids": "False",
+                    "RestaurantsGoodForGroups": "True",
+                    "Alcohol": "'full_bar'",
+                    "Caters": "False",
+                    "WiFi": "'no'",
+                    "OutdoorSeating": "False",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': False, 'valet': False}",
+                    "BikeParking": "False"
+                },
+                "categories": "American (New), Restaurants",
+                "hours": null,
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 2.0,
+                "review": "I had high hopes for Jet Rock Bar and Grill, but the experience was a letdown. The food was underwhelming, with a dry veggie burger and a lackluster goat cheese salad, and the service was painfully slow and inattentive. The place could use a good cleaning too; it felt more like a last resort than a relaxing stop before a flight. Not a great spot for a pre-flight meal."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "dWgnBvdmIvLtk6Ciw9xCEg",
+                "item_id": "RROICJV1SdNKeua8QOSfhA"
+            },
+            "groundtruth": {
+                "stars": 1.0,
+                "review": "I had a terrible experience with Katona James A Sr Roofing. The service was unreliable and unresponsive, which is a huge red flag for me. Jim initially quoted a low price but kept increasing it as the work progressed, leading to significant financial stress. The quality of work was also poor, resulting in further leaks and water damage. His unprofessional behavior, including rude interactions and lack of transparency, made the entire process a nightmare. I cannot recommend this business to anyone."
+            },
+            "user_info": {
+                "user_id": "dWgnBvdmIvLtk6Ciw9xCEg",
+                "name": "Matt",
+                "review_count": 5,
+                "yelping_since": "2017-09-09 19:59:05",
+                "useful": 1,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "None",
+                "fans": 0,
+                "average_stars": 3.4,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "RROICJV1SdNKeua8QOSfhA",
+                "name": "Katona James A Sr Roofing",
+                "address": "4384 Manayunk Ave",
+                "city": "Philadelphia",
+                "state": "PA",
+                "postal_code": "19128",
+                "latitude": 40.0297438,
+                "longitude": -75.2190878,
+                "stars": 2.0,
+                "review_count": 5,
+                "is_open": 1,
+                "attributes": null,
+                "categories": "Home Services, Roofing",
+                "hours": null,
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 1.0,
+                "review": "My experience with Katona James A Sr Roofing was deeply disappointing. The service was unprofessional, with significant issues like unauthorized photography and a lack of transparency regarding costs, which escalated dramatically once work began. The quality of the work was subpar, leading to further damage and unresolved issues, and the lack of follow-up support only added to the frustration."
+            }
+        }
+    ]
+}

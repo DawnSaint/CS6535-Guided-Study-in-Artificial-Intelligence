@@ -1,0 +1,1531 @@
+{
+    "type": "simulation",
+    "metrics": {
+        "preference_estimation": 0.915,
+        "review_generation": 0.8413377248192566,
+        "overall_quality": 0.8781688624096283
+    },
+    "data_info": {
+        "evaluated_count": 20,
+        "original_simulation_count": 20,
+        "original_ground_truth_count": 400
+    },
+    "task_info": [
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "wAo7casDFsbUR4O8Vb3u8A",
+                "item_id": "cVoyA9wrdF5E8OroBahxCg"
+            },
+            "groundtruth": {
+                "stars": 2.0,
+                "review": "I had mixed feelings about my experience with Mad Batter Bakery. While the cupcakes and desserts were indeed delicious and beautifully presented, the service was unreliable, which is a big deal for me. The owner, Chelle, was responsive at first but then became uncommunicative, especially when issues arose. This inconsistency and lack of professionalism, particularly for important events, is a significant drawback. I appreciate the free delivery and the reasonable prices, but the reliability issues and unprofessional behavior make it hard to recommend this bakery without reservation."
+            },
+            "user_info": {
+                "user_id": "wAo7casDFsbUR4O8Vb3u8A",
+                "name": "Jan",
+                "review_count": 1,
+                "yelping_since": "2018-05-28 19:34:58",
+                "useful": 4,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "None",
+                "fans": 0,
+                "average_stars": 1.0,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "cVoyA9wrdF5E8OroBahxCg",
+                "name": "Mad Batter Bakery",
+                "address": "",
+                "city": "Tucson",
+                "state": "AZ",
+                "postal_code": "85710",
+                "latitude": 32.2165669,
+                "longitude": -110.8195292,
+                "stars": 3.5,
+                "review_count": 28,
+                "is_open": 1,
+                "attributes": {
+                    "WiFi": "u'no'",
+                    "RestaurantsReservations": "False",
+                    "RestaurantsGoodForGroups": "True",
+                    "WheelchairAccessible": "False",
+                    "BusinessAcceptsCreditCards": "True",
+                    "BusinessAcceptsBitcoin": "False",
+                    "GoodForKids": "True",
+                    "OutdoorSeating": "False",
+                    "HasTV": "False",
+                    "RestaurantsTableService": "False",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': False, 'valet': False}",
+                    "BikeParking": "False",
+                    "RestaurantsDelivery": "True",
+                    "RestaurantsTakeOut": "False",
+                    "Caters": "True",
+                    "Alcohol": "u'none'",
+                    "RestaurantsPriceRange2": "2",
+                    "DogsAllowed": "False"
+                },
+                "categories": "Event Planning & Services, Food, Food Delivery Services, Caterers, Restaurants, Gluten-Free, Patisserie/Cake Shop, Desserts, Cupcakes, Bakeries",
+                "hours": {
+                    "Monday": "0:0-0:0",
+                    "Tuesday": "9:0-17:0",
+                    "Wednesday": "12:0-18:0",
+                    "Thursday": "9:0-17:0",
+                    "Friday": "9:0-17:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 2.0,
+                "review": "I visited Mad Batter Bakery with high hopes after reading some glowing reviews, but my experience was disappointing. The cupcakes were tasty, but the lack of reliability in delivery and poor communication about order status left a sour taste. It's a shame because the potential is there, but the execution needs serious improvement."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "tkSCd4gCwgh2XvDYmPlsPg",
+                "item_id": "T72WVqMPc67-DWCS8R_ASA"
+            },
+            "groundtruth": {
+                "stars": 1.0,
+                "review": "I had a terrible experience with Brighthouse Networks. The service is unreliable, with frequent outages and slow internet speeds. The customer service is a nightmare, with unhelpful representatives and long wait times. I also faced unexpected increases in my bill, and the company failed to honor promotions. It's frustrating to deal with a service provider that doesn't seem to care about their customers. I would strongly advise against using Brighthouse Networks."
+            },
+            "user_info": {
+                "user_id": "tkSCd4gCwgh2XvDYmPlsPg",
+                "name": "Jefri",
+                "review_count": 2,
+                "yelping_since": "2010-12-14 01:00:12",
+                "useful": 1,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "rA9oXjX9JkWxnz58jerwiQ",
+                "fans": 0,
+                "average_stars": 1.0,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "T72WVqMPc67-DWCS8R_ASA",
+                "name": "Brighthouse Networks",
+                "address": "5214 Linebaugh Ave",
+                "city": "Tampa",
+                "state": "FL",
+                "postal_code": "33624",
+                "latitude": 28.0399783,
+                "longitude": -82.5330207,
+                "stars": 1.5,
+                "review_count": 10,
+                "is_open": 1,
+                "attributes": null,
+                "categories": "Professional Services",
+                "hours": null,
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 1.0,
+                "review": "I had nothing but frustration with Brighthouse's service. Constant outages, unprofessional technicians, and customer service that seemed indifferent to my issues. This company needs to seriously improve its reliability and customer care."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "1q6v24bV-zYk9trWszBB4A",
+                "item_id": "9Ti9wdW4CGlF2b_ZuvtpdQ"
+            },
+            "groundtruth": {
+                "stars": 3.0,
+                "review": "Bar Asia offers a unique dining experience with its modern and chic decor, which I found very appealing. The outdoor seating area is a nice touch, making it a great spot for a casual dinner. However, the service was a bit hit or miss. While some servers were attentive and friendly, others were slow and understaffed, which affected the overall dining experience. The food was fresh and the portions were reasonable, but the prices were a bit steep for what was offered. Overall, it's a decent place to try, but there's room for improvement in service and value."
+            },
+            "user_info": {
+                "user_id": "1q6v24bV-zYk9trWszBB4A",
+                "name": "Sarah",
+                "review_count": 8,
+                "yelping_since": "2014-11-15 13:58:42",
+                "useful": 2,
+                "funny": 1,
+                "cool": 0,
+                "elite": "",
+                "friends": "rUjotRZrQVljbOd4rtAc2Q, -SIN3VzDghh0PelzRE-irQ, 7OVLDLIX-ZFmHhFy-FRqnw",
+                "fans": 0,
+                "average_stars": 3.5,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 1,
+                "compliment_plain": 1,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "9Ti9wdW4CGlF2b_ZuvtpdQ",
+                "name": "Bar Asia",
+                "address": "122 S Howard Ave",
+                "city": "Tampa",
+                "state": "FL",
+                "postal_code": "33606",
+                "latitude": 27.9434541073,
+                "longitude": -82.4828046674,
+                "stars": 3.5,
+                "review_count": 53,
+                "is_open": 0,
+                "attributes": {
+                    "GoodForKids": "True",
+                    "GoodForDancing": "False",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': True, 'valet': False}",
+                    "WiFi": "'free'",
+                    "HappyHour": "True",
+                    "RestaurantsGoodForGroups": "True",
+                    "OutdoorSeating": "True",
+                    "RestaurantsDelivery": "None",
+                    "HasTV": "True",
+                    "Ambience": "{'touristy': False, 'hipster': False, 'romantic': False, 'divey': False, 'intimate': False, 'trendy': False, 'upscale': False, 'classy': False, 'casual': False}",
+                    "RestaurantsTakeOut": "True",
+                    "RestaurantsPriceRange2": "2",
+                    "BusinessAcceptsCreditCards": "True",
+                    "RestaurantsReservations": "True",
+                    "GoodForMeal": "{'dessert': False, 'latenight': False, 'lunch': True, 'dinner': True, 'brunch': False, 'breakfast': False}"
+                },
+                "categories": "Restaurants, Bars, Nightlife, Asian Fusion",
+                "hours": {
+                    "Monday": "11:0-23:0",
+                    "Tuesday": "11:0-23:0",
+                    "Wednesday": "11:0-23:0",
+                    "Thursday": "11:0-1:0",
+                    "Friday": "11:0-1:0",
+                    "Saturday": "11:0-1:0",
+                    "Sunday": "11:0-23:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 3.5,
+                "review": "I had a mixed experience at Bar Asia. The food was fresh and flavorful, especially the shaking beef bowl, and the industrial-chic ambiance added a nice touch. However, the service was a bit hit-or-miss, and the prices were a tad steep for the area. Overall, it's worth a visit if you're in the mood for some good Asian fusion, but there's room for improvement in terms of consistency and value."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "IXAcl59yp4JyifX9A4KWkw",
+                "item_id": "0-evjpRKnht75t9J3NE8Zw"
+            },
+            "groundtruth": {
+                "stars": 2.0,
+                "review": "Jet Rock Bar and Grill has a few redeeming qualities, such as its reasonable prices and good breakfast options, which align with my preference for affordability. However, the poor service, subpar food quality, and long wait times are significant drawbacks. The staff's inattentiveness and the unappealing menu options, especially for a casual dining bar, are particularly disappointing. While the place is clean and comfortable, the overall experience did not meet my expectations, and I would not recommend it to others."
+            },
+            "user_info": {
+                "user_id": "IXAcl59yp4JyifX9A4KWkw",
+                "name": "Lynn",
+                "review_count": 188,
+                "yelping_since": "2011-11-10 03:19:00",
+                "useful": 512,
+                "funny": 122,
+                "cool": 133,
+                "elite": "2013,2014,2015",
+                "friends": "C8A6Qe39QUOIKb6vD83Zvg, L4f6norK9ivORBuzCqfnFg, Dbc3h9mFAJ6XYUkWJsjpWA, agqCf3e8riY9uvAd0IG74w, _cnkcFIJZS-gf6uCF9eZmQ, 60XFRD-0MSrbNxjIMPHFvQ, zAbk9LczypGpjdb3YXB3vg, 8QkYr9ftTna9oZTcjHH0tA, BxhAvmGn4UzfPLAPoTPqhg, qJ9aD12usV4rHtxEapBS_Q, QOD_2prbRHUEY18OG0UVyg, p7OZx3RIeJPxSM4hP6wqEA, cYxQM_ZkOAFgivpR6P-Npg, 33_ba3krpFtQBJpC2C9KOQ, PHNawOl-z6X3RVYXST5TVQ, OZmiqcylFQ3Jxht-wuyJWQ, T4cflb-H2M5W8_hw1OqAUA, wEE-YMx5pmSuagLtNxMPKA, 8RkMK27RpMHjFuZdidGl1A, QaJbgj6-EQU8N7UjYKqfDw, 52VwCEiFXVcQiCltnAwaRw, 7WOfuNxzKaY_bhgzvE6wiA, Z9knrFNgKEqAcv1t0VDYNQ, uCsTJ2gNlfCizKMZDQG9zg, BkHkEZ6P6qZCyF7L-pXMRQ, eou4ETG8xtrtaRtTqBf8Lg, gnG1C-XU5sPjnWfWzlNt6Q, mqnBG001i8XaJiyijNOCuA, VxaCvv_VbC4k6wewXLw8tA, mZm0lEczbwFLdFreGqd74g, DLBNYnjJ3-lzgsr3AeXhAA, ncvgNeEsAIAuMWYFN2blhg, svKvXGcy2Gbm8tUOocuNWQ, aT0ipN5eUKmPnZmmXYouJA, 8Zocr6jVED5JQEBvqwEBZw, -RGgPpj05cxxcVVq28rIXg, dFiZKonxPWeancwryQe8Ug, wCWp_WaUgelZkDXoREc2iA, JIL-11F8saOkNg5e5FOSsw, MzBQxPzJPR_DCL_TWjTQog, a1SqPdDFe33f9gLWrVF6yw, NoOaVw8YAe4SlgWGLWMY8Q, YgTSl-H3SEM-D1GTrjcIhQ, peG3q2c2sMhSvKoXij4fTQ, 8bw9vD1Bkj8nUdPBUhgpug, -ByQQNRM-FGhAC0gsOJF1A, Bmfo84L4-ExHDQpn-ZNmvQ, 3viWuM6eHyI_Km1fd4UE-w, liymdX-2oYY7jy4py09Vog, EGqM1Zzdm6I3vv1fNvXTgA, fFI3goEBB0ywYNB4qZLu2g, HWGrt1MEXlzZ71NGx0YfkA, 0msRZVxjmRWIWXuiiLcw6g, Ehjg4D6ANqI1fTHsWYw5LA, 6ub5Ok9ahLomzlu6MD3TPw, MIQ5HSYCF22P95Luwxh1gQ, 4TTOknBZuKMXF-z218YQqw, ygxKTez7VxBclwD6TIEOBw, 16xIUxD8TbCJSOrBf7lnbw, eRKEFyUmQD8562fDJHTwIQ, qswKuJB5-JTmdhdPMiBxbg, 84t6jpyclA55TMfMV0X0kA, hhCjb2MKp5ludw3kKrTH8g, 4vavTfDI0A2Dc3xlowx2Rg, i7sZqIPkLWxZ08_wWejNZQ, Lf_0C2LiBc6FZJhSAwHk_A, e4QRzv0d43iq_RaEonqY3A, _6qzYTyQ3lV9DJqoep7_og, ZjPh6VnxV1Twb4bmd6wXdw, YSb8JRyI75M8FkbYWLH4UA, K73tPv89_EWRs_oo8HBn7Q, UGpQAXJ3hG4M_0Vijq6fEA, c37ExETACU9zVWxfdb3F4g, KJjShiD6qnG4WyzRnmKqOw, gPZ-qR6Zc93jWKbTSwuQaQ, AYgZchbVYpc1tsCJjMhnVQ, ZY58g2vAU0wAt8cM26sR1Q, SzAT0j2jvt6vS6TWHylMUw, _NikLf2J8VosVcENf5uVtg, YAnas1lwVMrAhc99_-rufA, f_k-QaIBracdL7BMUoCzdg, eboQt60JSNbZ6fdI5hPlSA, MPFxLd1-ieQ1cRrPQwTklg, BkUBe-6cDaVVhJ3yNRS3jQ, al186jXxeyJye0EOMW4rDA, 0whjB2QtWoyyvVC2MjBTaA, IY87lQQIrnx5pUGD08R2FA",
+                "fans": 14,
+                "average_stars": 3.81,
+                "compliment_hot": 11,
+                "compliment_more": 2,
+                "compliment_profile": 2,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 10,
+                "compliment_plain": 18,
+                "compliment_cool": 20,
+                "compliment_funny": 20,
+                "compliment_writer": 16,
+                "compliment_photos": 2,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "0-evjpRKnht75t9J3NE8Zw",
+                "name": "Jet Rock Bar and Grill",
+                "address": "7250 Tucson Blvd",
+                "city": "Tucson",
+                "state": "AZ",
+                "postal_code": "85756",
+                "latitude": 32.12028,
+                "longitude": -110.937725,
+                "stars": 2.0,
+                "review_count": 11,
+                "is_open": 0,
+                "attributes": {
+                    "RestaurantsDelivery": "False",
+                    "HasTV": "True",
+                    "RestaurantsReservations": "False",
+                    "RestaurantsPriceRange2": "2",
+                    "RestaurantsTakeOut": "True",
+                    "RestaurantsAttire": "'casual'",
+                    "BusinessAcceptsCreditCards": "True",
+                    "Ambience": "{'romantic': False, 'intimate': False, 'touristy': False, 'hipster': False, 'divey': False, 'classy': False, 'trendy': False, 'upscale': False, 'casual': False}",
+                    "NoiseLevel": "u'average'",
+                    "GoodForKids": "False",
+                    "RestaurantsGoodForGroups": "True",
+                    "Alcohol": "'full_bar'",
+                    "Caters": "False",
+                    "WiFi": "'no'",
+                    "OutdoorSeating": "False",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': False, 'valet': False}",
+                    "BikeParking": "False"
+                },
+                "categories": "American (New), Restaurants",
+                "hours": null,
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 2.0,
+                "review": "I had high hopes for Jet Rock Bar and Grill, but my visit was a letdown. The food was mediocre at best\u2014dry burgers and wilted salads\u2014and the service was painfully slow and inattentive. The place could use a good cleaning too; finding crumbs on the table was not the welcome I expected. Despite the casual vibe, the overall experience didn't justify the airport prices."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "dWgnBvdmIvLtk6Ciw9xCEg",
+                "item_id": "RROICJV1SdNKeua8QOSfhA"
+            },
+            "groundtruth": {
+                "stars": 1.0,
+                "review": "I had a terrible experience with Katona James A Sr Roofing. The service was unreliable and unresponsive, which is a huge red flag for me. Jim initially quoted a low price but kept increasing it as the work progressed, leading to significant financial stress. The quality of work was also poor, resulting in further leaks and water damage. His unprofessional behavior, including rude interactions and lack of transparency, made the entire process a nightmare. I cannot recommend this business to anyone."
+            },
+            "user_info": {
+                "user_id": "dWgnBvdmIvLtk6Ciw9xCEg",
+                "name": "Matt",
+                "review_count": 5,
+                "yelping_since": "2017-09-09 19:59:05",
+                "useful": 1,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "None",
+                "fans": 0,
+                "average_stars": 3.4,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "RROICJV1SdNKeua8QOSfhA",
+                "name": "Katona James A Sr Roofing",
+                "address": "4384 Manayunk Ave",
+                "city": "Philadelphia",
+                "state": "PA",
+                "postal_code": "19128",
+                "latitude": 40.0297438,
+                "longitude": -75.2190878,
+                "stars": 2.0,
+                "review_count": 5,
+                "is_open": 1,
+                "attributes": null,
+                "categories": "Home Services, Roofing",
+                "hours": null,
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 1.0,
+                "review": "My experience with Katona James A Sr Roofing was nothing short of disastrous. The owner, Jim, provided subpar work, increased the price unexpectedly, and was completely unresponsive to my concerns. I strongly advise against hiring this company."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "6JcBAl3H_VGT5ipcPrpDOA",
+                "item_id": "vLpLGCbAtuxFzu2ka138aA"
+            },
+            "groundtruth": {
+                "stars": 1.0,
+                "review": "I decided to give Barnet Fair a try, but unfortunately, it didn't meet my expectations. The stylists were praised by others, but my experience was far from positive. My brows were shaped poorly, and the customer service was lacking. I felt rushed and undervalued, and the overall atmosphere didn't make me feel comfortable. Given my past experiences, I won't be returning."
+            },
+            "user_info": {
+                "user_id": "6JcBAl3H_VGT5ipcPrpDOA",
+                "name": "Lisa",
+                "review_count": 2,
+                "yelping_since": "2016-02-16 20:33:24",
+                "useful": 0,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "None",
+                "fans": 0,
+                "average_stars": 2.33,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "vLpLGCbAtuxFzu2ka138aA",
+                "name": "Barnet Fair",
+                "address": "139 N 3rd St",
+                "city": "Philadelphia",
+                "state": "PA",
+                "postal_code": "19106",
+                "latitude": 39.9532548,
+                "longitude": -75.14479,
+                "stars": 5.0,
+                "review_count": 39,
+                "is_open": 1,
+                "attributes": {
+                    "BusinessAcceptsBitcoin": "False",
+                    "BusinessAcceptsCreditCards": "True",
+                    "GoodForKids": "True",
+                    "HairSpecializesIn": "{'straightperms': False, 'coloring': False, 'extensions': False, 'africanamerican': False, 'curly': False, 'kids': False, 'perms': False, 'asian': False}",
+                    "BikeParking": "True",
+                    "WheelchairAccessible": "False",
+                    "ByAppointmentOnly": "False",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': False, 'valet': False}",
+                    "RestaurantsPriceRange2": "3"
+                },
+                "categories": "Beauty & Spas, Hair Salons, Hair Stylists",
+                "hours": {
+                    "Tuesday": "12:0-18:0",
+                    "Wednesday": "10:0-18:0",
+                    "Thursday": "12:0-21:0",
+                    "Friday": "11:0-19:0",
+                    "Saturday": "9:0-16:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 1.0,
+                "review": "I had high hopes for Barnet Fair, but my experience was a disaster. My stylist completely RUINED MY HAIR, and the customer service was horrendous. I left feeling frustrated and disappointed, warning others to steer clear."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "meJ9sHOd-fE0jn1rw2nXow",
+                "item_id": "AKtLOAuqcb2GWXuiRW5Www"
+            },
+            "groundtruth": {
+                "stars": 3.0,
+                "review": "Twirls Frozen Yogurt is a place that caught my attention due to its bright and inviting atmosphere. The variety of delicious frozen yogurt flavors, especially the tart and pomegranate raspberry sorbet, is impressive, and the extensive topping selection, including fresh fruits and unique options like butterscotch chips, is a real plus. However, the service can be hit or miss, with some staff being friendly and helpful while others are less attentive. The pricing model, which charges by weight, can be steep, especially if you overfill your cup. Despite these drawbacks, the overall experience is still enjoyable, but there's room for improvement in consistency and value."
+            },
+            "user_info": {
+                "user_id": "meJ9sHOd-fE0jn1rw2nXow",
+                "name": "Jennie",
+                "review_count": 2,
+                "yelping_since": "2009-08-21 04:44:17",
+                "useful": 0,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "rOhFID7CiiH_nTXXDCz1dg, gZN4aYXU2zQVAkS81Eeg4Q, 6A8ZTu4DnM2DSGwEFugYIg, 16NGkckAeMM-OWlt9x3vAw, DdskgToUee4C61rM-_skUw, 1r6ARLFNHNoYcWzysn0KAw, IWg_1s-hS6EE4A-IYrQOsg, Cdiv3cRogulwOsSyxuSPGQ, 7_6xLJmYDSK-DInqH5ZmpA, ML2Q8uY40Wl0GbGwaKJGUg, P-OgAuHYXmduN6JTnyQibw, QWZiRVqVoZ9QARsPNkJGPg, He_QhlQ9NDgOUpmCsrAPiA, 09XbNpJmTbdjKJdLbfog5w, x-LrGPXN7WFX15Qk9B6_YQ, 0ius8DPk6oXOZ5CaRGhtGA, Hnxr9BMfZXtAwdXPvHtFgA, xn4EswtzKdB2Q0ilflOTSA, k0JDot0A3S_Qm_u3BmYkqw, 6Gr83NHZZ6AfX2giTnrq1Q, I-_6IrPs68ozMNITqjPEnA, Ht7-MqG4EMfPWiY0l8dJFw, K5XZ9x9PECVdB3opV053Nw, faF-OZ2Vks9jYX0_L40gdA, zJzJXi5P050nN-EnqZq_1g, me-prkDUc7_cBrpZyB2imQ, MTemPGvWSZPNGwVagm4-qg, kd0C3uyg0IuEO6xscV-YwA, rKHY4Ugk5VovCxDrw5yT_Q, BaVDvTmKrGIcifYfu8bkJg, CN6b7zoJTG5XCc2pJKCRCQ, 7KnQr9W0x163cWgTDUyIrg, m5q4y8UqkX59i5vvXzh80Q, za6nrQpl92nL4ZlmED4VgA, _mz57KV2695z1BTN5HeosQ, FpWbWYTECzCsBM31x85N2Q, AbkFQ6rjFmc7SXvK6v83SA, RX5DGDsOxVFmdN0LJyTCPA, w4kPYGa_2d1fxtHekZ2fog, n6TGJEgiRE8k4K4ZPhXOBg, QSLhVoMOt4NSTF-ssQFwAA, V4KLgLOdKPKLGkOjuUUDNQ, Ff-muRI_Swq03Jg1SC667w, NEjy8mAUwOQUZPwNIWaYdQ, XopRpReWSHH09tX16juGAw, wS4DMUQ8h-2hpIXryf210A, ZVIgWkpCcjpkA-cO9OLQYA, 3koQjEhccBhS1jRtMs1lXg, owpPk3yo9SLDxyQoSRYkLw, SOwX7skWIyZQnmeeod5nLQ, 1qKi_aElbeNODjNL4Nk4MA, VYgSNP89ROCDtc99JOR_0Q, SO5dE3DnQy0LlKDYuvGfsQ, VFTGAx1hgo4kQ41FcbBkRg, ZhMnI5ogi4cmMkNxn81UGQ, eN0oPJu-eBWR53zUBkibNw, tNHCQOJTK8DFsbIYfytdrA, sW32pYfTo5lu2o8xfpBSPA, LecUEcFe5ubfX3rNn_X7wg, 83eCv0LIhEdmbsUa9licWg, e3hEwa_6Qtbiouh809sG8w, Tkt4x40Dhx6tnI56WXmVgg, 34isoJ7RRbN2VAM8ctrXsQ, crKnQBh57vEGYrn0vsqsuw, 0v-STvwT1JaTZnjtYKt0nQ, pwqHnYeNgwg4h9PxahXmzw, Hcys0DunmsguRYes57CSSw, 721TqOW4LTY2HhUz8_XQag, ZpT8Nv8JcXGMdvyGQuPQxA, p26MRbSoXCfE3whrUbaPPg, -0IjgfqFDjbgnU0DiVXCuQ, tqspXOoS19brA2b8fcXhcQ, yvdJv1wReNYdGjV-h_KNkg, vpHRvxQmEAM0H68TFDEtow, -1n152qJQUOGEwQLEGi_-Q, geBxkyZV1OrbJY3eUbYU6Q, r1bOCusTVTmuV-YzEx6n9g, yQKKqL0xgJ9HPuwqgE-a8Q, DCIrSkpTbciHeMnKE3RDbQ, snMTh9NTIVeVtvQRoxsSeQ, p0gOZEPBPphyTcZndv32Fw, 6HVfzXtQIqfpfHi-nYTrXQ, Qv70NowcWqoq8fHBASICTQ, GZk8ruYO8iKztizzo_AMUg, sFQMTzfCmTmLgSfJa7RVew, 9cWkd296ErQtOOj30H90Cw, 4nhfouTS-SIQHEhAcyY0hg, Klk7AYwgw8aikZSNcbiddQ, vsE5EaM_-0QXEu16HIBgXA, byc4gciHiLU21xBH5owo5g, ncmiSL1kbWI5R0Dt7L6RIg, W1es56xEG9oPx44o_0Xa1A, d-gBwTjqatlkWJL_z_kiBg, d_iTMWEs_pv9OvC8fEtoTQ, 6fqnrgOMJSyfP13zzdnCGA, IvvaOBh27NNaaLCAmVneXA, MrpSQNt8fIs9ICFXYkbXiw, GLubLF9HbPNVyJhDXr5k9w, 5NW9ScvW9YXNoIpbJplAmg, A6PAzZcMGaYXS1NUnMB2Zg, KYblk4n01p4PKyd4lhuNpw, s7ASNqC24wKfjQQXEFN5Uw, -e-tQt9o7qGCpJT2_ksr1A, uzL928ZX4BcEr6qYdpwyLw, JpIDVxCISHuv_2Zj5CICVg, YHrj0cLawCIE11hS0dQGzw, PyFyzxXW4QN_TgpHjZcAhw, EDvM525hnST_wdFudOnsJw, Fd6ds9ZytyeF8QZrcEZw7Q, OoAoNDpj4KEIpvTpGbKjEg, -fL2VHDxd4Fp3B4ruymcOA, TeqGKAJO8I6CRA-0x7iLMA, QJD6cdFDQ8Xw31r3w3i4qg, 5dXCWAOgaX7e8sfSCaPBIw, BwRikf6yMkDoHzCw7k7egg, tah1TyH62xuunmtaMpSFXg, 7oefUVCaQOC93YNfy7tJjw, 7o1L7zYkAPm5EANWWl6jqg, hOVEC237yO-XQOqmZDMXtA, UiNOOL7J5BqjTeHGiQqpVQ, RC0rtG-V45DeMSmFjWzlYw, 1EnrvoPLw8Nb57J3kjvkcw, cdjVIrmOnXoATgnenjaweA, l9F5sfPqC8e8dbHSUn7nfA, Bpr-a0Y2sopVQrjh7LvXNA, _MMzTHDRHwlleeXSpWC07Q, Is-DOuFwlQeyJFZGG7hoDg, QJgDHQyjUTCZ7jNPdD1zUg, vfRRqozCiNcQmGyVyI_IXg, QNgq462vC9UfbsrbCvPg4g, i87nxpeLGLVJqiSs4Gdhkw, SyKs0dXDV9laPTQEV2L_gw, DdoL9HW91GAJgIDyUpWsgQ, nSSDYpN_raTxeOLzassUlg, Z0inxFoAnUNKf9pWyDjO4Q, xnwah8pvO-tJF8FiqmGiPQ, 3d69tY_KOj0eH5Pnir3ceA, e1gE_Kt-4-yTbAxGdt_ADQ, 6dUHOzfvZMLP26nb9xkwiw, xek_e2LVX1ZjihF1vob8bw, qtXY83SSn8mU7Cf7Ze2igA, 66Tf8URvvmzMDdG2WCVtRw, -ezII7KZvQ97igiYlgioOQ, aZRf2IxVCl77nIxjoEuGyA, 4SIIBAThpCIsjPiFKt2Q6w, a2e2t82FoeW-a_0FUeyZyQ, CXn9GxJOJ4yeZKZPT-dySQ, IUu28GSMRrtcbFY8Wrkt7w, ja-1J0o_VzV6Iuu1aDHbYA, SuiK5V04cU6QLbHLTIF71g, mz04NNawI3iPRfkMIjhbSg, Z5wt5CfnjzDegssSUPZqnw, b0Am92baPCo9Sexesuzncw, ncbxF_2giLbMb9gZHlebyw, l2BIz8DQMlnkOHO1nNOVhw, lcio1Bhg6Xu5RKZWm_LtNg, Fad-3Ru7Ea81rhhI-jUtSQ, ELKRhqtwffQ-fO-9iM-RoA, OGOpACXZ86A637Kw024d3Q, 6WQYc6dpwAMvr7G-8wT1lA, 8Xm4Avp3o_xWQrpEN1JHHQ, 7sX_jINSB0SOjP5hzy9Dxw, so_2ddvJdCIEXhT0DjEJww, bffeFDJWLdR6rXnnbH543g, qXO1lIecTbms_zX6v_rNkA, W0B5rwLRLA7cNlHHbXZ3yw, NXhVlyB_00YlIi2iz9U4UA, TreL40WL5HqgcglePboCnQ, OA5pOtDVwlZdnH1mssPetg, wjpDEtt3dyv-qISlKWPwKg, Fs3dJRxLpavnbC6EARu3_A, NhbBN_LPcMG2x1FRrH069w, avpgkt3LW_L5vzHrx6fn7A, KMqUMILWdX-DXD3s9jcz0g, FUHqu5_fXsvEN-Hbl5L0kQ, g4mSi99wTo9P2ygc4inKtA, qNojwQbZUMiOUaL5JWQGzA, zcKjp3TkhDlpbJWsu6RhCQ, wj8PQcapKKp99U9mcTOO5A, QclW4JGZq1EhybudBDyyyQ, ZENvSny_GQOxRXXkQ-MPMA, Wy34IS1rH9APWuesolWVLg, OzTTfTDm4AgYXWQ_Dw1wSw, DHXqzK-6aiJUbjlUQvvIjw, toRVeZdU9J4wqRpGqGYhKw, dMqhPJKHkeTBo75G-aQX2w, fXwFYlqCGo1_iAIdah_RGQ, G9lA4ednKjOJeKvaeT55Vg, uSmEevvFHlw_eqobLuPTiw, GXGyMiicXwnRDL4IWJAmpg, E94UcFCISsEgWkFwj74b6Q, 51xaQKqd5QrZW3gOxGjqgA, FKcpi_gE1NsnMtSMzR_UkQ, 5xkZpbXIc40GhXqygd-Bxg, QuwVEhmKMVr1scB9VsApMg, GoM9M3wgtwGVXjb1hzt4MQ, dDa-evyHmTWOVnRAi5IjFw, 4e4GShDk3ksr_VrN_Yj1SA, SDZsBNCJQrOHm26YzeN6eA, BFMNuJF6ZR22_NpaAhOmzw, O88RZx41k-TeG2kaWueLJg, Zl8fw46DcIpbEG_pQCVfDw, NKmXjFSPl_NMnlX0PALCEA, u6rt7G0p8WEzT1TeYzwwiA, 6LB92JD_s39uI4ealUcAqA, eWg60K6hPMI02CNHogV_Vw, JHaNMqi5bGw0akaxbVjCrw, XOzBcWdKVFWstW1rUgAHVA, pF0TEi8MnLNYt-yR3R88iA, JtR4ob2M6eHSYyYdVKchgw, mrOgZOr-DBaNQDPEY_QzAw, 2O5MkNRp7NbdGBVycLIF1g, MEA0guONJ9bjr3-NQ9p3qw, pxfnXc1aq_2OR_awNZffNw, aO7PH7tOuJ-3D4hA5fKmCw, Rmx6mTKPP_l-pLE4pSzqAg, FK4Y4Sk1Ti3cBbUPDljuMw, 1saimMJscb_vvtV7NoocIw, Vd2ViC0siPmk34JVZUmDYg, qCOBpWE_KiVTZuNDstSXvg, X02YNLa3Iofzwv5Le6QeYQ, hcSvzPf2JGtxPO1dCvwrZA, xb8_pd7IbJ_cYlc5MR6YvQ, ygWyhfPNjxVNAWxbsU-geQ, -ra8widc9nRTfSux77Qg6g, lk7sk0BQS1fon23riUccXw, KG78XBguCuAHZ0KXt81YBg, Uwfkgj4ymSXmH2bWjnpGcA, CTOqGtqCiY4GfJFE-mmUAA, dxF4kmFg1_FPMM1fqWkRXg, 1f4FkWXLafsW-yylrw8Piw, 64SVwEg1qZz6L6fhaNhe7Q, LpDBMjZN9YdYx0QylKkBAg, qXdkxTPri8Q-65RQz9Wh1Q, 9meWBltH47QM6WqxFuB4jg, kkvkfqWYlD6k1-ZjM6lOog, ebyOPMgHWTmiigNJqxLtgA, eHtCI38EMovo5EuHnqrH2A, CVz7uTJuCTWHsDvXPqSg-w, Uet4-Dzw5dh80U81XrXPOw, fHpnHzgVWlneJT1FnHpoKg, jlU1OcjF0V34SKOUsz_J6A, jXlYt3KgSjq6csXJ_VyKIA, rv1HuNh4VsE5lWNLbA2UiQ, 4W3FSfOhF4CUgTghiZb3Bw, aO7PgMRCp_B44T7QFogRsQ, j2HtvLZzKG2y2ryeywp6UA",
+                "fans": 0,
+                "average_stars": 4.0,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "AKtLOAuqcb2GWXuiRW5Www",
+                "name": "Twirls Frozen Yogurt ",
+                "address": "3587 E Broadway Blvd, Ste 115",
+                "city": "Tucson",
+                "state": "AZ",
+                "postal_code": "85716",
+                "latitude": 32.2219894,
+                "longitude": -110.9163421,
+                "stars": 3.5,
+                "review_count": 108,
+                "is_open": 0,
+                "attributes": {
+                    "WiFi": "u'free'",
+                    "BusinessAcceptsCreditCards": "True",
+                    "BikeParking": "True",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': True, 'valet': False}",
+                    "RestaurantsTakeOut": "True",
+                    "WheelchairAccessible": "True",
+                    "RestaurantsPriceRange2": "1",
+                    "Caters": "False"
+                },
+                "categories": "Ice Cream & Frozen Yogurt, Food",
+                "hours": {
+                    "Monday": "11:0-22:0",
+                    "Tuesday": "11:0-22:0",
+                    "Wednesday": "11:0-22:0",
+                    "Thursday": "11:0-22:0",
+                    "Friday": "11:0-22:0",
+                    "Saturday": "11:0-23:0",
+                    "Sunday": "11:0-23:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 4.0,
+                "review": "Twirls Frozen Yogurt is a delightful spot with a wide variety of flavors and toppings. The staff is super friendly, and the place is always clean and inviting, making it perfect for a casual hangout with friends or family. I especially love their innovative flavors like pomegranate raspberry and the smooth, creamy texture of the yogurt."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "ScHwaxyOrnZZsk66S4NHrA",
+                "item_id": "Flut-RAHgxOwe_4FlkqGSQ"
+            },
+            "groundtruth": {
+                "stars": 4.0,
+                "review": "I had a great experience renting an RV from Cruise America Motorhome Rental & Sales. The staff, especially Hank, were incredibly helpful and made the entire process smooth and stress-free. The RV was clean, well-maintained, and comfortable, which made our trip enjoyable. The prices were also reasonable, and the check-in and check-out processes were efficient. While I did hear about some maintenance issues from other customers, my experience was overwhelmingly positive. I would definitely consider renting from them again in the future."
+            },
+            "user_info": {
+                "user_id": "ScHwaxyOrnZZsk66S4NHrA",
+                "name": "Lynn",
+                "review_count": 2,
+                "yelping_since": "2013-12-09 17:42:54",
+                "useful": 1,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "None",
+                "fans": 0,
+                "average_stars": 3.0,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "Flut-RAHgxOwe_4FlkqGSQ",
+                "name": "Cruise America Motorhome Rental & Sales",
+                "address": "3101 E Prince Rd",
+                "city": "Tucson",
+                "state": "AZ",
+                "postal_code": "85716",
+                "latitude": 32.2726091,
+                "longitude": -110.9264738,
+                "stars": 4.5,
+                "review_count": 6,
+                "is_open": 1,
+                "attributes": {
+                    "BusinessAcceptsCreditCards": "True",
+                    "WiFi": "u'free'"
+                },
+                "categories": "RV Rental, Hotels & Travel, Automotive, Truck Rental",
+                "hours": {
+                    "Monday": "8:0-17:0",
+                    "Tuesday": "8:0-17:0",
+                    "Wednesday": "8:0-17:0",
+                    "Thursday": "8:0-17:0",
+                    "Friday": "8:0-17:0",
+                    "Saturday": "8:0-14:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 4.0,
+                "review": "I had a fantastic experience renting an RV from Cruise America. The staff, especially Hank, were incredibly helpful and made the entire process seamless. While the RV was clean and comfortable, I did notice a minor issue with the water system, which was promptly addressed by the team. Overall, it was a great value and I felt well-supported throughout my trip."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "FzTqrbKr-Bxle-eL2rNPbg",
+                "item_id": "KrKQChZ1hwHHVaUK9Zc-Ag"
+            },
+            "groundtruth": {
+                "stars": 3.0,
+                "review": "I visited Iron Hill Brewery & Restaurant and had a mixed experience. The atmosphere is clean and welcoming, and the staff was friendly and attentive, which I appreciated. The food was decent, with some standout dishes like the buffalo wings and pretzel sticks. However, the prices were a bit steep, and I felt that some of the portions were on the smaller side, which didn't provide the best value for money. While it's a good spot for a casual night out, I wouldn't say it's worth the higher prices for the quality of food and service received."
+            },
+            "user_info": {
+                "user_id": "FzTqrbKr-Bxle-eL2rNPbg",
+                "name": "Bruce",
+                "review_count": 29,
+                "yelping_since": "2015-07-17 12:00:59",
+                "useful": 19,
+                "funny": 0,
+                "cool": 4,
+                "elite": "",
+                "friends": "None",
+                "fans": 0,
+                "average_stars": 2.56,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "KrKQChZ1hwHHVaUK9Zc-Ag",
+                "name": "Iron Hill Brewery & Restaurant",
+                "address": "1150 Market St",
+                "city": "Philadelphia",
+                "state": "PA",
+                "postal_code": "19107",
+                "latitude": 39.9515764639,
+                "longitude": -75.1596684381,
+                "stars": 4.0,
+                "review_count": 324,
+                "is_open": 1,
+                "attributes": {
+                    "DogsAllowed": "False",
+                    "BusinessAcceptsCreditCards": "True",
+                    "RestaurantsPriceRange2": "2",
+                    "Alcohol": "u'full_bar'",
+                    "HappyHour": "True",
+                    "RestaurantsReservations": "True",
+                    "RestaurantsTableService": "True",
+                    "RestaurantsGoodForGroups": "True",
+                    "ByAppointmentOnly": "False",
+                    "RestaurantsAttire": "u'casual'",
+                    "HasTV": "True",
+                    "RestaurantsTakeOut": "True",
+                    "GoodForMeal": "{'dessert': False, 'latenight': False, 'lunch': False, 'dinner': True, 'brunch': False, 'breakfast': False}",
+                    "OutdoorSeating": "True",
+                    "WiFi": "u'free'",
+                    "Ambience": "{'touristy': False, 'hipster': False, 'romantic': False, 'divey': False, 'intimate': False, 'trendy': True, 'upscale': False, 'classy': True, 'casual': True}",
+                    "GoodForKids": "True",
+                    "BusinessParking": "{u'valet': False, u'garage': None, u'street': True, u'lot': False, u'validated': None}",
+                    "NoiseLevel": "u'average'",
+                    "RestaurantsDelivery": "True"
+                },
+                "categories": "Food, Breweries, Restaurants, American (Traditional), Brewpubs",
+                "hours": {
+                    "Monday": "11:30-21:0",
+                    "Tuesday": "11:30-21:0",
+                    "Wednesday": "11:30-21:0",
+                    "Thursday": "11:30-21:0",
+                    "Friday": "11:30-23:0",
+                    "Saturday": "11:30-23:0",
+                    "Sunday": "11:30-21:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 3.0,
+                "review": "I visited Iron Hill Brewery & Restaurant recently, and while the atmosphere was inviting and the staff were friendly, the food quality was hit-or-miss. The appetizers, like the Philly cheesesteak egg rolls, were delicious, but the entrees were disappointing\u2014small portions and lacking in flavor. The beer selection was great, though, and the service was attentive despite the wait times."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "JkSiLxs14OOaD8hATWR-PQ",
+                "item_id": "L-f8TzrPaOztNMz7xikbNA"
+            },
+            "groundtruth": {
+                "stars": 5.0,
+                "review": "Family Eyecare at Westchase is an exceptional optometry practice that truly stands out. The staff, particularly Dr. Mertzlufft, are incredibly knowledgeable, friendly, and attentive, making the entire experience delightful. The office is clean and well-maintained, and they offer convenient hours, including Saturdays, which is a huge plus. The only potential downside could be the parking lot, but it's managed well and didn't detract from my positive visit. Highly recommend!"
+            },
+            "user_info": {
+                "user_id": "JkSiLxs14OOaD8hATWR-PQ",
+                "name": "R",
+                "review_count": 69,
+                "yelping_since": "2007-08-09 18:38:03",
+                "useful": 124,
+                "funny": 64,
+                "cool": 72,
+                "elite": "",
+                "friends": "ZdHzLUqnIO4fo-4AL6B2sw, lXc9XMKpR3JLYLp2aqv7Qw, MB9jJHWFCUrprJC9DDH3GA, HTF_usgx0qDZXVZ4jaclIw, 8CF_I51V_yYP9icFFIMuNA, L2g6vS1GDfqLEpiDOFfCkA, TjDPkhRuTioPrJLtmYbDtw, _v-L_chcj5iz1LD-5OlMeA, ITa3vh5ERI90G_WP4SmGUQ, qVc8ODYU5SZjKXVBgXdI7w, gkN988HqhViBw122RHgA_g, ddEIS8ZSFOvfQbPQnnM_3A, 6RcETsNYFZ68coz93i5MsA, I4qfkITMnCYmnra9O-u0aw, FTq3jm-l8fTY2mn-KHR5Mg, XV1pUmZKYoka9a651zyfUQ, q8OdcTdl_VEsw-zL8Vwrqw, oBmd3hZiICxr_z_T52aGGA, cF4MBwsuN6AJvo75GPSQ8w, G1iz9H7tDdMNjUc7Ndu7OQ, CSvRdjGCIVTU0lOLOJdjlA, VCORv150AG88TvDrKvZBcw, 5vFtD3aPe9o8xYaFd7d7eg, uYW7wen5WOYoM-uYfr0ZtQ, ubSB7GY2pnIUJNgbSJzfzQ, ExAgwnQT065eUDO9UHLpUA, eGGHS-WVrSi1b1sHBnRpKQ",
+                "fans": 6,
+                "average_stars": 3.79,
+                "compliment_hot": 8,
+                "compliment_more": 5,
+                "compliment_profile": 1,
+                "compliment_cute": 1,
+                "compliment_list": 0,
+                "compliment_note": 3,
+                "compliment_plain": 5,
+                "compliment_cool": 8,
+                "compliment_funny": 8,
+                "compliment_writer": 5,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "L-f8TzrPaOztNMz7xikbNA",
+                "name": "Family Eyecare At Westchase",
+                "address": "12311 W Linebaugh Ave",
+                "city": "Tampa",
+                "state": "FL",
+                "postal_code": "33626",
+                "latitude": 28.0565974,
+                "longitude": -82.6281314,
+                "stars": 5.0,
+                "review_count": 5,
+                "is_open": 1,
+                "attributes": {
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': True, 'valet': False}",
+                    "BikeParking": "False",
+                    "BusinessAcceptsCreditCards": "True",
+                    "ByAppointmentOnly": "True",
+                    "RestaurantsPriceRange2": "2"
+                },
+                "categories": "Health & Medical, Sporting Goods, Eyewear & Opticians, Medical Supplies, Outdoor Gear, Shopping, Optometrists",
+                "hours": {
+                    "Monday": "10:0-19:0",
+                    "Tuesday": "8:30-17:0",
+                    "Wednesday": "8:30-17:0",
+                    "Thursday": "8:30-17:0",
+                    "Friday": "8:30-17:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 5.0,
+                "review": "I had an outstanding experience at Family Eyecare at Westchase! Dr. Mertzlufft and the staff were incredibly knowledgeable, friendly, and went above and beyond to explain my insurance coverage and find the best options for my prescription. The place was spotless, and they even had a great selection of frames. Highly recommend!"
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "hG72KnoH6BqJUriH76ZjcA",
+                "item_id": "RBCtHLVvc230q8zkRWIoyQ"
+            },
+            "groundtruth": {
+                "stars": 4.0,
+                "review": "Creme Brulee Bistro & Cafe is a delightful spot that offers a cozy, casual, and classy atmosphere. The food quality is top-notch, especially the pastries and baked goods, which are fresh and delicious. The service is generally friendly and attentive, making the dining experience enjoyable. However, the place can get crowded, and the limited seating might be a drawback during peak hours. Despite these minor issues, the overall experience is very positive, and I would definitely recommend it to friends and family."
+            },
+            "user_info": {
+                "user_id": "hG72KnoH6BqJUriH76ZjcA",
+                "name": "Ronald",
+                "review_count": 40,
+                "yelping_since": "2018-02-23 14:54:52",
+                "useful": 6,
+                "funny": 0,
+                "cool": 4,
+                "elite": "",
+                "friends": "RSUZ0ynr29159dzHK7vBPA, ZrdfEcdoCtgE7Z30N3Lh4A, t2VKv_Ke95Gk5AE5SzP_Jw, eRNqs4GEU6IlqehftsKGUQ, O_9f-dbOhQi0OtrV7luHOQ, 2XKnW16gIw3TtBD33xEnow, WMi-jx4I23uAbEkDxHgjXw, ej9aMvB31oaS57rfo-Knbg, SSU_cAlKWMFEFIvAcofZsQ, NLgR5Pf6HDtdZPEExlM4hA, Gh-KLtVVYd5PADHmE_hRPA, beqJC1pWRPt4_TEztXEiNw, mwG14xOw5My5wZLuaACCgg, prvN6_mLb7-M119IFxCxyA, CuxPZ4H4NPC4_Ilw4WU9aA, rGMntr7qu0dRC2RZ4ENBZg, ogTWNSl0UNlXgntExrrGlw, y3DBCcWmyiu2wf76EOSIQQ, ZPuyYDI14hWXWqsm_c8bHw, UFluQ4GFBtPASIY1dJP4Mg, KuzXpUlF_PifmI3oC2nfSg, _xGRALfSzROeOIdVagsmVA, ppFLky-uaYPHZeOS3jAQZQ, WRPLzm5JXTF6LDe00nClQw, SNxLqabifazWKZrR5U_hNA, zAVNYdpdNiNM752nsLHiBw, k1XcHiIFeYyaH8vAqoYD1g, b6wLyfnHDR7Ys4o43hNXBw, jThmxh82LYTm94YL_sLJ2w, FCaTOkwTLQzpUBXKWm2M6w, Pe_Z_irz3g4iyKOi7YIDaw, O9z-OYbpmfGIyU0R3eF9Fg, w51D5b4SvU25O2x2g8NgEg, ml7kMV54TB6Ny3SIptGmJA, 06LAUMCpyFM-7tni_h1RVg, hXOc31X2umcg-m5Bv1VtIg, OHnAhxhkreV6kOWeNTKnHg, YQ6kLmPF8grOQR4A2P8JRQ, jYGJ_nXZzkUHIXAFHaaq8w, QFOYpiPk9t_eglOgfLIVOg, qB6lHtOzlXiNtXlA9bo8sQ, CwYLSo8yPXmYJ5WF8lExmw, e5pi1u8uNd91x-LINk0_MA, CrvHRwGC5MmPRLB9eKGg5A, Y2c2r85TIMIo8dedEcK21A, Q7ghRj9L-db4lVOly0oj2Q, e2Ru_H9euqkhRHJxYuBprQ",
+                "fans": 0,
+                "average_stars": 4.1,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 1,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "RBCtHLVvc230q8zkRWIoyQ",
+                "name": "Creme Brulee Bistro & Cafe",
+                "address": "1800 S 4th St",
+                "city": "Philadelphia",
+                "state": "PA",
+                "postal_code": "19148",
+                "latitude": 39.9259730399,
+                "longitude": -75.1527614381,
+                "stars": 4.5,
+                "review_count": 165,
+                "is_open": 1,
+                "attributes": {
+                    "DogsAllowed": "False",
+                    "ByAppointmentOnly": "False",
+                    "NoiseLevel": "u'quiet'",
+                    "BikeParking": "False",
+                    "Alcohol": "u'none'",
+                    "RestaurantsReservations": "True",
+                    "BusinessAcceptsCreditCards": "True",
+                    "RestaurantsAttire": "'casual'",
+                    "BusinessParking": "{'garage': False, 'street': True, 'validated': False, 'lot': False, 'valet': False}",
+                    "RestaurantsPriceRange2": "2",
+                    "Ambience": "{'touristy': False, 'hipster': False, 'romantic': False, 'divey': False, 'intimate': False, 'trendy': False, 'upscale': False, 'classy': True, 'casual': True}",
+                    "Caters": "True",
+                    "OutdoorSeating": "None",
+                    "WiFi": "u'no'",
+                    "RestaurantsDelivery": "True",
+                    "HasTV": "False",
+                    "WheelchairAccessible": "False",
+                    "RestaurantsTableService": "True",
+                    "GoodForMeal": "{'dessert': True, 'latenight': False, 'lunch': True, 'dinner': False, 'brunch': True, 'breakfast': True}",
+                    "RestaurantsTakeOut": "True",
+                    "GoodForKids": "True",
+                    "RestaurantsGoodForGroups": "False"
+                },
+                "categories": "Breakfast & Brunch, Patisserie/Cake Shop, Coffee & Tea, Restaurants, French, Cafes, Food",
+                "hours": {
+                    "Monday": "8:0-22:0",
+                    "Tuesday": "8:0-22:0",
+                    "Wednesday": "8:0-22:0",
+                    "Thursday": "8:0-16:0",
+                    "Friday": "8:0-22:0",
+                    "Saturday": "8:0-22:0",
+                    "Sunday": "8:0-22:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 5.0,
+                "review": "I absolutely fell in love with Creme Brulee Bistro & Cafe! The pastries, especially the macarons and croissants, were out of this world\u2014fresh, flaky, and bursting with flavor. The staff was incredibly friendly and attentive, making my visit a delight from start to finish. The cozy ambiance and high-quality food definitely made it a standout experience."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "Iu_0caGip_vp8EaTZIPhEA",
+                "item_id": "mcA7_ZHBxL30OLKjlmNmng"
+            },
+            "groundtruth": {
+                "stars": 2.0,
+                "review": "I had mixed feelings about Sansom Cleaners. While the alterations were top-notch and the staff were friendly and professional, the smoky smell on my clothes after cleaning was a significant downside. The prices were also higher than I'm comfortable with, especially for regular dry cleaning. Additionally, the long turn-around times and issues with stain removal made the overall experience less than satisfactory. I appreciate the quality when it comes to delicate items, but the negatives outweigh the positives for me."
+            },
+            "user_info": {
+                "user_id": "Iu_0caGip_vp8EaTZIPhEA",
+                "name": "Todd",
+                "review_count": 2,
+                "yelping_since": "2018-03-24 23:23:33",
+                "useful": 1,
+                "funny": 1,
+                "cool": 0,
+                "elite": "",
+                "friends": "a71SDVh4unZfRmmAmpLgHA, G7WPKd-bu_2I0UZZDIHAfQ, W8YVmQkyODXQ1RaS2BA8Jw, L1ojWthYvWma2lkJNUAmMQ, xwM49sbtJ8FHJIVSOYy9ew, cx9dvtZScL64wsf4f-bxUQ, hw8z45QFVW33oWeHtNDmpw, LDxVR1Axvx2xrBvtzSw1TA, wb-4fNP18dnn8m3hlgkbqA, B865plJabBIiDkSDOGX4uQ, pTVhvayNt9XGGcCuN9ekgQ, -uShM0vCCM67rYPatbSIFA, at2spdJh1f06iW8Df_6mSw, 7UPqiiFyeFLoPwe3JYJH8g, HcqLAFIC0mEN0XcfABieiw, P08NjXYSrsN2DAyudtbYrw, yHgHvdItTkIGL89Dh1tWgQ, HHnnLNuAXUv0CAghnOqOxQ, Osgil29kgQOQxv_YIjQjNQ, y2khNivqyNk7iidw-gme5A, XgquLCsM3yQpMUQ8hM7n7A, -azqRwE_L0jU3Ln5CvPQgQ, dS_SC7P3XF6agInMx8ruxA, xafcVbheZ41oABH543e0qg, QfWHbwqd7pUPpz01WodBOg, aGFiFeuHMv6DyJHwZUzEgQ, l6RjmESyQk77HHiUVJDtwg, qTKRqvtewh4aVa_hqiwf8Q, e28VM5AI9ILIJbFxnqDIuA, jrbPO1TbeS2lTEDTySaghA, HxUQkGLOFA_S5HuJbJHv8Q, mecYXgc8Tik878Q2TLY4_Q, RATyFLsFImjyrn15ZYRc3Q, wamkpmEWvhn1XmMu3CY1rQ, F4WiekVrYtSlyYGJBLDhEA, fxzKomg_E7lT90CaNiG81w, g9_Ysr-mDNwo6rdk9i_Fcg, h4A9MICo6hwL9WLyUI4MGg",
+                "fans": 0,
+                "average_stars": 2.5,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "mcA7_ZHBxL30OLKjlmNmng",
+                "name": "Sansom Cleaners",
+                "address": "2011 Chestnut St",
+                "city": "Philadelphia",
+                "state": "PA",
+                "postal_code": "19103",
+                "latitude": 39.9524074,
+                "longitude": -75.17392,
+                "stars": 3.0,
+                "review_count": 9,
+                "is_open": 1,
+                "attributes": null,
+                "categories": "Dry Cleaning & Laundry, Local Services, Laundry Services",
+                "hours": null,
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 2.0,
+                "review": "My experience with Sansom Cleaners was disappointing. While the alterations were done professionally, the customer service was lackluster, and the prices were unnecessarily high for the quality of service received. I encountered indifference from the staff, and my concerns about a stain not being removed were met with little effort to resolve the issue. This business needs to improve its customer service and value proposition to justify its costs."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "Aoii1MTXAnc8G6kOC3j4gA",
+                "item_id": "WANyiYJgedwrNuV63x8s1g"
+            },
+            "groundtruth": {
+                "stars": 3.0,
+                "review": "Photographic Works offers a mix of high-quality services and a knowledgeable, friendly staff, which aligns well with my preference for excellent customer service and expertise. However, the business has some issues with inconsistency and reliability, which can be frustrating. Additionally, the prices are on the higher side, especially for basic services. While I appreciate the local and longstanding presence of the business, these drawbacks make it a bit of a mixed bag. Overall, it's a good option, but there's room for improvement in terms of consistency and pricing."
+            },
+            "user_info": {
+                "user_id": "Aoii1MTXAnc8G6kOC3j4gA",
+                "name": "Erica",
+                "review_count": 4,
+                "yelping_since": "2010-10-31 20:57:47",
+                "useful": 4,
+                "funny": 2,
+                "cool": 0,
+                "elite": "",
+                "friends": "QzScdKLFS2QZJoX8kOIx1w, e7KwomwAfmu_xIffxsmwZw, _joQEb3xc8HsSZ4psJG7zQ, Q0u467SnBumzuezIriqXbg, pBHkt90xoNZvG1Wr2aQElA, YUSkci4E-ezR55A5WQ2GYw, qbFMtKbBeka9X21iLU1tgQ, Gmqp_pQQdvyoFkhhprnemA, URquzC8IOcNx31jDn1MClg, QyIGH3W77m7T8RDS2JJ-iQ, Q5WfEXhgYDXht519g6zQXQ, 85mncpJexQhqQIAeZKP6nA, y6oJxRBTdroAFpaCyXtsZg, MfNXyXV9fFYi_P3_Gkz2Bg, zCyMCpQRNNVB0X9FrgqO5A, bFKQyCTOIO5p_WpMc7GjEw, hxATSv0Ss2vmq8jRy_-PyA, a9vQoZspidey_Sl2p7LgqQ, DSTNHKrZZrdN6j5MyENxlg, 8Y3bW_zhtE7DvGy6-pJq9Q, prln4xdVPNUibbjaXu2CpA, d-6MkYVZvhx7J7qJf88AXA, 2NJAZi3AD1cNB06UO9Sa1w, KX-lsh8lfwttcloPWjKZUg, I1656yQx3_Ubr0NpMAXRfA, du6tDmLg-hCCLRw9YY_aUg, rplHMxVXmMnTGo06j8njzg, QN6YjadHRjue-5A-yqBQVg, l6ljrHAmbrP9fk5NAbQ5-g, oXSow3UzlpsBv3gL5D__-Q, IG50tYw2wuz-cT3z0MmfnQ, 2vcapvoEiCP9YFjJFe2pVQ, 9mTenH_euydrK_EJCf9d2A, FiowwI0tw7dwVvozVf7Gdg, rAAycZv4cD6uB-h1DjQFKA, oIShfdQUgN_EAj6XPMpALQ, 1GUhKB2aiqs3c9EwgGG6_g, QLMnV_vJhpXGJvZdJfFCiQ, lChEn-ol_dIuNwUTiBH10w, gC7ALEhibjZJxw1WTbWiVA, 1rkQVLfkVPzHn4u-lZ53NA, seeaxY-xe8BM9ltxjomz2A, Ul7muI5dUckDDbpTfxl7Sg, D0kG5nGcvKwsQLqGIkydPw, sYqsVDGJ2pXcQLPu2JNgbw, 9wE3m5fwDVcDmncqxACO6g, EtesLvqEtvL5yVWhzl0GdA, y33bv7f43HfIbHjmkHl8BQ, x07kpM-qYbCkVvvJi_2HcA, iL3VZcmCH_m_MI4umuyIrw, y_PMpgAxTWUIYAmzfFc6VA, -8680MIDsZhbfCmxUlC0hA, fMtMk1GMxnzcN6pP-L2-1g, N9SAsOpHlNUCFNnl4zZWdg, TXijDdCpvkn4zaNPlLaHQw, k8IPiEGv64YPtsoTCNuTcw, PNuRcQgHYQCKepQYRWcdeQ, IrPeKvg_mAie7Wx_wakZFg, OaWyUNhzfvUEGBeF7cHvIg, ZL5c0ODIZVpVBIsmYnOc_g, Ct19ZVqVug85lsiilbT-Uw, zvOw3mkkL63SYMbabCkuHQ, vGyzi8FJSsJkSp9MXcDq6A, 58_3_3tCweatPqbINOm26Q, Uar8A2zJu3FeAwLnqIcfcQ, j3clk6XdXuzVCjFgOvAvYQ, ouzHBERwJ_MZHVZKfBH9lA, Hs08GiYyqe0m_xkKbhh9YQ, KrbXODVFXewyq4WOw05sfg, YQ2HWdzdHyJhnMbZnLoVPg, sFhhpqd2nm1dUrknIDMn0A, FKkQiLUuXDEQqfMMCyCPJQ, DsGIUp3_xR-o_mW2EyT2KA, yRlnzs3cVIrMic_O8R5uVA, KT_b3NjIbs7uGTPrDDK4_w, YD3iPO6T3a0XeP-bVJYbpQ, Dn7WGVdsMwT0tB_ZNy14GA, zGSFzxhOYrWYc9OFg9hVWQ, r4GqQst-a3Ka7h_U5c_CeA, U_RpE-_X5urMaddzoAp2yw, hunvMyMVeCXMm_Z7vArB8g, 568Jz8Hpvan-O5xUfha-Bg, 3mosTtmMsGsguHAI1mvs-w, hQ9jC26FGGECkdGFFBoJWw, 1eeukuhkdfkrYjdbd3HEtg, TxahLcOScrKKtHljLHi5NA, VuXAm96146z2hA3ROEK9dQ, Xw_pXvqI0KjhuS9tbqvCQg, xvPMTsxQhLgaJfomZxD-hQ, aS4RCFND1QQANHFSySVsdQ, 4PIDPwEDnkVbIBHRDx1PxA, okPIduGLBuelz5It4-1LSQ, E-vWx-bvmG0-NGbtTTxbug, HQb12muvuqupRX89BLXIVw, Sk9-S9r2RssbprLlOa2amg, o_GFgxBXdoAh6aR_3dj5Tw, r0W50bWxRmig49zBkamNLA, 9pKeZyeeP6kuaD9MdH4Ahg, YIl7lmh549ikdQPIne2x6Q, MO7H55wOBL7w_I1z_IF8BA, _sBQtaO-iQDFQuIrRyoVNg, ArDU4BkCx4nuI-uX-iiojQ, FfRzIgswJ_bFlK8EQYGEbA, RVArLet1R6Z8dGiqgDya4g, u5VowHhDH8klFtXk_wa9IQ, L3pd3_B9JJ2qW8q-IogVKA, gBQQ_fVrmTbSqPoNOiwinA, _h4570FPXeklYCfgTeP2zA, RQ1BI51Bb1DsLnpJJI8Dlg, zrCDoDlTmoLy5ZMMiU5XAQ, K4pIJMPsAC0G2dPdcqqgEQ, MRr6_79WFDyMgZiTlXeD3Q, 67HuoK9sKfUvtMiuNbUmYw, htUBLO6bbUOplsBe6giB6g, BaWbw0rkWboH_0fTujinoA, w1UZHQzJGV3fofK0XLbtDQ, QFNA8bTreZny3zIFoMXv9Q, KyeqgL2gyO0gFJ4_5yVwNA, vTp60fQcy7JUGqhMAhzBYQ, e_Swj5WMyq4Kr4WfC8kJbg, ciCYc_JY21QdvopiNcmqAQ, AmAOxW1PE7OfnXxMP-5qEA, hRXR-ceJidl8Asweyi4vLQ, K60RKSEoIFCrtDvnKkrYAg, F3MPqGYQ1oLMKZe_a5R8Tg, E0vfcdfUDYUuRK1Ut8PnZA, GaMgnhv3HDYZM2cjis_P6A, WhD6e1C090d7sJUTuDISZw, ZN1qT7g8hHw8nb4Cmbodyg, M7HXEKufd98Bgpk6p5myew, cj8zeImlHycgDFMa_F7PZg, -g5nxkOguc7o5ABpM8aUGA, iQ5ffjwqYducJ-ldfo6QsA, 0qKuQoGY8_McRig6QVIEYA, slR9S_nte0SKNCfL9_XJdA, ZHPaLlxGWeEcFx5rFZ2gEQ, GyUUxsjB-Nm4-VDZaZeO-Q, Xrm9wNPFzlFpLG-QmUwRmA, aoTnm4zsLARnZUyesIbh0w, J577jlAWrokO-O228BQbxA, RkSjn8v0Oq90BXpfJ8pf_Q, 9LqonFNnr2lfWr4nDIqRwg, Evz6GHsmWeIPVuLJQsGVyA, xwYGdWMumuxsldP09-zoMg, B1oo7_UoR6Yx5sZNExB5UA, C_qQCXH16AwqbJ3uca7ArQ, h54kmuJ5Y3PPVQ71O_5WzQ, 3l39SxMGFRfuHK5AgA1KCA, hq6sjLEeN9TNyQ4g-leXUQ, 4CfS92hRrCDJmuYPHTrpVA, CtQdECCMlUuSH6OdO7BrOw, pIFhOx2gxlWE0lfCYdmgHA, tzTLwBOOeaoN5geIUDs3pg, _ePM4YiLprqh0rY41zOehQ, 3MtPCHyPgdG1Kn_bFpqLJQ, --UGS7K5jsOjyKfHtK8eHQ, g5At_Yp0-KI5jrbSrDj-7A, yTehMnDMELwVLkBtorjKow, LBIjRoAU3j_8aAzCOkN7sA, J9uVcR0ym9NsXrmQ1RxAoA, 7ak3aAtwAA9BurJ0Xx3OUA, aLxRen7sTH_UT9tXD08DzQ, s99i91ai_3iNSQZQTlORMw, fND7PzN2zptMrANhwPvRGA, THl3b402Dq5DfAdaIT10hQ, Xq5yVU4tmdOMcB05mw9Sgw, 9ZeMivMEzlkOoIQeoRc9PA, zd7mgjXX49OuhwhUimHGxg, ur-LOOtFxY_pdk8mByK78Q, TrcIIcxtw-HfSSF-mU18BQ, AYPo8HfXxFpQCkVgiWRy4g, HfkXFuLBIcAC2I355KjF-A, PWpSIccLmxM-O1xkarIOGA, Ga_iVw1quXYM-sf5BYxS7g, QXiqVO6uS4Ib8iixtS87PQ, 5r7ilbXSJKKZ37_YYCm_EQ, 8_-0C6GMHXA5frFRxWXing, MOUdaFk18UXCis2z6u4jwQ, iXgdscwq_wwYras_u_o42g, Zc9gyNjqErC6tgFdJ1BsvA, ssLuPwebEYQPkZ_PCb_ryA, 7Lm6d5VHeH94N_BOMPjY4g, 5XimkK2mgMRQKJ2uv5Mdxw, gU9zFouEb-drk669TiOvYg, WOx4l_kPKI4JfqLCx27Yug, -tzHWTtzVR_yvBYsfJRvUQ, 1h4RTeM5x8_V74snmxtHeA, FsvZqwmKvmKfnYwi0EDKkg, RhSgpc-Pn6QAAICas3ZL-Q, pazNdavphMpK1KFw7wVkHg, Y-18LvtZksOoxpWPmBZN9w, eC29cBuYchqF3i353QKDiA, oF0VV1g374KHUxQEqIxXuw, MdFMoZeloqkjiYUEFHOCkA, fa7R-Ib_H9deUb9Yl0CUNQ, ePU_HwGQIrLgXwECMKwQSg, xC_XLF9D9MhUbvWlx74UfQ, 9x4In41E2OrdHSYi2LwxQQ, tP5DwidOiSdK9LwrBfIZjw, Md_BXjEgMteQBpF3hAXubQ, 04uthiThQnJo1fDI2bJlVg, nvCYvrZQG-khLs2xS6CwZQ, 4Avrd3LFtaTv7uYTZimOgQ, 2oQR1hyNBRGJiWTEBE-Hmg, dVrn2PHw2IGgvOkbeANUfw, SdtccslHVxjU0RCKs_1NNw, SwcP7CM-A3esWri3b6mw_w, 5jyD_C3t0bD23yQT_BqXYw, LmEjix9uxiVi8RXzboFXxA, 6w23qrkmhM4sNNjrskSTKg, bA1Q1cOMpQr4QfleJJp96Q, ZKm9pfiVMdTBduBDzhWx3g, MOPBLZuun6GdTXv0TYRdVw, -o694wIQQ65oFriAJaUQQQ, w68Tyw-wG8m6N-QoTfOD8A, cI78WL_iGzmZKlSuKmCN6g, fomViFLs9tpEJ7yM7BG5UA, ILklVSxufDb_v_WMAFAo8A, UMwTZw8aWoJj-PjI-pMMpw, YrNqTaTbXi4_lOoebqKG3g, QMdkUk0qwmDUBBUnBhYJmg",
+                "fans": 0,
+                "average_stars": 3.0,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 1,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "WANyiYJgedwrNuV63x8s1g",
+                "name": "Photographic Works",
+                "address": "3550 E Grant Rd",
+                "city": "Tucson",
+                "state": "AZ",
+                "postal_code": "85716",
+                "latitude": 32.250111,
+                "longitude": -110.9168078,
+                "stars": 4.0,
+                "review_count": 18,
+                "is_open": 0,
+                "attributes": {
+                    "BikeParking": "True",
+                    "BusinessAcceptsCreditCards": "True",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': True, 'valet': False}",
+                    "RestaurantsPriceRange2": "3",
+                    "ByAppointmentOnly": "False",
+                    "GoodForKids": "True"
+                },
+                "categories": "Shopping, Arts & Entertainment, Art Galleries, Photography Stores & Services, Printing Services, Local Services",
+                "hours": {
+                    "Tuesday": "10:0-17:0",
+                    "Thursday": "10:0-17:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 5.0,
+                "review": "I had the pleasure of visiting Photographic Works recently, and I was thoroughly impressed! The quality of the prints and the staff's expertise truly exceeded my expectations, and the personal touch they added made me feel valued as a customer. Highly recommend for anyone looking for top-notch photo services!"
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "BYj5LjLS7mMl7aExIcBe8Q",
+                "item_id": "t3PkHzVTvPA8qRxKe9TIkQ"
+            },
+            "groundtruth": {
+                "stars": 4.0,
+                "review": "I had a fantastic experience at Booker's Restaurant and Bar. The ambiance is elegant and comfortable, with a romantic and trendy vibe that suits both casual and special occasions. The service was top-notch\u2014attentive without being intrusive, and the staff was very accommodating. I particularly enjoyed the outdoor seating, which was a pleasant surprise. The food was delicious, with well-executed dishes like the chicken and waffles and the shrimp and grits. While the portion sizes could be a bit larger, the quality and flavor more than make up for it. I highly recommend Booker's for a memorable dining experience."
+            },
+            "user_info": {
+                "user_id": "BYj5LjLS7mMl7aExIcBe8Q",
+                "name": "Coffee",
+                "review_count": 25,
+                "yelping_since": "2012-01-22 22:13:14",
+                "useful": 45,
+                "funny": 4,
+                "cool": 27,
+                "elite": "",
+                "friends": "None",
+                "fans": 0,
+                "average_stars": 3.52,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "t3PkHzVTvPA8qRxKe9TIkQ",
+                "name": "Booker's Restaurant and Bar",
+                "address": "5021 Baltimore Ave",
+                "city": "Philadelphia",
+                "state": "PA",
+                "postal_code": "19143",
+                "latitude": 39.948041,
+                "longitude": -75.2242388,
+                "stars": 3.5,
+                "review_count": 276,
+                "is_open": 1,
+                "attributes": {
+                    "GoodForDancing": "False",
+                    "HasTV": "True",
+                    "CoatCheck": "False",
+                    "BikeParking": "True",
+                    "BusinessAcceptsCreditCards": "True",
+                    "NoiseLevel": "u'average'",
+                    "WheelchairAccessible": "True",
+                    "WiFi": "'no'",
+                    "Caters": "True",
+                    "RestaurantsGoodForGroups": "True",
+                    "Alcohol": "u'full_bar'",
+                    "BestNights": "{'monday': False, 'tuesday': False, 'friday': True, 'wednesday': False, 'thursday': False, 'sunday': False, 'saturday': False}",
+                    "RestaurantsAttire": "'casual'",
+                    "RestaurantsTakeOut": "True",
+                    "RestaurantsTableService": "True",
+                    "DogsAllowed": "False",
+                    "RestaurantsDelivery": "True",
+                    "RestaurantsPriceRange2": "2",
+                    "OutdoorSeating": "True",
+                    "GoodForMeal": "{'dessert': True, 'latenight': None, 'lunch': True, 'dinner': True, 'brunch': True, 'breakfast': False}",
+                    "Music": "{'dj': False, 'background_music': False, 'no_music': False, 'jukebox': False, 'live': None, 'video': False, 'karaoke': None}",
+                    "HappyHour": "True",
+                    "RestaurantsReservations": "True",
+                    "Ambience": "{'touristy': False, 'hipster': False, 'romantic': True, 'divey': False, 'intimate': True, 'trendy': True, 'upscale': False, 'classy': True, 'casual': True}",
+                    "GoodForKids": "True",
+                    "BusinessParking": "{'garage': False, 'street': True, 'validated': False, 'lot': False, 'valet': False}"
+                },
+                "categories": "Bars, Event Planning & Services, Nightlife, Salad, American (Traditional), Tapas/Small Plates, Venues & Event Spaces, Breakfast & Brunch, Restaurants, American (New)",
+                "hours": {
+                    "Monday": "0:0-0:0",
+                    "Wednesday": "10:0-22:0",
+                    "Thursday": "10:0-22:0",
+                    "Friday": "10:0-22:0",
+                    "Saturday": "10:0-22:0",
+                    "Sunday": "10:0-22:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 4.0,
+                "review": "I had a delightful experience at Booker's Restaurant and Bar. The buffalo cauliflower was crispy and flavorful, and the chicken and waffles were a perfect blend of sweet and savory. The staff was attentive and friendly, and the ambiance was cozy and inviting, making it a great spot for a casual dinner."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "PpCc7-9dC5PKfXenSvgixQ",
+                "item_id": "nA4by92WDrSbxooQOe5rMQ"
+            },
+            "groundtruth": {
+                "stars": 5.0,
+                "review": "East Falls Beverage is a fantastic spot for beer and wine enthusiasts. The staff, particularly the owner John, are incredibly friendly and knowledgeable, making the shopping experience both enjoyable and informative. The store offers a wide and diverse selection of beers, including craft brews and imports, which is perfect for someone looking to try new things. The products are always fresh and cold, and the community feel adds a welcoming touch. While parking can be a bit challenging, the overall experience more than makes up for it. Highly recommended!"
+            },
+            "user_info": {
+                "user_id": "PpCc7-9dC5PKfXenSvgixQ",
+                "name": "A",
+                "review_count": 13,
+                "yelping_since": "2009-02-13 15:37:38",
+                "useful": 7,
+                "funny": 1,
+                "cool": 0,
+                "elite": "",
+                "friends": "Cqns1qP_ocJgVH1x_b-H6A, XhXkdGzInaBCz8q54o_1eg, yyA2JrGW6jVeJ26PRaD-Fw",
+                "fans": 0,
+                "average_stars": 4.08,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 2,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "nA4by92WDrSbxooQOe5rMQ",
+                "name": "East Falls Beverage",
+                "address": "4024 Ridge Ave",
+                "city": "Philadelphia",
+                "state": "PA",
+                "postal_code": "19129",
+                "latitude": 40.0073061816,
+                "longitude": -75.1896571599,
+                "stars": 5.0,
+                "review_count": 20,
+                "is_open": 1,
+                "attributes": {
+                    "BusinessParking": "{'garage': False, 'street': True, 'validated': False, 'lot': False, 'valet': False}",
+                    "RestaurantsPriceRange2": "2",
+                    "BusinessAcceptsCreditCards": "True"
+                },
+                "categories": "Beer, Wine & Spirits, Food",
+                "hours": {
+                    "Monday": "10:0-20:0",
+                    "Tuesday": "10:0-20:0",
+                    "Wednesday": "10:0-20:0",
+                    "Thursday": "10:0-21:0",
+                    "Friday": "10:0-22:0",
+                    "Saturday": "10:0-22:0",
+                    "Sunday": "12:0-17:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 5.0,
+                "review": "East Falls Beverage truly stands out with its extensive selection of high-quality beers and the knowledgeable, friendly staff who go the extra mile to ensure a great shopping experience. The converted row house setting adds a charming, neighborhood vibe, and the reasonable prices make it an excellent value for beer enthusiasts."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "UId9V4QgwTdn3XDkeD2xKA",
+                "item_id": "Mha77MN_BYGB-w7DONZ5YA"
+            },
+            "groundtruth": {
+                "stars": 4.0,
+                "review": "Cuenelli's Peruvian Restaurant is a pleasant surprise, offering healthy and delicious food in a casual, welcoming atmosphere. The rotisserie chicken is moist and flavorful, and the sides like cilantro rice are a perfect complement. The staff is friendly and attentive, making the dining experience enjoyable. While it's not a food truck, the quality and taste of the food align well with my preferences. The only minor downside is that the chicken can occasionally be a bit dry, but overall, it's a great place to visit for a satisfying meal."
+            },
+            "user_info": {
+                "user_id": "UId9V4QgwTdn3XDkeD2xKA",
+                "name": "Kevin",
+                "review_count": 1,
+                "yelping_since": "2017-11-12 03:32:38",
+                "useful": 0,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "BphtcLg3UcTBU7xhyS1xoQ, PlpAVbgXv7ypDytjhDBghw, JNC-RFD9N-6NxEvHtQzJgA, OsK7Ztag7C0okY6UbtO-Ag, 9occPvgv58q3w0AAfGQyCw, sT3G3pF_eo3XR4oSEBG_eQ, HTUeGBGgFMTFvedU7AhrKA, Aea96QwMdms3K8i44T6mmA, 8dSkiPi71BZtXWFLKpwkzw, T-c8KEjlT_tWncnjbHqPJA, qmcTjXZliURARzZEySLxxw, smrPl1_IfNPFA8tYg8YsDQ, T0ov2n9Nw1g7qJggxfAmGg, 03wYQ5acQd8V9KSQg1gpow, Jc2x0mOV5bR3Syr4BYwKUg, yta3jhfS1JWFinVsKwctsQ, nNuQz0NgAH41ac2fcophAQ, XSZNsMZQid3SLdKeILYXhg, QCWbd2wGcTir-rgu_5E5lw, EPNQV11XGnTpgQYrRjveFA, LYbV_fjPzbRs6ePlomPXcQ, uSb46VoVWmaYvIIdmlNS-Q, 4acezowa1BmwtK0fe4aO7g, 9kii9oUuzdKnpXz_sGw3ng, dy2a7PnxckbNWXlLbRCqEA, f8Aka4XMHHUIfyCaCYxhYg, d2tTiNGzpavHgON8u7PR4Q, a8tbYmnH2ikTedbCt2wzcQ, R8zf9xjPj5wrCdF-UCFlWA, 2xLZEfTJNadMkUw-9O8A-Q, Lz09ILwaAWY7JpVYmNejKg, rIitdQ_HjnwsNEI3liBCIQ, -javCn4_KgO2q-dhH3Hweg, d0N2PE6M9UK4zqTK-m4kKA, jXYUunjNZWixWMAClfjeXQ, IHxPaXWSDtnz3slrCFknCw, wenqen8167huDnVdyZCRFw, 5MQzGPtBj2Bg867qSfglLg, 0qlGqo9TjXtjvvrB3AvUKg, ZwGrimVgRAqLFcNqanaOzA, nS8Vny3eQB3uiRDXJ0WriA, 6Miehy9wtf5pnDl7HgJPeg, Dv20DnI3437qNoAVQkmG5A, rwKyZR0p-8SNX_P2NB_bJA, rzxmDI30x28f6gBJqwsgWQ, tGQPBs2X51Ap0PRImQHchQ, R-e-oB_KbOtNJM07g0utfQ, GcCAxEEsJgNJANWNkSlqzA, P3DfmQH_HDf4cGeG51ZL8w, n23AiF6vsNBgKSYLNMvUIA, b_csnOeKt-R6MsVIspGnHQ, BabWfYzCT1DnyfMZiu_c5g, sAYu956j25JwCJujh8aelg, yKPNvXSSwD5ausuN8FN6pg, P4O9a6Mqj1pJrDehBI341g, MkI0jvXQbbY-j_EkyoFOTA, tu_dO9IPiL70FGaD40hadg, zR8Fb01nSC5pejluexFJmw, E0LfIGfnqQPjbDwyMgj3_g, G29NjYomz6bX2ChXrazs2w, 1rsrCBARQuoP7gbDW9Vk4w, ZPnQrtGowEHEo_b1FfHbSQ, N_4J1fHZoYFCCSL6Xudgzw, ESqOtBOqCPD8M7ccoZHTZA, 65lz0Jmwl99jDMqO97RIaw, UO_pw6bxUku9CEg_XOJedA, c7OKgUTS8TQc9myKriKkQg, naIwODCVIM6-SflpULoRAg, TidFQO4ITY5HaC-Kv-VfNw, IwnkuqV7GUfaN0X4K9v2Ig, b5SQ0fmFYZBiqCMuysyJZQ, 7ub0aEA2qr5wstcaGtUOfw, 3jsMfjpVNHWzB5Kj15Wp8A, C--zAexfjZZ3mC86JctvxQ, WbXjPXKWe0SVhgC_K-cq4g, SpiMyPtadLH5er74iBS2-w, BDyIYCVJdOvlFb5x0R73fg, etuoSQfoln4vobq_C9KOFw, AktF_BYljSKshgeYRA8T_Q, UcTgxyt4Xx2b9-TAAqlIIQ, aBsRFNf7x5bj6_kgH_rByQ, lQy7G0l1KzrWwceZqq5fNw, DcA723LfcaDQlNtMpn9hYw, mL_07kTVsc7Emawrh-ssGw, pPhDtHj0P4dmUxlMDAlHDA, aili-ZIO3BK7LdRURLatbw, ffnZE97EUpa4BMDsQRmEaA, 3ItrwartUZHjR7UnlGNo9g, a90tkIhwiHrI8dD-Ro-ppA, 83iZIbSfjLVQoQMna-y4qg, CVjRh4GNrr3aZvzhAbV7Tw, 3XFpJym8fHkbsKOWzvMtVg, pEMLF1wHTTypBBQnULHeDg, C5ZwAd7TlkbMQ93gk_zECg, F-qm2dHnPPmb9WohW97nAA, JgitO0a9-8ybZ3hWTjVngA, PI5xJnugpz8eKym_gFE9Gg, 0tBKsi_R3oh7ItYrqbRDVA, VQqJE2NCwc6APhnYvv9sWA, E8H3JRQUeS3TviuSZDTV7A, 4Im5Yzg20nSRj9ISUIIz0A, l3gWYrwlOvPf1wIEvarurg, 2oDk_pWhmcF0SX6Grw6u2A, NM5UcxtIpaENIH9pxV89_Q, TNiGrENaRu7y2f_O1swgLQ, 2aOHfW37tujlR1O4AGPSRA, 8gTysKoYPMSrUn7YYAyrhg, xnuL3IIwPTNVXIj_pHpyJg, 8pRASqjQOWdComNLwB6PXw, Sy_YLlxAhT-qGT-0t6e7YA, nrXm7MDSIB173MgDwNinjA, hZdeDw9RgpbY3WtDGvBrLg, lX3aiKPLnzP7EVJMgebfsA, jxPHgnZMA1D7jdNWMqGKaw, 0HOdRBHe8jKlEfom2XZYpQ, pNQbFvw-x2uhpbxUZ7y7aw, 4Mg2NYBv2kTxYU21j_OJvA, B-amzyVplvpJfl__AahSbA, XGLOPyWtJ-Uwxy_0Ya6V6w, 5-IJfgcmFGi0PjYB42GSTA, dodn-9BPmhJXoqc-pd8PoA",
+                "fans": 0,
+                "average_stars": 5.0,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "Mha77MN_BYGB-w7DONZ5YA",
+                "name": "Cuenelli's Peruvian Restaurant",
+                "address": "4801 W Hillsborough Ave",
+                "city": "Tampa",
+                "state": "FL",
+                "postal_code": "33614",
+                "latitude": 27.9966052,
+                "longitude": -82.5243863,
+                "stars": 4.0,
+                "review_count": 249,
+                "is_open": 1,
+                "attributes": {
+                    "RestaurantsAttire": "u'casual'",
+                    "BusinessAcceptsCreditCards": "True",
+                    "RestaurantsReservations": "False",
+                    "RestaurantsPriceRange2": "1",
+                    "Alcohol": "u'none'",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': True, 'valet': False}",
+                    "GoodForKids": "True",
+                    "RestaurantsTakeOut": "True",
+                    "RestaurantsGoodForGroups": "True",
+                    "OutdoorSeating": "False",
+                    "Caters": "True",
+                    "Ambience": "{'romantic': False, 'intimate': False, 'touristy': False, 'hipster': False, 'divey': False, 'classy': False, 'trendy': False, 'upscale': False, 'casual': True}",
+                    "NoiseLevel": "u'average'",
+                    "HasTV": "True",
+                    "BikeParking": "True",
+                    "WiFi": "'no'",
+                    "RestaurantsDelivery": "True",
+                    "GoodForMeal": "{'dessert': None, 'latenight': False, 'lunch': True, 'dinner': True, 'brunch': False, 'breakfast': False}"
+                },
+                "categories": "Peruvian, Restaurants, Latin American",
+                "hours": {
+                    "Monday": "11:0-16:0",
+                    "Tuesday": "11:0-19:0",
+                    "Wednesday": "11:0-19:0",
+                    "Thursday": "11:0-19:0",
+                    "Friday": "11:0-20:0",
+                    "Saturday": "12:0-20:0",
+                    "Sunday": "12:0-18:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 5.0,
+                "review": "I had the rotisserie chicken at Cuenelli's, and it was absolutely delicious! The chicken was moist and full of flavor, and the green and yellow sauces were the perfect complement. The cilantro rice and spicy beans were also fantastic. A great spot for a casual, satisfying meal!"
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "-q8QTgZ8UKIgFKnI8A-seA",
+                "item_id": "ijrWM-bKfFfqbnkvT1MYMQ"
+            },
+            "groundtruth": {
+                "stars": 4.0,
+                "review": "\"I visited El Rincon Latino and was pleased with the overall experience. The food was delicious and authentic, especially the mofongo and chicharr\u00f3n, which were both well-prepared and full of flavor. The prices were reasonable, and the portions were generous. The staff was friendly and attentive, making me feel welcome. However, I did notice some inconsistencies in service, which could be improved. Despite this, I would recommend this place for its excellent Latin American cuisine and welcoming atmosphere.\""
+            },
+            "user_info": {
+                "user_id": "-q8QTgZ8UKIgFKnI8A-seA",
+                "name": "Kathy",
+                "review_count": 1,
+                "yelping_since": "2020-03-09 17:02:12",
+                "useful": 0,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "None",
+                "fans": 0,
+                "average_stars": 4.0,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "ijrWM-bKfFfqbnkvT1MYMQ",
+                "name": "El Rincon Latino",
+                "address": "5537 Sheldon Rd",
+                "city": "Tampa",
+                "state": "FL",
+                "postal_code": "33615",
+                "latitude": 27.9988233408,
+                "longitude": -82.5826661903,
+                "stars": 4.0,
+                "review_count": 39,
+                "is_open": 1,
+                "attributes": {
+                    "HasTV": "True",
+                    "RestaurantsDelivery": "True",
+                    "Alcohol": "u'beer_and_wine'",
+                    "RestaurantsTakeOut": "True",
+                    "DogsAllowed": "False",
+                    "RestaurantsPriceRange2": "1",
+                    "HappyHour": "False",
+                    "GoodForMeal": "{'dessert': False, 'latenight': False, 'lunch': False, 'dinner': False, 'brunch': False, 'breakfast': False}",
+                    "WheelchairAccessible": "True",
+                    "BusinessAcceptsBitcoin": "False",
+                    "GoodForKids": "True",
+                    "RestaurantsTableService": "True",
+                    "Caters": "True",
+                    "RestaurantsGoodForGroups": "True",
+                    "NoiseLevel": "'loud'",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': True, 'lot': True, 'valet': False}",
+                    "BusinessAcceptsCreditCards": "True",
+                    "OutdoorSeating": "False",
+                    "RestaurantsReservations": "True",
+                    "WiFi": "'no'",
+                    "BikeParking": "False",
+                    "Ambience": "{'touristy': False, 'hipster': False, 'romantic': False, 'divey': False, 'intimate': False, 'trendy': False, 'upscale': False, 'classy': False, 'casual': False}",
+                    "RestaurantsAttire": "'casual'"
+                },
+                "categories": "Restaurants, Latin American",
+                "hours": {
+                    "Monday": "8:0-21:0",
+                    "Tuesday": "8:0-21:0",
+                    "Wednesday": "8:0-21:0",
+                    "Thursday": "8:0-21:0",
+                    "Friday": "8:0-21:0",
+                    "Saturday": "8:0-21:0",
+                    "Sunday": "11:0-21:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 4.0,
+                "review": "I visited El Rincon Latino for their famous mofongo, and it did not disappoint\u2014flavorful and perfectly seasoned. However, my Cuban sandwich was a letdown, lacking the authenticity and freshness I expected. Overall, the friendly service and reasonable prices make it a solid choice for Latin American cuisine in Tampa."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "7GcuC5_UL2PBjTqRRYbNhw",
+                "item_id": "sWhPGcyYJoOTAabh2NjbRA"
+            },
+            "groundtruth": {
+                "stars": 3.0,
+                "review": "Kwality Fusion offers a unique fusion of Pakistani and Indian cuisines, which I found to be quite interesting. The food was generally well-prepared and flavorful, and the takeout and delivery options were convenient. However, the service could use some improvement. The staff seemed a bit overwhelmed during peak hours, and the wait times were longer than expected. While I appreciate the effort put into the food, the overall experience didn't quite meet my high standards for exceptional service. I would recommend this place for those looking to try something different, but it might not be the best choice if you're in a hurry or expecting top-notch service."
+            },
+            "user_info": {
+                "user_id": "7GcuC5_UL2PBjTqRRYbNhw",
+                "name": "Pieds",
+                "review_count": 2,
+                "yelping_since": "2013-01-26 17:46:49",
+                "useful": 8,
+                "funny": 0,
+                "cool": 1,
+                "elite": "",
+                "friends": "aluzvfLYEBRvl1-tX5w56Q, Aze-COpSmDoRqV3Fretx5g, CGacVkDVuKIXCrhuUhJ6Kw, IIpuNk4czEL6jlt5w8e3sA",
+                "fans": 0,
+                "average_stars": 2.0,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 1,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "sWhPGcyYJoOTAabh2NjbRA",
+                "name": "Kwality Fusion",
+                "address": "2025 E Fowler Ave",
+                "city": "Tampa",
+                "state": "FL",
+                "postal_code": "33612",
+                "latitude": 28.05351,
+                "longitude": -82.4364752,
+                "stars": 4.0,
+                "review_count": 7,
+                "is_open": 1,
+                "attributes": {
+                    "RestaurantsTakeOut": "True",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': False, 'valet': False}",
+                    "Ambience": "{'touristy': False, 'hipster': False, 'romantic': False, 'divey': False, 'intimate': False, 'trendy': False, 'upscale': False, 'classy': False, 'casual': False}",
+                    "GoodForMeal": "{'dessert': False, 'latenight': False, 'lunch': False, 'dinner': False, 'brunch': False, 'breakfast': False}",
+                    "RestaurantsDelivery": "True"
+                },
+                "categories": "Restaurants, Pakistani, Buffets, Indian",
+                "hours": {
+                    "Monday": "11:30-21:0",
+                    "Wednesday": "11:30-21:0",
+                    "Thursday": "11:30-21:0",
+                    "Friday": "11:30-21:0",
+                    "Saturday": "11:30-21:0",
+                    "Sunday": "11:30-21:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 5.0,
+                "review": "Wow, Kwality Fusion absolutely blew me away! The food was incredibly flavorful, especially the Paneer Vindaloo and the Rava Masala Dosa\u2014both were cooked to perfection. The staff was super friendly and made sure we had everything we needed. Definitely a must-visit for anyone looking for authentic Indian cuisine!"
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "sJKPdJqoR7wP8cj-utik1A",
+                "item_id": "4-TKASCNK5-XBWdXmeXWbA"
+            },
+            "groundtruth": {
+                "stars": 2.0,
+                "review": "I visited Wawa at 1300 Chestnut St in Philadelphia and had a mixed experience. The store is clean and modern, and the variety of food and drink options is impressive. The food quality, especially the sandwiches and coffee, is good. However, the service was a significant letdown. The staff was often inattentive, and the wait times were excessively long, especially during peak hours. The store also appeared disorganized, with out-of-stock items and messy counters. While the affordable prices and free WiFi are nice, the poor service and long wait times make it difficult to recommend this location."
+            },
+            "user_info": {
+                "user_id": "sJKPdJqoR7wP8cj-utik1A",
+                "name": "Celina",
+                "review_count": 96,
+                "yelping_since": "2013-09-27 21:03:54",
+                "useful": 41,
+                "funny": 6,
+                "cool": 17,
+                "elite": "",
+                "friends": "9trMLEnEA6l11rsj_g9CFg, Ra6DEP0yTkbGiuyGb6Jd8g, waS4p9JOwGQAADCApqjd_Q, UOSEjVLCYpyd34wsIJWEww, RXqlif226NbDVc_OKD3Uiw, KO3roejH6BvNJsGUn2vuUg, otRog_HcMQOs0E7FH4WThQ, CCng_J99sX_uotGcHDn0uw, wbMVyUhka2x71zIqDmZUAQ, 0HAsowGsofpX8tSOE-JK6Q, EHK4ExkY6ttQMxZ2T77_9w, 35PyEkci5qVx9NQD_lqz2w, OmRp-snClTCCuHTnbtRwcw, ZHRHxMBE_CvICzcFDpk6Ww, 5kvJxvud3koIFxfoaXR9Aw, WCya2w1YelEu3e1kZHRFwg, SM1b9vMrOiYY8i8qNFDylA, _mpnbgWr24B_ZjQ4rf00Aw, qt4jxbcSTONfd6dW47sQbQ, fhjRpur1jP8LN7pDOCvmJA, 1eK88sUtMTdquIH0xTKxkA, -bbu70hNi-6aCi8cJF8gZA, 53YbemAzakyqLaY17R3a9w, 0_bJpVxbCupBHFCXuU19Hw, aWISIvQbPZ9fMsuV6uwi2A, en7QAVixkjKF2XaMHOe51g, BWW_fYsLOahSplO1zIU8kw, cp9mFMdoRsZxFFB1q7sU-Q, UEmZmgAVycBtXC_Cx70U9w, fZlS6Ph6KnAOJpG3kRx-xw, M5HCS2itPdfL1DIHbcJJEQ, nWXv9Z0sSD3xTyYrwD2B3w, sIvbe087KltjlI0VzQE5jQ, UQWGWFxPhnYzNg6QQSxXnw, yv1eQK2MXVjLtkDIK-WFcg, dTYPLSz9i-vC9uUq-hkwDA, -bxnkpOd0lgnY7hOMM8eMg, EoxmcPzQlbCK6GUossobJw, aWdAChcHMAUnV66su7G1ug, UMDOYKvoKdkJGhpjh6VGgQ, fRp2pKY5xTaEhsd_iy-6Ug, TzyNqNB9FV8dpleGd6Wvyw, enMGNk30hGSac0si4NQ5jg, 8kFu5DptRzQLNEtYk3sGVQ, rzw8qSvS_00rqmsL2MPJ5w, 02tfeUXt-k2bPhUsbusXyw, ekEUz5okDsRma-3qWVgU1w, ksMiq6e7v7L1Q1CbvbAIOA, eC-X9qTpVVjafZQauKPBLw, wH5G9cwHleov1FQj2ILJdQ, VE7PvcjwDO2E5lfOtXtnTg, q30hqJuFwPFUlsL1WJDmAg, FcrfbLA37LZdQnHTo7h3xw, zltSmmiPqNzvXhmx929maw, hQ8BPG6RGS3fUWWO5HURgw, vRnNEmZ8U8SZqVqQ6RCY2A, pHZ1_gddDDwlko9cv4cACQ, Oxejq1BqC2kJ1sYtQNGZ5w, VpuV6tji34B0e7HSPMdFrQ, OZv3Jta6YO1EfRhqHnMzjw, 2X5-M_r7uBm53JQHPWq3KQ, Ff96Hh7KX7oB-juaDTc-rQ, LVE1s8pUdHwn_dvFoZfDvw, okCK-KnQxAoWD-mlWS0m5A, KS7jdD6KimAe3QgN7Xb-Jw, 9QJGOcs2SptJIYEHrsOSnQ, H8VPMRfXDhnNmH4zkiR8QQ, Fuc4hG5yiQpzuxkX6O3_Mw, tIHZEy3k4M492-xHLMbxVg, fujm_xZuQ6ANYi4aY9b2Uw, ReAKgJ15ob9_CIvpXxzo3A, tyxY3AH_Ghxs221110SKrQ, xYC-UhesvQTFHwyJ8qXYmQ, rylKcKP0iorW61F6jrsZAw, RgkkFohXvsHdQXn-md6BLA, SnjErHd2Ta3CcwHMWzKbEg, JTzjF5sZSb7OyTcsKDtTWg, kHQ0eNbX8ea--CietzZVEg, H054u4UmgmOXKWWM7FCm_Q, gIGY_QByUJXqFNtarP1YcQ, vdUftxt6XmCQPG5zEHk7gw, etviAaM3KZPi-Sn5xY7wWw, K2LOaUkFvaK6NCRaegyzaA, UzyE0H0BtpnKxEhWJiTGrw, 9fMLl_mPq9oIFl4XRBgKhQ, pIIuu-n4BsUuChMp0_1VnA, IvMy4aU8iz16y1Ultq244g, XaDF5U0_nF0uxthHIkc9Tg, MSN3MBmzR_KpoQcAWQ8kwA, SU5FhPQem9VCw-x_asT9pg, PfSPLal0u3AdC9D-DmcQ9Q, 5YLsSEqsj1AITb0wh372yw, FhOnHTG7eOm1Ed5r4_L4Zw, hZZvUp8OZzL7Pf0qHbzHVQ, Lgl2fiXFJypPxJ49stcIjA, KL45CTY3f1utSS4mkxztiQ, hhloRe9smtGOQF7RoFSZ8A, zPdTS3C329mibQuXv8cXPQ, r0QybVxv_CWR08GLhSNCSw, lci5UdAZX96AEBBGDRdsVg, UDrEoY2z_wt7eKKJpXCYZA, 8reymsZi8NjaD4ezAfNZzg, 8bKxgHItkPC49UuXSOMpHQ, Nlk0FejV7FqnQfI7HweiDw, ImdPnTTC5hssPa_MFyWdlg, jGq7_6RBRf1-jrxzlYhurw, OLA4LeMcLZ6tkxpjv0lhyg, jItgaWtfuCUSEa-Ri-NvCA, J0vieDEUl24e5qF5CpRnxQ, vHhMVJhsDGmpUT4sxCBfJw, rvedftqkRoHUFK4qO6xdqA, Djo8-Da-ytMP4sHGDN1SWg, tIBO8ikT7VBsLKjr_0AN9Q, 9_tlf9DqgMLwe5geVyUGMg, CbBK5ZCcVX5vLTXjhCvZ5A, xOk6RYwx0319_E6Z-8DVhw, 8NeZGlZwvbcHD67trmVSdg, INYjFEaTXGVoB9X5_KZX_A, RvxiMCBQZ3EMEeQ8AIblaA, gjm58Q5gKt2xiGZLQ1EQaQ, YX3PwUU0-6dfkil8RdLYZA, QCPqjcG6vZ9ASurom1tWTg, O-PCQbM9WrTFGisMhdUH4g, gNTWkweQBq0artoqJ8IoSg, BdO49g0QTeMSdJQ2tGSoyg, gOq5lQEQb_m-Vn96Vs-W9g, vWk5ld84WemnirQpdql1Cg, d8pDTJW_9ich2zQv9a7ePA, DcTeXN2MOTZfHNTIey7toA, ZpA03MVM65nm2oVeBxv2ug, fMHbRkDwGX4c3VWz4e-xAA, 0n7MBNVR5RfgeNJ-x-Xggw, L-AudYf6qccQojjGusSg9g, J4CnQrCynlLr-VOpt4lu7w, owZKGyLDDltfJrflIceQyw, PA_tiXQnJPRuVgvvm6u91g, k5_-iRAVM6648SMBbOKmzg, yePnnPVCNLNBNntccpswHA, iMiok2g4qswS9zKoHL8VwA, 7NavgnvgRTGodCn8or5-iA, 414NwCJz2xUwNR3gmdcxiA, Hltiq_sEbT2btsAMuVIWmg, r_8D0QbcI_riIXqImR79Cw, 2jSyvCs8R5tbc-nATIyVaA, BwokLnNSm424xoGcD8YhMQ, DY0vohpYTa_rI-sayb3w3g, DeVfR0w9jaJSBP2jxULAMg, hJLzvQRoM9pZi1PXp983Sw, Vl89Bji6_GH3S29VnL4_rg, _i8IXZqPFK_dkgsuOFz02g, hJcQoBwpIVk3ycM6Kx3x7g, s9SNO4R32ouhxngK9h_xMw, 47v7XTI5fJoAO7qL_lqA7Q, qvJWDOm76NRhqSvAtkCLZw, X_VBnqQAH31N4MZJ3wc7HQ, C2gzPtMcKQ27ByCDfUfsww, AvxGn7J9DzAYTdcypGzGgA, 1p2ekgcSuq8E0jXOD6J2XQ, 7ZkMRWwWGGykbrZcKVgcPw, pbNi8HDbsyik0SGhbwde5g, RHm_JVJuUJmpv59REkldwg, nvHLV4qbwvbKHSCP37xT-w, ybAuRzFjSasmeDWwvrQJWA, 7ZEhzqkolWZhiuMSOOMYDg, W3uwirnFr_RVmAOuyVUK5Q, FaqrS9u8-CnjRJ91QwZr6g, bPvdcYCWTD61sOZcyMCX1w, Ne9j1cBmaZSvcbVD_M5AjQ, U3n0jwCdYRPYiUuHioRDOw, rA7WWHQK1PAvrKSDkJpayA, 9DaOwQxr9v8WTjIGASZwlQ, DP-BeuLYuR1XmMfJDhRe-Q, 1Rd6f3l2aiBqyYCpGNteXQ, L0lkm4PsLgrdg5C1qSdbvA, ZJU9SJQclmZowIL3rwZeUA, xC1PHgp5mxOHgBxuHykwjA, S6ibTEsC4XCXmZ8yZ1UmAg, z4YqEcPqiHKGkf9tdEPc-A, Gpgeq6z45KtCSGNJAXroaw, O67_GwXOecWY5Qoor6VFdQ, sEYD5YG0fGgvLXAZ5RDuZg, SaeTV_a6nIQGob0Pfvz4dw, gncc-WsgE7vIVeaiFPt4PQ, eYRsHQal4RiaF-zRjHa88g, Ct3MxspKENnsbmCatd8_ag, B0hddcsq8ayrH-WK9kuWOg, dkrJJNHsXdiz98FlYMz_pQ, jJMwKrbySjKNmpMxIOAvvQ, fm91BD0IRSO1w6acfYBzUg, CV65ouY16JRTfuVVw42RDg, uv0ogZQjDUOLxuPZq75hgA, 1MDD5MERqk47PvlmCrCMIw, svUPsmXq3WVbwwKvUkvEkQ, ZZ7dhHslFx7fHDzKnoqKGg, _bjN-nuuqHKTu5d_D2bRFA, f7h2IaBYfCEH4y5pJzuDLw, 3PeGQF-x399FbEqsGwur1w, jVqQJez0x88Ktw3wnJTUeQ, sxmsHJNTDG3utqTS5p7lHg, Qe1pIkb5_kYaBczoz-CpQA, Px2tdQ9DS7nA9C_EJUE8EQ, GJ7y8JRM39upU4ivhXjT1Q, L6UyAwhlMcTyWZneVAOeZQ, uC4LAGCuD3Mb65_A1yCzng, JzcKOAtpUHh2qoO3cmT-gw, GWGIhoxNI-GJaeDNefqjdQ, eQQzXQd2V7f70Zd2Jamd7Q, 5fiVgiwcYc8imCOdSUrmlA, xjPAOcAzHvu8xKlPVJ0OtQ, WjSrWWQjCbt1y21P7boIfA, G-S2hp655jKO1yMikHcxeQ, FMU9YCizsbPhdJ1zf5BXyQ, jDtG2Gjx0n9-WRtsfeHtbg, YZrXBbS2gNQ0-zGK3BdMpQ, qstoVczWwMGQcxhHr30SOA, wuKb-wO1UrjcumzVPguSVw, IV_13hOg_swYXMMpC7oHUA, fiLztwPScuuMhxeVlPf_Nw, QmIh3-iDqDG5TkgOpufswQ, k03-ADd24YTzvf7KQaBQXg, OOiVdscKhh7M7sRQ0VezJQ, G1uLI-WxSfNXhnZr93pzzQ, _yNbl8dNUp-F5FeYj9OCuA, OoiPAhO4GX9lWZFMAbofkg, PV9UgAX7dJN0iYPkkON9PA, 3ADKHvexC0E6BjREcV_YCA, KjsXkADa9a5HHhuS3XIeSw, oir6-AzJu64uWWRxB8RsXQ, MvFdUn8bvCtYl5gWnLCxAg, EPY2VjIOKSvVTaxts62DAA, fMb9GsuzzJLkp8gS4PIIWQ, I76nap1CHfDKhxplCXFJXQ, _852AN17XFi90dvav8c0SA, 62jpcJ0GCPRfH5gQ7yRycw, FgMfmtbQ2H-b6uc4CBRq0A, V0l7Lf1Aba_4WhIytPMLUg, mNf2uBMOtLLMhwDREkvpBQ, hNQ3HecLpGbuXvQbgYCw9A, UOIwXFwQ0Wwqtkl6Thr2rg, pRXqV4KRAoYYBUW5ZlmkHg, rvRsRVoKZwTAxOIGduWj0A, fclFTNcLy-HN-T9khHx2-w, m6Y6XJLIansPDWQYxIPlrA, oxsZigmPo76UaruGs9jBRg, AurcRYfCzEaCXnee91bJwg, DlKKsTnUg6E3fqYpOD3RCg, Z8u0EKlF9iV7bIz3n1Mm4Q, DhWwPkMKd7ieUAtreLv3Uw, 22WgC3Pn3vQSPvrciGHmgg, tGkOTnthtLYd7cBdprBvGQ, XciONJcviazAYSCP_KHCZQ, DN4HCLjY2PZXdtky5RhCaw, zcd1ziOgGWX2HqBFwQNrmg, bQPAbiIJs_X4zyoULWLiRw, t9CjK1p62ZavlFwjhglfYQ, 3Lwkv0KGR-PpaiBpHMVkAA, vpghoeXkwihOyLjGUX_OYA, Qjgw27KFspsKEf3WVVlGqQ, JRqNKy_Cey6z0HIGz853ew, qPyktTxwDPeLAm0VRF1BeA, Lms7hY2a6OdDinUT7Wog4g, o9ya7Qgr1mmwWkdYqnNcSg, 8t_XH0O-r_i6ekFW1LiLjA, S_GgYNxszRnUkMxddMd5Lg, _9XfD2dYbhubGwg98EaDCg, NRAf5JbD09rCRev343WJmQ, ouPb8CQXXw5wEMgD7l_t3Q, VIRYvXA7LPoc1r7pmldVlA, xlzeRVXB0J_RlwfnjVlmGQ, aroebAg_HumZhbFPR8Ov6w, PLI93IZmc4TOFu8uhYdXiA, NdxpW1_DHaCBmjC9Yx39-w, Z1_hNQuKHiYrL-Nf-_15aA, ZB-S3A_9gTKDaf_Aminw3Q, GH258cOZswY5F4OUmFSXwQ, fDi88B8gZTpbfjhy9nSWIg, DiLZ_xFS2alCFIUbAJjlpA, 9pgJwhO0k7dIJePpwKijaA, 0Z7K73GeBO9KnpsmG0NMdw, Lj6ZK0WU343lxe6rDzUGwA, j7VF5ohRP7OWXECG8MSvaA, p7opa-8tZs56pBf1_P78-g, fufQip4KZvPSn26T_nXBgg, WXiYHurkByiHToBl9ugtHg, Map-CeWr-9qPAA8vRRTICw, sMR8x_VPq7P7kTARRxJBUw, REZNzR95GgEXac9uoQRytQ, vO9yWxnndoTXm6MJ1l2PYw, UN_ms4wNOsiAl80bVWukQA, NV5btqJ0iXSgStMrBYLK2Q, zbG09OMqA00bLIos-S8cZg, XeQNLOzeaEZREHHJC9WJRQ, DTAB-4Dpfkzqhhb9lSQLLQ, qvGYKWsvW3-7OxiakIZ22g, 2oEKrda2moMqA_MOPgJwiQ, aMpSNSGFVm_1tuA0-Zl2aw, iIEWzikBabu5XXrNFX8RVQ, nHM71274vNg1glM2Gp1Gpw, 91ZEfCbPLbS8EUouZezF5A, mQwxbo5crGwyOxlyFZmptQ, o46uhaQX_btwlrlA8Cs_Vg, Y47nkp5FHkvR5NL6kSqWMA, Y4ovjFcCpQYKt_jRi2bI6Q, IfO_tu7rMSkXLJG9q17PGg, Ur89b5T5WcrT_STHiWzhGg, yr4TCmrifaC0ZBglfUMaBg, usCOP_KNVPc7LAyA6cMtYA, nY-HJZqFODMAgBa-bODm0g, 4JyLtlNTKlslU9T8RUSMaA, OM8S5r3zJQlvTl2X9vcJqQ, eJSqooXiJPgTk7NzYTQMAQ, TYshQ9dZbfX7Pawa-Epv7A, lFohee1oQu_rc6wkNpluQg, f3Wp-frAubuDB8sO0buM_g, Z4a5h3OfYVxTqI5edeTkBQ, -XCe0FH07OXgHzujNBv0Gg, MmYKp16XuJoE3mQ0NJtXMQ, qsVniQBAq2inhzzYFJOvOQ, hf0ZAxL76Mhe0RIRkR5lzg, y4FRqoq6dEayI2tlLM3Uqg, x6IKrdB55p6iFobaBKZJzg, kZFwwNoV83KCFdrDBnUSlg, LwJTjCAShaxVoPmRszb8OA, V76AvaWGDh0lq6TCqjVS1Q, 6eGTplcA8OMQ5iglIbFcXA, Z5LlIlAPZLv8GrBVLV7ppQ, Hm2hYM7wvuswuTTRVafHGw, corv51LktK_lTtatfS6BQg, UGlGDskHt3poVYZ-k9KQ1w, 4ssUfjPLmMl2M4bED1wgwA, V9oEHhsLxTNCgn1cLD3MiA, NjRE1z2k9iB5f0rXqRKoKw, 7ssi4dCJl2ZEhfowA0iZqQ, uPrCo_0foCRvNL045FGb2w, JnzTejvNjwEo9KCoiWlxJQ, S6Rn1aLuZ-2Kw-sSQMSg3Q, iMdOYd30u1f7bpR_6i7luQ, DJz6dylv66DXPrBFjW2Qxw, DEN5GuDr2sKBprkygzlzMg, VfAY7uMiW03ain0OHFsGKQ, AZpm77rsMaip39FVP9cvIA, DC-eUCITuotmQ1Fyl4-Jtg, ga32pO8OULF8AibYe5k6Vg, eaYYv2KH6Wl0lG9CG3HbFA, GsXEiAQqEFKGJpAmECKI-Q, JKG7i37U7zLgZHcju42ESQ, Ljt6y-mZkgy-xaU853dopg, gPpeLNpyNoU8pxKOaqYJKg, 3crRc78Evj8vrSwYVfh_WA, b0PDxdqexrVAGJfuDiCbEg, peWivqgYy5e8h-Ec9srhXw, hhaecD4dZ3C9jTq3hOK16A, mnsANceQTdCAIEo_kVNNEQ, gOelJPRstxAxZbxR9O4LSw, 8wf4qYhu0miI6FzhZ5_mLQ, jwi7H1BvV07456oZjZYQcg, xD44jxaeifcyHrNreAU0Qg, 8Z_Wnl_BGT8xEAEZtTXNTw, EpHFfxd5-DPHv2dxDZKwJQ, 1krUg9L19-w3GwNRIvLupg, 0ayPiVteVH65EDTzmvYXBg, TGJtLXTPgz4PD2Ya-YAbiQ, EkVRaNUVK2_W4jj2ACU6VQ, R4eBLTfVc0PqGu8-TwBqrA, Hk5WfG2LTgztvdmsFmTg_A, v8QDgT76Wno5e1mpcuDKIQ, dJLVFgW-2j23P0tJ5pJoWA, 0ZIHJ4Hh41UQUjgwcTIxag, Avltf8Xvk1gHcWqttbYAUg, g4Oy1-d48VSWGqeL8W5gQw, bgMANCe6aawQaduW50dgyg, F4PhHskVu1eIGYs5itzQtQ, EDgXQuw8GY4T1lIcZbHaiQ, R4r2qCJyVR3PSw5u_fp1hQ, OQXqlScbx43C0F4SsVXIWg, IvdMS7AwmF_HCExj1AsInQ, O1wLY06vjZxQgVKsKfm9-g, qMb03tocc2vJRuttnZFonA, XRNxWp-8f3IWByIctCdPvA, lyGLhRGa6yTxYyvWbddQfw, 6si122777DRQ8HauEyQnDA, 0p2jA2Zlk_6kiC2HRiblBw, 6a2bYSibDILjBqMzu7FaIw, eOCVYHEskYClD4z5ILIDYw, bjSrgTvW2R0JYxLBV8qW-w, QdJvP1ueoYvRujEtC5sFOg, RJZOOk0crg_QPXRBeAWNvg, ekTzIceLn4Dv9-QBNCV3RQ, Y9taU23GSvS7H6Nl5NVLTQ, YIBjtHAqpZQBv5TQiOuG7g, IvA_fGnxiEb8Mvv7zmJNkw, d6nlzu8gnGYnN9AaWiNOQA, NcYzxmyjTjpzzqCF9l3BVw, YFHbGt7-tm1OAQM4KL8OrQ, DkOjU_hk-PrstgVsmHaCYQ, xOn29wxGe1ifKq79HjGolQ, 6M8arqvzW9M8Y3PE2xfQgg, KYt10GGUfqAW7nc7r8cfdg, 4G0BncONoRXBym2iUpYDyw, ibDxICur8v-CGaemWYVURA, 6OrQA57BYb-qUx85kN6hwQ, F-hgGDSsgwvV1obZOhb9Og, ICd4QHumHf_0zXskFB1QcA, 9OYsZEw-qpEBZYV-rQNO8A, PO53IZdaPXLN2a4-DGKM5w, SrwRv96AUL8e-lSn9b6TIQ, FyvlMGXZRG7RWzNHMCuaRA, O7WywLi9Eki7E4ELkPux0A, g4cad1uDTz3sLENvEH8b0g, yR6zPtmER5e-axfSLYQeNg, bydxSAxaKqndgSW-Jb0sZg, Fk44-I1orb4QCknzSnEdXQ, gP2puiIICSLINoNl0xZSyA, kh78duKuXn44cjmy6F0ZBQ, CqwBi4ZHwa6tvjz6zYL0Mg, ZYXc7Ma0Ul1E_9beSHOzgA, h33y9iSw72P_3LRMUv4e-w, f7QtPv-Cb-MGg527nTXs3Q, Dp7wT9Aa5ENL1bFC7VQHYw, As3KiWLvzS_gvJMrxxnjGw, n5DbRvboy0-CE1yWC2oTJQ, nGN0OxL6ReQk7gyOLErmTA, BIadUCnLwA5By5LntbUS5g, 2hO_ZGSe1Fy05XRmhMfN4A, 2Dccs1ARX_faleQ2_o49NA, Nc-E81ABhHbZ1LlRwuIzBg, WTNZbVy89mMl3solRN0I7w, aUMp8YF1xgPnwJ0fuZjpTA, LzPS-Hfg-rBeMeEnMNdYzQ, YNyeXHJD-vmueiNnizA5Gw, tgSnV4f9cGJf7U48ZpM5IA, EkAbyz2yuDbK88S8065PGQ, GobTyTmgdPWinzQMkLnSvA, 6j8Mq2zSn3Rx2E6VjQaNpw, qvOpLrBb90iluwVm9NOcug, qUXVk_VaBp-1ERHvi7-OYQ, Qotdr6gPHG-ccfXqkJbFTw, Kn2__5uoXJDEXMMGvT-n2w, d2n0iV30POG5SgOOQUicYg, CwH5jA1s3j_CIJBMIha7Ew, 19kNlDwoW4DNasDtiub2uQ, buEjH5vCvObaZ67ROYzXrA, ydqhk9b7f34O-9yCWtjVsg, xol6zHjcpPUNmSwezIXtbg, 0h7OLShv6R8c1n8UGWtKLg, 8ivxVOyno14iY1If8d236Q, k_rKd4822zysO5cakrqc9Q, QzhX4x7mvqlXX2RDUXa8JQ, JXNkSJQGc-D_UQ2Z_uCseQ, R-zyPVfKKb43L1yLfEJ1Ag, 8apySiB1tDkzFCBM5o4kNA, 7Wb-MM2yIJGkSZUYJL6F4A, 9WRR67LfpQwdxsqA77zjfA, fLjpBLXIHOKpykzwMDICUg, Ud19I08zKTB6ln4MvjYSRw, GA5tSpRJEx9SYqtJUG88EA, mKcpANIi7Jev8oXnJDtquw, 67I16bAqzReJyxy9lFAAZg, hJK57D9gY3qkEd20feSSZw, shtQzmpEMiN3t6g11ssS5g, NIs3ybQInV775yMlh-yrLA, H7Pyp1dnsN8ioYxAyMwssQ, 81Xzi5vXoGmFLB5mI1Cy_w, qpXgBSvBItEWs80QM0YNeg, YNF6slyDU13VuR1DPFLtgA, 4U-CJfyoJkmti3DwmSzH7Q, b3V7gvxZJ5p6P6EDfhjfSQ, 8Kc9hGCleixLT4G9HC2dVA, pJy5MNKQwxak0tvp93dA0g, 3YtiXSb4JVjVSuPMwScyLA, ObQpAW-sZMYXUWh9II9Slw, GeA4wWMcDnB1djD1yFi_Jw, gYL0X3_aguYpwIUjXqdWyw, NvHrOhXEH6HFrQoW1VljCw, 8agAn9yoJEwyjVKZ-nKovQ, lD2wO9wvreI9sf-oV_8_Ag, lC9SDIswwcDbQB-KRb0cDQ, mcdNL-1sKr3QnxHbdzmkZw, C3i-L01W1lA538rIaUGRuw, nbRv3XDfKLTRCEd3-vdvpA, h_a6roeou8Mg4vz0nxxDIw, QO_mv6m5f4U2jJDvObE8tw, o4UG1D4rOMrS1kvZhV9_Jg, vl7pIFVAF5nWck4mBVxRDg, Vx4NpIfimvWT7fGnt6GpRg, kc7EuOw9HzdXYdAsLtb-Fg, E1SBnrj424Ao-pUkbKxpUg, GtQ00JJgsykHcOZa2twPzA, aMUPUkAsfzzkTTWzFtY84g, 0KRgTb_3tbicy6m0h1rG2A, OxYXdo5tEY3pUWwkhc75cw, Wj9U38pvD6Xtt8YUtH3sgg, 79WSwK4QD1TBoAa2THVSMA, WiFKRnb7chwn-JxFSGAwIA, xmqaEjc7yyOuLYysPqm_2g, YD0FJ81zKoGQ5Qw7PNqblA, AcNbulpntc4HvTMjfBP-PA, 4Uz7z4kH-NC0grp22y9M_Q, 3_KqMB__MPupMi0Ewh2QhA, VWX9YOdNOVMdmVPctgv-ig, ZhLUA6qXbnIog82zX17pLA, xxUMmnW3IrYskDopYfUrPg, shTmB_ABAsy7qS0dpeUvEw, r5Gcut9oDlZc5tGYNNRELQ, Xgy2fslqARhw3s0CXckYfg, 9Rfk5Xgv5powwyvgSMuHnw, wcgyE-tDitWwWOfG-Ga2Sg, h7c_jKzQX_q9sTW1lgpQdQ, qqljIckJoHv9UjuPfEYhSg, T9Uno73qCYZa4dQxHc-v1g, i_5pWrspahPVIGeEzGw4-g, ptinDEjjmTQ_vqLeWVjtSQ, aIj4TUxeGddAc_Z6p5YKog, M9A6ie3iHDHw9Usy70elnw, vVgEnF-UGRiYNABpVWXmqA, dAxsgAU9_1qHvHfjQXk6MA, AOr-b-Yfx19ck_sT2QypGQ, hiSVGJZ7JHfFMgo5doC6pQ, B29Xb3Ux2XvsWlLGQ5HnYA, TaBceVPTELxBxDEkZwx_Zg, 0S9jQXkO0U4KDfqcjyiuEg, F4DRJIj48_0JvKqmO1jMWA, eadQsYvLcu1MUu4psueLHg, TSkRw8QOsT59GNQntsi9RQ, yI72SgmfcfhXNjEDjCJ84A, EULarroAGmORSNNP5gdFBA, L7ZQr_y6cDH-ZkicNJWBnQ, 8tZilXFopKo2gV-x6wg-7A, qJsS71axBzEQbDCTcfRgwg, pvpzIh7AMANi2JWw9WNitQ, GgECALBVSBD92MOPha0ilw, u8q3LTgCZoLUfYzu1Oktog, XiKBSzRl6yfRtDuDIf3qKw, z8I5t4alCoLG-jpbeebL6g, fDf-NdLRy1H_0D6ij-Wmog, GdBakZ_7UHxiTjuxlrKlBQ, n5U7rKH0s4q6y4ZKf8dzwg, FileNSMPjVWVNTs95IK3Uw, PMvjZBUigJQJ6JslS3P53w, 8673L3TU4aZgG9yAitjbgA, ftrJCbvOOhSehysjshzEOQ, wRLxzPrW8WbTXciS2VE9Zg, VdyCZnU3DieVGy2iOVIwNA, Fzun6t95jSYnniEM3OegSQ, R7BzhF7RXL7Hdmp3qCEsiA, M5l9pmXNrOj1EQiuCpr_Tw, Ro3IYZbABgfceekEj9gd_A, q2zqUej5TWY9iyOxmewOzg, 4kM08FqEeCm9zU9ZYlCKLQ, 9ifl4QdOeXIda3CPwlzniQ, tP8MaXZ4rvGdqOb-0V6K-Q, 3NRXMIROUcK0Xlt1HmoXGQ, PuuQoV8kgoi1J8FphVY53A, 7mhVOKw-TIajpv7i1Gnwsg, iNMPbq6wy6jcU2BgbS52SA, ICXcEst8hQg5H0mocE18Vg, NR1OzmPswJI7so-FXz551g, M2eRZiU-M-lDNgrIHNeb8Q, fq51VU9oDv8_l4OstrLETQ, eZUdBqe-6koH6G62e5F7NA, M1PLLAo5il5xEeQq0rHDyg, 6lITsAdylqv2bQztPX1KwQ, wp1ld8ogBN48z0b-jDpxtw, m3T5JW9PpvWeGiE-AEdKtA, 5xBQBsBKCEyKLYRqF3FfBQ, GycVuhUgwnWFzRpXh36KNg, p_NDFUL_kuW7SY85bHT0bw, X8sxxjbSg612nFUr9vF-LA, gx4HkNeeo4bCO0aLEkcvOw, jyYaYDiMmtVi-ghN8PyPJA, 4o666SATUEajepzvVyIbOg, 88pe6tcCCPMfpKqstS6c8Q, OHNRaePZI3yNgKo3Q1pjlA, C-c3eFHTlP_c2pKwP7UAnQ, 9aZkMcXOoOZwRwh9FW51Cw, x5535j9Vwe0zAIj1srteJg, ljYgMGrV9u9NWWyboN8PZQ, 9OtfREkk7vqtnVObeUp8Jg, d2K3g-7hemlxeYPJOnUHjw, 7H6mWuKPvP1iqmjpcO6C1A, a2EJGohdTvQFvtkbg5c7xw, ghG8RMbovxP0N_jcVdfp6Q, _gotEOqKBr-W2RXmxSXIFQ, o_WEZitT7k3iyLC0yfnAtw, mkBxPTi_1wydpUFkPlUbfg, DuixOPdfWQNb_sK_YtfkEg, zQoZiugHc7GVuleQTZ3h7Q, HE1DtP_RSx7BPPoMAudjRQ, U-HhOnzCV_P-XL9lHDMogw, 07RLUC61HNywtuK54LK1Mw, dWzMZAX32p8ZbGSb9LuM_A, 11A21sorjsSicKVHKooyxA, PA7a3LtnOBgUU9o9lBz2hQ, KlRLC4qYJCmfIeZZT-gsOw, McIAHLM75WRVN18ws0jBvQ, mekXJQkY3SWA1ZgonufuWQ, RL_72xnfElT4RcbSZrMzgQ, bYx67p-1MtrroQwY8qfZUg, SH7j8zZkisOHyhcH3-GxaQ, r0-7mgzZL4Me3Pc903KRcg, d2lV9NvvcS3moTixQxO6_w, HupJSDItBMe9cy4rZpi85w, K04EQ1z6NqFluULedwSyYQ, mrDakk2ftUUFduLRHTfzEg, vsQ085G3y8GNP2cUpGvgcg, EkvcWyFmUj-5NhOey96qlw, W-pQmkkjRt-XUXjOHEYUmQ, u-GruHKeyl1T37NB0AyYOg, kYTCeU9A26Gn3R40bKzC2Q, JNCeJv0dcWnZ_HzuJUKyRg, 2nWYBmKi-mKjsX1TqLAIfA, _h6j-fib82GtiMLwVVZnWQ, yxDyqOaEX_eGvMQzZY4D9Q, oWCHnE0eUygayvAkB7x5HQ, pSG-ACl7_zDbx4W0e4nXHw, JfKcDFuNrU1zYfw0B8Pmfg, WBm3jiaxaZfrCpidEQKEMg, IIL3ndicvHTwv8GA1si1Lw, SuGO11bGA8xEihDZeGIFNA, FrHN2SN_GNep30KNJv_qFw, H64MJqKDWOhTfNIzZUxc4g, pAvEtn9lXclvPPdnha6tFg, Ku91yU_xfJvLSYPZ4qPhjg, TzkmRRV91lqMAKpqy35amA, OaKzwQpIIlWIrkERiiAJ2g, dPJlsNfjIimJGaC7Qg8kXw, p3lYaTBz5ZOSP_llSc5L3Q, kgAtZ1fuybPi_vdHUHP7GQ, _NjzRCG2vhpnfgRJvGYEog, IPnajHDO6aZDG4l3xB6w4A, apjepIU_sYaiRTEe0-qBsA, F_SnmFb35gQ47o9VqEsQFg, cHKyr_0svHpoKtbeBMWOEg, 1c2JOot1iXgv2o8TYkkowg, B2OFzBb96PWmRSJfxkCX9g, d9UNxPLbS7MY9rFgn2zOFw, PoYmJgBkgfV5q7ahSGADKg, NH97BI3WRt5UpoqN-6hsqw, zlZVe3FbUc1m47Md4lweRg, pbmG4FkLOV7dReoUr0pTnA, 8xQ7VHuURbzr3Rfs6NO95w, WO4zfM-VOx8JlwTd20pQZw, Jf-J_o7FT6ZAgDMo8DDtNw, -r3xwcAw505e3E2XueFI0A, UANbY1hb5noZYy68WNv-gA, Wj5Wras1J-s6JlmxavVRRQ, isXpYdLcJkr6jbB4GzHfvg, VofSq3ehP7q1nHebQXOLoA, kNb4yb49no9_yNkFrAohzw, pD5WPfVm1f8VhdpBf8Mh1w, yjjh_toxWEqD6cBnRPd2HQ, 3zFomRaZY9FJZeTv1ocLbw, eWhPwW-l7PRp4qyYr5Tqmg, cMAJuoZPwWAIxcdkn825Eg, S2QhRMMB3QJJyO_k4WuXFg, ZdqX_M1DcKMX7qZbZnZ_iw, N-bvPFxt1OJWhoQIuISnwg, gucAW07w7d0N1zE5zu3qZw, ty5kqQ8W5cQAO-xfzh4rAw, U1hrj4e1cDlJSD6bo4u5aA, rTmDU245MM8ATrdwHReAHQ, jYyDiLyHWnHhbdD5M1wdbQ, NpVvqU7veHauwB3nti62pQ, WHHfwG_YtFuyMSDeBM46rA, 7gr5ZG-d6927aRY--pcXIA, W2jHcVlrxNbft8aofDdyhg, tQmVmT9VMTME1dgk6LbG2g, G30YoVuwvlg4mCRUw59YGg, Cdb5ClDuTNvIBt8HvxhhGg, ZJWG30_quNfmvKbSSVSL6g, mINnQgVfQe2o5DKNocf9zw, OmgkbgR5AURzI9SEZCdByg, K1Q_CqMa4ThZff-3Wbr6OA, _11zuIssGfen4BZ_wxtTEw, vwqhCtmmHRzI3DPvoAyQ2Q, Qt0wNydj-lVyfN7l3fxxgQ, dyqooHZgZ0irZv6SFbHw_g, BrwfJs6ZxGA4mA-UjG6oxg, xzko5KZpbTNBVCYRjAl2Ig, gJOtS4KkqLmUPnAcuyDp2w, WKVfqVoTgpwWxkeNQfczSA, pKqChgMYyB3frqfva6l5eA, ch-U4NLAmJHLF_9ejcr0xw, x2XQYxX-q_-_amczCP9hig, w7HarisFLapFimBx3tVE9w, h-ODQ1MO_R7IjE9SRgDi7A, Ib2y0tmVb5TTHUEmbm_PKw, ksFmO3MtCa1DOloFtMih4w, EO8TOSl-cGvUL90w24_6VA, iOmwpEiyaLRghhSQ12RPWw, 8zPT8qGtvozMQ6foBzJNBQ, JXOsTcy4pSnSvUtHGs3cuw, -s-IfHF9xo0j_ukoBObnIw, TGNLkXnJEqqDI_0X_1MMgw, 2nNOIwai4Prl7TitssBc-g, m9JN0lI6tMikjyiMm1M7zw, vXT4muEhQzzfPYwUnREG4g, fmqzgcXkCfX2TEY8UzvIcA, GOKlkl8EZBlVyY4YwWATvQ, ayE9P5l5mf_Zx_FV4XONPQ, cEnlRNdCNFhJhXjFhAwaog, HaF0JiClJQijwj-4BLiOqw, UmjmYVWbadna--FVpCpisA, 83i6jLiJ3ovyECwNyriLuA, YiM428WjsVI-GYdO40f1RA, dEURGCUlL_e5xMs4lhsdJw, 4QeOoLwwxbZeNXpxVZdo2w, oYXonH9jCsEUOFQq80O7Mw, 8hPfu5nSBvnQJYNW_KuTtQ, YIjjSc0EtzW6BkeDytBq4g, WfIjsmi0xrvd-wEXWnjcgg, 6NDZ3KwBTQbtDPRmqNWffA, EXCZ9hPdb-kgVbuO0gWkEA, FopQlSEuvRpMW66BnigX8w, KWlwVamf-AxOgJ0CjJwoLQ, MLT2lbTsTgJQpU4RP38bCw, Fm7BY-9micqJR-SCebxhsQ, o2ItgEsS-uOP9a3mWkRgTg, L40pRw6yxQ49X7161Qhyzg, nXF3qrqbtv9AS2GWT0tcuA, XMEt-g5Ppo-KHJKRSNjHlA, NilfxIgDnuZf49mvomvnDA, fOqUbod_Wip_nMWv5CghZA, vHnn9-Cv62kzMDw2Oo9B0g, Xa7QtLDHhOclsk9uymUI5g, jY5JkTtAX_HT7uBZukzWKw, XdkCKNXbE2IML4HwiYYgDg, uikLsSohamnxo4sdbQFW8A, Zfaea_Qah-ZUjovorQoWxw, ulIzW7iSIOjudC5PEd2qcA, ooF57PJ7beG95UzceSUVLA, 1vWSCNhHHm8CrgOepQhbrA, 2aeLXGzDX45gNlJ0PHFmiw, HM6gQc3apb67230IncCMdw, iuTX4hh9bAlUO7wEPF6VzQ, jcZfQ2wgFo4_EdDE4RD8zg, dSv5v6SvWaxVRO7FaJE-3g, TagSctKNrCQRUqRe0S4FyA, Cb_qPmrxUQg5NQXYLxNJ5g, 086lBfjm9zAH0V9sdSqX5g, f3IH1JK9Dp1mQ0NpKdyuOA, FEx5x5UPwRE4Dll7dIZWgg, e8Ra6AxCvO86q3dmcmoJIg, dQr1uNQqpbTQcEyvL7dSTQ, q26H6YA4wtU2FE4TUp6fnQ, 9lj6rHvlC3ewAeIj_s9bqw, sg2whDiNAmIB4Mj6VxtM2g, 1VgTI3UIMN-SlfJlfiXr4w, -Kq25jVv2-3OR52bR21B1g, 1qSiox9ucMPdjiitm4MWMg, WJnho8XPH7t6zZiljQlwdA, iGrYtRqXET_YxB4HeJFY5w, CJCPMeDn6J3vF25-nnXuPg, 4wqMjQIYYhSkV2_RP1vmRg, 2p3Mr0GIKrty4Wz4Vb6vyg, p5hjiE_r89_XLREm5ck88g, xn1I4_Hwqu3qqWbDgpUpHA, 6spKYOtLHlvyyo4SM6Agpw, fRJpK_b0rrjpBgRZjvfvgA, JU3MfnRDimZclnb9LEx2cg, 955zuOX3Z0klGJF23mYhvg, xN81BnQSpxHvieahdeQxdg, pYAywZ8I0v7BIeH3nwccZw, 46PXzT1HsFlNHJft2mGZlA, AjrofarOeegXiAF9TP7rkg, fAdC5D55i76zwyKe6UsgCg, D-rb3t9lZNFdvPG2VPhXog, rJPBdJnc9tDkFYZZ69r4cg, dwL12IzwbYqxE7R7RTVIMw, ucftQOUHmGqM0NLkvtT-IQ, wbTospLL5hDigGcQWTkL7Q, z_yOWCUcWIRdENRFjZvL1Q, X5wwqyDYkOrBTkhydUlsmg, HvcLgdUHn2t2o_s4PO3gBA, t_QP1SUNj46Z-YtzcgJfLw, COt8Zr3CoxQK4jlg-0SaGA, xN01uoc1RdGMgh59n6bYrQ, vG1XxLFooukAVl0pUZLBAA, E1k1mYzQCeoEB_hnusIW6g, A8dEA17BHLPxSFSCEtw95A, nZKvFx7lNFa1yvdexN7lPg, xed0F70aZD5gynPQ0q5n6g, kK8jArvH6xDbcjlFGcT2wg, VYaUkbqJKpkqQR3m07gESQ, jvRXVU107ESZDscOnvX9ng, KfXlHC9OECs65maIrYAUtw, 1r44SFuky3EbO-jcWMzwPA, 2DcWerPw1W8CjJXbc3B9jA, k2U9_Llt-OjS4oBVJqwUMw, scMgepgWrKmSaDQUTBg4sg, TlznrrknYeOtFwPRXyIfag, eDr0_c7GeaMkUIrFKLGCnQ, 829kdHpwWTxjDshtx5eGnQ, UCyQ5hOrCWHa0kNUW7-nZw, iWUk4tpoD-htjtWc3Km1rA, 4uqEKTXnXwhiLsrRvRgqmA, yV_gfnlS0eMGvn8N7-9Jsg, a9weY5yCtC8Irouyxatq_w, hO7FgwbryfnvaYXMUss2Jw, AdMHoQuqyszSR_9mbi09Og, H4A5eDX0FrXwdCnmTdcrqA, LYiA6Pq1Frgnr_wLiRbhjQ, 9Ra9GRt_z1YQVuQ-4xk2TA, CmbdI2OuafECAYLgdluXkw, cunS5xPghk5cb-ouoaF9Ow, GP-XXyi8D8jAR5u49J6wMw, nNDMGpKu5FdcOyhg8JIz5Q, q3YCevYKVhEmVcj7JANxcA, S-BcIm9U-Sty3r68XZghpw, 5Y3fKODToFxKKfo1A82DQQ, h7ryZWat0lO4vzeMzVQmiA, q8tvUnbZ5DxgQsDd7wyFKg, x1g8AN1I3cgmnMlqgeIzmQ, WanSJclLGBHzWp9QQHg1KQ, XDkwoUD1oqEHvWEqTGnOjw, 4hNvUPAf8O0B1C9U384h9A, BUbd9Cm5M4I8J7vGIs1qgg, hhUPHAZKKLwTE6eoaj4Mew, orpOibCCcjaERIQni_eCSQ, iYuX3T3bvxsIw3capoTMDA, EQHmZZBxIsNC5Zh3t7tfuA, ZPCmxPRVLoENPjDhbovzXw, 9qTmXOrgYTeU9Yp3y5NKXw, MrWDcZ0U4w5J1ST_E-Iimg, EvNr4cBGgb9iN2infC4Lew, OFQUbnct-rYjgZ3IHwVUIw, soUUk1-eX-xgf-qSNEctNA, ftBbU8jwhYMMHGpq3MvgqQ, n1AtThIpNOV6yI_PbZ3v0g, SvFIEgZlJKA7lBAGj5FQeQ, mWe4wpOaWLiYpvi7QH3_Ug, es04QiVgjyYUmgd2hzopjA, 778Pz42U_pu_Ct4qK5kp9g, 3ID578zf9Sp9yUTDNO2hAg, cev844LG14QQBmV0I-H0cw, DPPDr262vGwI3g9fUs55gg, qnpmxZBnF6TSLax78NAaEg, 0JCJYQmRGwEQrfX60cMbrw, BDWyudF3DbLqsPl86Q6YgQ, xVjAz4BnsYRg9g653DQpuw, UsxACl0Vy2cUymlC12sB6g, bBqYbcgNC9DDL3xDlBEL5A, kCztra6bL0e0lBkQAhQqdA, 1v2_jsGTkGvUoODn5EaBxA, v1y-pJ5klPI4mTjw7KTD0g, AmmtNvZtNhc-VmRA9U-vqQ, -9zMPHW7TJIW9XMQkA6hFA, osRXjYRfyv2grayFQWEiUw, PAmCqzNfoKLX77BhV5rphg, BnPJGpgKMpdASPEYuwse8w, hlG1AbOdpBC7cuv5Gg4xOg, yxrX-z-5GDMGnCIY8k9Hig, WgmbrTwYQ9vzVZwLJfU2oQ, Pw6iyY3ASZnb7gVwi08DUA, 9fFdQKypHUr_AzZFeJW8fA, dA4y-KHDwVXYVJvKCZi2sg, TyiGIU7eoPwnvYm4w_kP8g, 8SnGnG3zipLI5yXqiufRyA, L7DvFAEaCAYoGezJyDi4rw, uGyRGyW_akSYNxMv1ucbsg, XLN-X3_fqWDta2zOWcEXrQ, x0u4Hen3-YIEEZ6O3wZpRQ, CJ2S5LhljZJhZhaHZZcPlQ, WEo4mEQ5p74PN-SLU1VYHw, FvtfsfT8XKMr3KV06D59sQ, HO7xc7m0PJed8J_z_Lf7wA, t9I7KFzqa7m3g4MMtulmqg, minoBfKXlJHMkLbUf4gDpQ, iYNWnS-bRrZ78xYOgS9F5A, iypZ3lDd_Aj5RrLY3spC-w, IEAptip0zT9zq3PjDhhVWQ, Hw--A-yzIMOb9KKm2mEXWg, f05gDLjxDqKlKapbzMs39Q, MOKMDwJNua1YQV4lPKjZJw, K6k7mX_2f0cKmDCCxqhbiQ, JbyugKzHGLfwraaY6sXpdQ, QGz4SrgaiNmQpim0duNOMA, i3DFp8WpNmgoPL2sxJrGJA, yvnY0zM4p12G8oL7LL9_7w, 7f7ESunG8xhj2OI98q998Q, PvUkZWbbu8WG1S0A97ROHw, kdRhBIYFS8LTVh9QaUhsaQ, k1pcHe3W2vQVaGbZ7LNOPQ, LuOySL0cxfpbGUDt_XARtQ, mEmj8pJmuUMB_CupY8RmMA, E214tI6gB1seyqZp4ZoCXw, 4Zz0IXrjB77xK8dGl_HM-g, _WTiYpfdhPfe_4HKachsyw, fJgbpkYqLuPu8uGA4zTJYA, yTTHD3JBOeEqgT1C1sJ7PQ, GqppmscNdbeizlI3Y_9-JA, veDmFpkfzjCMZjVn29XbwA, ulmaB3v-Cv0oVgXq5cd9dQ, PxrpBS5tt30-TiUHhT6Arw, oOd3sZ4OYu_E1bXqKcRaQw, dFikL4fVHWbX7vdxkagLaA, N4hSNFNjwNdZuGi_3TorcA, auOMH5MegBGf5hVEdbCjTw, cqYdR-XNxrcjZUW4NLpA-A, b8lq-6RSbeIbBBackBeOIQ, l4l9kTSaNB2bcNBq-GZwNA, bdnFlW47ZpnoEQIZKPRwxQ, L3tjHECrtGD0l1_L_OySqA, cd9XMW590QMbZGcwlK66ig, Noj7v6XwFdyXRs0zq1dnrQ, zPZln0znJfUNyeQU77DP_Q, 92a-TfBrZKJKhf1fd9hWNw, LyWZEMQNrL_L7_AVvPvT-g, OFz3k69zLd7BycsjkXc2kw, wcClTN4Bw75-QY6GwU5GdA, rp26U9yqlsZZ9LkBvzV9SA, 4Zfu70rzYmEti0i3nrWSDw, YfZd0yu37Yg-JK6Q2vF4nA, v6Yk71mp-nRKQozShn1hNA, xY89ue_pj5zEzEam7IQtWA, -YuJk4w5SvO8vlkFfeKc3g, _ZKZZDy88T5v5BPJGQAYPw, c7NQ-qWhjY0HDeqL6bmf5w, KGegSzK-yRCK9u4x4dLOAg, Ji3WtyK59pN0UrgcCONgaw, V6p6YhQFINlAjh3USGiKPg, lswL8W6HsbPeaV8ovNBlSg, PMYpNbBJJhohSeG0MUM4sA, 14nrpN6e_XEdDI643m7v8w, 04tgPy49afGI-gh427ePYw, 6lFDkCpjW2D9mewLiDAExQ, Uev7CKqQaeJHJy9bjys1mA, JEoeBQzqG5Qi4nJdX70rSA, LNh2cL4f4rz89RWaoKizVA, aPKeJRsLDlH85-j4zgk-lQ, P9uGBoYvWPCjA907MhzKgQ, YUemOZw9cSlPboXdZvPWAQ, kosll4ft5_AFQ-PQSiR0ug, Poq91kpfB9_mMJ9f_vePpw, GXaG_pWfril6LrIoN7v7sA, eJOcbcUPXc8V5e0qu4M1QQ, JVVxvpog4oy-qUy9pUZI-A, M5hc649zBEYcr-woJY4yjQ, YOP7Fcbgz5fL6aScDAPQvA, lUNpMq8Zk1FHrtT7E_Keqg, uHzOff5XnP_s1Ed8MoZ0TA, T40KXY5shrqSlE6yUaUfMA, nXI97q6uJXh_mmtuJq9oUQ, ZCwfFOQ0DLkXTQ-J7tevRg, 2qY2ZtIamtbVkFFs_XrVBA, ojy_7kqWA83i_lgDtwlRUw, Qec13wxMpsPGKrPIaFexbA, FBP8c-8SFlgnToVRpPqxwg, 15CNsmw7VZD2LsLT0lnWQA, ZxYsQG56dUWBRpZSiPvq3Q, Un0KGRXLKIxWF96bNwC1SA, -90PB1IWT3X8x01rgO_B-Q, 8Bs9zNCO9sOnZ39WjsQsDQ, 2fE2Tqg6euPktjBCdHjfuA, uPllO1pNBA1OjmttxIEE0w, bWvmeifznW2q72U00BmU3w, 8GEGjEtkFJr91Cs0oa6-Og, UWoC2zNzHSh7PWE8wqWbZQ, hmFIcj7AZWZXG1Zal7fFWQ, GZy1PFiDUOObyVP0L1wGPw, eangt6w3KobITmwwyAtCCA, 4OFO9lWXYvoPG1V0lzCOSA, WePnpIvhZbaRMbNkgW9xkg, txb37MTHE4KNWImJpiIzKw, v5k_AoF4TNzySro7dGXCqg, WCcLiD79LT5qRTUNPggykw, 0gdC9gDZWrWL-EIop9oz1g, pNtP1MYYb6CYNs_RFco8Qw, vIwPsUXhcdjDdcR7nwoErg, vztTHlx8lwy5Od1Mew_3Wg, vBPi1L-Hu3G-KpzUqzDx1g, ksRRZZpGDvhTT0MsLNRnsQ, uMotDK_TtL2f1ekxsx9xGg, IpT1fDHEoRp9NSuVufBfaw, HIvCo5kTLqYN2CpnbuhdCA, TO7tu4NsLOdS1lKyl15RTg, ge_5u8Nwm5p9H7aMyN8Lxg, G5VYYqb1OYb4jPjnkm5J-Q, dPGTBNlLDPnqhI3saTPs9A, O1hA2KHyLpBbXzuN63ruhw, t2YE0FkoxEZ_NZcflzy86w, yjbWKqe9xbnK3zCSvqJ98Q, a80SxA1KaPbY9MfjlEQlug, KBdUjGSQdhXzZv_pIvLYkA, Ycug30mbz1UBha0_QxAMsQ, n5zzwAxuIqqOmLcWl2TjTg, RNN61edGfR9kPV6pBN4pJw, vO4jB1dJleAebqUEtmQ0vw, loYTcvR3Jy3_cbJz3qCHEA, LPobm9okqzcoUCMBONQn4A, 0jE7TNaJRbMxetL7eXvwUA, nToi257uPnyJCmijaZkxgQ, 72Grig3MQ7SqvNnqAt0Z7Q, cCqTsK6OWiP9zkjnVoQWAw, MG4rRcQ1xUaAJ9iE5tnBCA, TMobkbxwSF6EWWjTu5NHRg, 7macWOA6E0qWiRF3jKHEkA, HCj3Sgl5VtyoLWatTZNfVA, sIMxAIBWUZdfDdn3cT6qRQ, FQ3Tr-NdQ7E-udysbZtJjA, ZQdSR9TkVl7JygBwnLfL9w, nfHPFvDs1TzZNcVUtUzdWQ, 84nhAcOTfmlvfUTK81y1Jg, XrVRZDO-6vHw5NZ-8LY5NA, oaEooHpHcJVMovzK6BUI5w, ojBNkmGdnTLVAYDnQUYREA, VyxMTOAhvKl0qL9uCP04Xg, y4b0VMteyZFLqjS7DsL4wA, JRmEOMilxncIFqwoDfOEsQ, xE58DJhIICO7FkD4L5IOOA, q_snq4BO5gtfCN4imf8IUQ, vM2ua5NhXQHDHijFhCk_DQ, 5T2hlrUi1H0uzFeDvxPvCQ, c1XN3bABHmZ-XRpuasJ39g, zJ8X0t1q_Sfd4KacwmNg7Q, MwdlNXT2BOozJ4ipyApg2A, w24iwhoQNePyujxfqCP0Pg, FZxpKqYJ23_Rr5ilHGclmA, Y2hrUoWAvXs9nard4gXm_Q, fd8d2yny7dfCvlsEhM5jkQ, 3yCc2mxCA0zzKiVYozGY-Q, ffZtITmBhIX87E88WAZFew, pYNKCpTXXG1B0CIyowX9bw, 4NAXFzAavJPICfif7K_rfw, F8S9M9U6hqVu-TS7Xj0-xg, MO0LzxzxP9CZAh1S2YEpEw, qrOo7xxTbuTA-tvB_tlE3g, kX0wc-tCiIFO6ORifsAa7Q, AbFR7DCBe_ojZaWH9hOBFw, XxBVvG4AlcQKquI5vFrScw, e6thcDRrPUtQ0_jzlf5CEA, H3HeE4rgm8bzNenQQYxa8g, 13fdo7AKWvw1OAy6VQki1Q, muTS0e4wmz7O8Czkxa2mfw, YciDC97mClhPtImyBnLfTw, N29xs8sIVFsfGDIe-PRdcA, EVg3ZiuF1FWxfXzGssd9Kw, g8u1NvHbyWTXy9eBkhs7ig, Wydgl6_EK2x7o-sL5NNCeg, rG7qXdZv9XILO5FOC-90-A, LeKXPRBtzYIx0BhgExRlPw, 0ncQ_BbM1MUGKZBTOLlbIQ, Otgc93FhKKwbHxkQ3F3mRg, Pf6TRBHUv_iyVFu_SfO-4A, 4aO5r9R0q_hmNPSKBUxZ2A, w1HCtCmjzm1cTYL_06Jo3A, rwm6SvL6YPK02QZ54gJTuQ, 7UvKFXJNVa3B9aTwDFjxMA, tdclMQncXyT_b3qPjfgbaA, 2qUkBe8G85vtoas0cL8fMQ, -QEcl59W5SPz-AbQk38AZw, VgiB4TbHMTUBBzwLAXVWzg, 0TVsxFw-F862ecxx8waFuw, NUXa0gsdZ2HKepFoZitBBA, _Z7QTfbnj77C-cIOBoo5XQ, HInwrsgRz7lLqiyPw4xzMA, SDsBoDJIthuLq_hADemllQ, C1JAmxH1zSgcZnxyF4ScWQ, s4vOWRXv-I6oZFszIOu7vA, 2oLbHwKsvQ7B_sSoNkadOw, -CoMpnDu_Yd8g2IuJuSt-w, rmoYMvkv_mqQU2EyGe-pwg, 8jeb8G6v8aiO9O2RJDLeug, _kWOxbtEitFIa9XEg0fL2A, YrcE_K4TwXK_575992gmPw, DsLbyGq5jur_4UL2gN1ivA, NX4soitc9cSUrM3naMXF7Q, RS8A3m15aJUw0lPUiKVhSA, 4b8bOaGm-UdwCCUb0-PNXw, bA2mmwSbKK2QOtl_E0RYog, OwqoWX-XFtlV1V4ZlfQwlA, tjjbe6s3j99K2dFkWZwHnQ, 2O_c-78ZfOBl0WAL-izfHg, hiYUuisTdrL3oqDvMazpXA, 7pRW88QpFHmWFMp-ZL-pkg, _dCeQs7Tyb437ylA9-j-kQ, Ln2Lv2ueI793Pal8HWXF5g, 9D8jPaIGJWt4wvDVaiX13g, f-ml15zQRwThKjntiiQy2A, Pufrkl8nkiqmV3n9Qo4l3A, uIGWkubhZNaZsG50gux8Hg, qQr1963YyU9vyc_0PPYeQw, IOpe0XVfDiiTmXlitePQGg, nyMQgVBKFtgiLebZiz3TJQ, BOyXQlBEwBAwRoWS5zJMTA, idQ8Eu3PHIPzHwLFy4QXVg, Ce9gNO3x06WX5bkafc5wyQ, ZkKDvfb7Iqyupc9VmLMrIw, AYtlqzjrt9kpBO5YDOE2fQ, 58KUrhRlJ00M4dnxf6krig, VC350Yy3L4UJ2CAFWLVR9A, VjTsxQjBUfteWqq8sMdyjg, 3FKg_88KV79MOxRE9fRchw, XrnN4oCV2uddRtoyBh0SgQ, HK-dxCTRXVQGUHu75aglBw, 3wE7iiNYsvAeooaJBxhSdg, 088aZZAKELLPh-FfhZkjGw, uUwPdBGFYzGWCCr1vfINIw, A_GSmxIcptKxNLC3GEKrHg, qMJ4uFXM84NQGzudAI2tMA, hCIw_WYobfPagEm1-K9UyA, D6Rqj56Rc_D1xQ9-fmwi3A, FzOpGYGyjMcJ8P0DXBa2gw, LfqtRVWof3GOWArJqbYgEg, L6DbdSSUZ9SaeBDLBpnNiQ, AFFCHWzmqElw4fvB_uAqiw, emc-cqT2bolKcS9CqOWV4Q, cdnap_qDh6gINbQoiZp4Sw, D1bi0Elvpo7kN-gHjBCNHg, sLoHo19L_hGVFkp_MLSPxg, VmXC3tADMFPSwww9zdNLeg, 03Bx7tzN2FaNfoD5OxoTsw, oNndDeoGhjg1UesxupADrA, O9SE5njH-M8h2dNkr61uIA, i3Xqljlp0VhzTftlA0id5w, 4hupBEzTnSE3_-yBcq42ZQ, 842v0jmenL-eEHhz8UCHoQ, -tRMHTGwzsAZmC51vajTZg, 5BZCGZBXQuUTGKeZ-tPCUA, KPQchUeIQqfGkg_mLqDOBQ, u_KRg-Fs4PYyU_UqWifpRA, Lemc-lz5RxksUQTmA25NAA, GbScDZJiHupXiyPd_xSKOg, ME69jLv-38eA1TSc5pOm2g, EgMYtssjGYQIehgGHChjaQ, KDo5PRYjVZznEyq7WwCuXg, p_2i5xC-N5kVp0BbhrjDRw, vIhn5MTWK0Xm2q4K1fDNJw, gN7U6F7gAqVhvWAl8Lt5og, xxOh_LisQC2khOBClyNcng, SAyKyk1vTZe2wQx-X25D6A, JQ77DR_Q7hRPq6qnYPeCGQ, vCBL0sAODLUzOTau7oU8rg, LlzWz9b2SiZS06XwUXRkkw, 5o1WjRJsw6s7xHTo0v9HcQ, Fqwdif719qwPOKTf_Ad6iw, x_ICS3ksH01PaZmeiUHxqg, 2j-zDpxAmbria28dYFR-gg, 5JeXXsDjNeg18GwKsH2GBA, tmmChWagERNlhQ83O_ODQQ, GA1JGHXAY57wT2O2hMZe8Q, dVU378wIr66SdDCnCN_c7g, AXBnlFPSsCWr0Wtf2NxrAw, ashbWRlplpHHVlIiezVKKA, rD5zCdkjzfvPZjaRg7TsrQ, MAsy-_f5pCbfdCSJUenC0A, atrpJ3WBmJZ9gleOZqQBUg, kQ1bRmFHcDO2hWsfQqIAVQ, wuOzcAlLrH1QJ1OhUaQ6Tw, ysA9mlukNRSOdoGVVWzWiw, bp30wX-51KWhvRcdhDaAkQ, UWOGN-mXMGI3zy6jcnRlow, GHksF2cvHI08qSDCW6IlKQ, akTZlptlYv_9Qj1ZoTxnwQ, M2tqw0Xll-DP5qm1Jrlksg, 2XXvUi1-kIWADlq8vzCP2Q, SuKI7r0Z-LVNTu6-lIhgDQ, d74kB-iIlNE25F3i6nBe_w, hRD0iGgUbzDANT0alW0QaA, y0n7Jp1oAjlna9A_dB0PcQ, KSvqtdTIxLoFumgz_ySA0w, LgoUSa3QY7QRrST2mcm5Mw, 66xv6mgtHdBjKmgQVCnarg, wp5jRcqOWurdhrv_wFwYpg, OtHmtJMVAW4SNFHRqYPnHw, IxP_UeH7SCOXcMUPXFcAAw, E0bD-qb1cJuXgEu7IIcnVA, Mru1fo5YertUuPKRNpmjmA, nW9YEJ6z9-DXuELKFVjh0w, logXmHVKlqOBO3a02_03zQ, bvRUyCprOyq6QVFkjKKlEQ, McVltwlkjoY-IsxqkDgVbw, hWPRtlMmg7jshlJ6lgyQWw, 7YbW3fh3J-xRLnk44wGZfg, 5FmIjkmpezuKofJaynt_fw, U6Goxvq0jvDUGOO3F1yarA, y5waOzV_X0zfBTWZVzQssA, JtjnGTZejClempqv1OaLqQ, of3wFjJNP-8eqZu6bnpF6w, _5ZKkNRXlgzZPAW2SKJnCg, nV0FiCcGRBjuXCrXmd55aA, 71VuJf8diEUysnPKDMRHyg, _mgMHhj6l-e88ygsAOFBaQ, Etr8Kx46IJDXHT0T4xbSrQ, BIZL8XOWDvuq_Fyjiu3xIw, C55WYO1P9JxkP95qS5XalQ, imHrL7RlfI4ZVYioo9GWZA, C1f1m7eAwl_aaa80HYPPdw, _hBJRwyPmoXf1a3pC9df4w, ZtJHV5kH35Bi0l_tvqqbyQ, -BsXk8S87fCESglXuEu7tA, jaG_XRfHMLeGCHYmm9vs8w, mxXV_Mf0kwlnUcuu6c7NrA, 0x0jzIh7Phs4NDZvXqrs5w, SvOoa558IxY91EhC3YNT5Q, 4EpumAfM8z0mJueVvvH82g, yHgB3a34LwmJcucYsv-hhQ, G3dz-x6YOK32vS8-J1o-Pw, J9lxXPGJrptrAaVYPVHwWQ, 2WuScCrre9d_GwiTxvI-pQ, Dd_PDnBx4KP9YEM1CKC5LQ, m5VsBZ2_ot0BgEwqCAw2_g, b-L526b9Apd_IQyzN4f2qg, CRHqCAiSFlGTWltIzbc3gA, LSSVmwv_SjEdKkVrnPw6jQ, WxO-Kvl7DluLoy091uF1HQ, 99SJg6hDD1v3XXKsTwDp5A, 4b6E38MeZd4j4NIJF5y1_Q, 9wIn_UXoJMa3qoBG4IC7mw, LcwZz88NvXeElkNcsGBl1Q, jkOErnkX0nB7-f0PgexfEw, 4KXTtdVNbkZHIxz_nI5TcQ, aO96fnHfEe3WXUM5sfn0Vg, Xbaa7Z9zFMBioQ7MXUPEog, 40VJd8V4sA8b3_7exDwWjg, 3UZJcRmUPQuQTcc8Pnf0xg, opGP5ruQaqbzodo4uaSv1w, DzwB1IEcQ2kTYrNzse1qhA, id2q4bYkK-FtpJWWZsHsiQ, VKSu8UD3G5h-Y3FlXA_0tA, i5vV_n6wi2PDkA-FETP-UA, kOHqWqKyqtdnfjUivyqSIA, oMkalbvFmgPlHQl2pMWR2A, VF1NiyQ2es86vBR2s1hidA, EpbQ8Z7e3Xw6v7usbSDSDA, SC80KRXw1Xl6k-3M6jIR_Q, E5f6Ib_MdemIaY79wWpy5A, xj-qAw1nIPonT1fISCS6nA, 6lAdbIIxRimjtDgZxG6JLw, 9Jdi4fiS0TbrSkrv5Apssg, 7Y3FG2VBrvPd505S8iD7Zg, TafDgiNPJF9jaV_TcZHhyA, WNVGI7bvRKD1RMExjRPQaA, uOgppiOKyHZfepovIjNRaA, 1UtNWGi9h_yq515SZwK7XA, oDL-UHP5mdJtHDw4uNhmzQ, iTimaBsq8orbIvSBQNpuoQ, ihPopnoK-_nEFNUybkvLYA, xVSQyyLaDjTp6Wyuim5XhQ, W2iG9tD8E3iLngNRIPt8ug, cnv7EI5w_NHowzQONlW28Q, wUVJKakAu1nfvcVxwztiUw, Nxo8t2Eowk5M8ylCjN4ztQ, 1cWhMXCs83ek20j6CvYUcw, 56EP5dibHnkn2f1CkWipeA, G7igpvIUC3Ad32q7deXPnA, qYMFADHuVEOv60pPF7Ketg, buLaCsUvNH0Xp_-pna-irQ, 557GdN1p9nlEa3mwRbhH3w, YuM8ejf_4ZLTZSVhIKCCXA, 1n8ZwAFsFW3mYoi-3gBL-Q, RUmInhTzErOFCTNnNcwC_w, fr60J3TT-QzRVZD5Af17vA, 4Qe_3hXChSl6hfX33eBSAA, 0IG9jI2Akj74qMLIhH0CjQ, BOVEf8IdT5TF2Lwhoh4rmg, 3vCIGjYwWLOWiokthRd3xQ, w0TclP2bPrRJ-zLHLVvT5w, Gd_DPI7jfi6qfWj5KKwUKw, QTybCmhaQijDA9yPggGkTg, AUJfG7R_Ps8tTzAIRmfF1w, b_VLbroOEOmkMfqEPCHlIg, hTTa9DNxsi0NBfJwTPbPeQ, 4kSHMjPTYDbN2wVQAChH7g, 3ANTPyCIORZE9Uycs3hG8A, auDWK3kDo_AMc5rCQG8Nsw, 5imKaqyQpSp7HN-nbb02Ig, s1a9P8q01Miw52R_WIKGNA, _p0QS6LTYWvHSj9_VwPBXg, dxcT9Vm6fNlc7mMSDGqzWA, Cv19EUIeqeNW2Vw0HcCzCQ, iQQa1b5l71tdZvjKzKHnyw, _-G0NyJDk64602H2pha-7Q, xPlR02GRCTqw20My_4KihA, G07lyfjw1IaWNFHJyEGSWw, od7twuadM9t3QpXyf9OQ6Q, 1f5FOAa_LFmoaj6NDqxPlg, iB5vPfuRPF6Goe9dk9OgaA, gfvyeVxfobnl9DDpLUR5vw, Snrud5Ts7T7-NcbwX-tDDA, tfMuD8bh9z5fO6hSrDCETQ, zBuUnfJOEZkpExHIxKlGiQ, wMHsFRTnwzxSEDBBxh7Xbg, WWOgUwUsTR07JauClY7Ozg, qcrvqvdb7xwViAolZZBelw, LUzE2mBFx9Dkfbg34mu5HA, 5xSP76f2s55BrzmF7Cp5Ew, RNZ8wX2QYMjcTY4d0o1AqQ, qzEEuauFiH_CMdAbZMCRVA, gapGjy_yX5DhhCSCyH8Qpg, HHeF-2ul7H-ENlJVZNsaGg, pS1AaZdz8O3vFsrOO4YaJw, 46lN-AHEo0NY-1a2wg5zCA, 6awczRLxFtevEWbHJ8yd6g, 2NTwddjmgx5QuW93fSVQ7w, XtwX6HZLBpnVYwT18JJJEQ, u1niJoHI0vTuA2OQD2czYg, Bg0a3Il4qG9YWTpzStWuKw, z5Kz8haq4pFGRzb0d3NnOw, OdPavSOWqoxK9euyDdE4qg, 79dVX5UnGOSFkFJirwMgmQ, MxDX_No1Rm5UTuQyfbFxTQ, aiBNMJqP891ZfE1cCYoC1Q, uksWsw9Jaj8nW3OoSTmRIQ, LpavlfzdFWXMHLVw2yeTLg, kXpcZKK4bahyyeWqlwXeKQ, wA0eDJNlnFamDLPRzqle6Q, rRtdkKFqR6__OB4MGUI45Q, UT-le8N7H8zHxc-6IjGX9A, Z7g6AHaTSysJzA0W6TQNBA, NzMcsVtG1sSQHFXFwcgRFg, QteOnJvaFCyU66Vz6uHH5A, VqSEULaO-OXhwVEwTD7_7w, FWnyWuYLflFKQ8F6c-5n7w, y7R9feOZAPN7G3yYZeSDzA, SUkQzytZ1rCC_jT3cuDNlA, yFj54QFC-ZNeL9CLyuXbtA, 8NXWq81G1kAPT4PcAkvyXQ, w3aeLuPaScwBOT6oXmfYNg, D8I-n_-9UhQ0K3zx_y6d7Q, OAvDbztmSlov5otOhDwzvA, CDk5BQFWXRiyo8yNAOK7Mg, lu8o1O0w1xLOUf-0W5vI2A, yGWhPjDb0RBSNdfmdUHM2Q, TkG9WGIbOAG6U6w-E5MDcQ, vc38_rMrz3ur9h2tT60w_A, dA_QcW5yqKQImOO3njOavA, T7suWNnxlHy7sziONRq7_w, VD53L3uO6D9mhX98aWhDkw, uOk44pQE2OevJur8iBNFtA, en14cu4SrdRlgVk3InxZ8A, ZwbU4Y1Hko4PUAFIamT0nQ, 2fupywysEmkZD9cOvJ_98w, 0ka3v5FRCfw2cOykW7DXTg, x1My1yQUdzVG_2iLIOTyOQ, 3s5AyBYjis8-Pf_PHwIYUw, SFcV6zQgTwhzdTzSNOwe7A, Er8fYmFXOyn3Y8_HSJ85gg, Lzp9rCx14BcXl-yBuhNURA, m2tiDJMxQgyBJQdYl3n4Uw, kq5AsGS-yuEVj3vv4olX8A, LVQ_3IiausG9LnFxN9401w, eBQ73jN8kb9p_HOUZ1WCCw, y5VQFu6-5NBTT_mzKZY8gQ, JJo-tO0bVCGfHreU6kOSdg, ASAoWZ5W1aF4Eg6ixXR99w, CbkPjKOJmMBcAxAa_Bh7EQ, Tmo7vwt4fpsAWv6EYcXwzg, 6Pp6R_MNfwR9kREeNkfOSQ, 6aDqPTNkKxS841imUGNcKg, 6tApWLAuecJmIKjGDnuw-w, urP7KFcZ831I-bmU3eGWsQ, 2T_iOv6YPIIkruYBBU5_rQ, 6BmCdgd-CImVGk7qmEP3Ww, 9WdXyMn8efkJPHYVCqfIzw, Q2qR9gsARvKyhwLJpgd9SQ, VU2_SKxvA--4RVHwFhTClA, _Ai1dILtLU6E-8-DKQ1eJQ, 4YEbz92ZO1kL_p1SZbFxpw, Wmp6mMVcRPaItvFGsyAXug, iAkXQLuCO2eoLIupexSSsg, pmDKyDMNpxEKRZ1tHpL-Dw, BLOTKpaRO1ycehiJRO2_Dw, R5tIk-2TE5NmaqSyXc4WaA, hn1J7brCXjdWvRGKuT0YZg, lF_5o-7Si2gMrMP5ilKing, -6rWAnLDrGZdUzga7Df44w, RpqbcvmkGsIhic9XbRMLtg, 5I6ZQaKtohB613-cz0ehSw, 9uA1p-7vBZPR2_TewTQQ7Q, BSVRG_8ploPaoVJBptpfmg, tDhObRPg33yvgPxRGpDPLw, a07-XY5-jAyJMj3u8eO28Q, q7Dhzs1A4qCQlyz7ioBXyw, i18yHUd9RQ0mbGJKouqkew, k85oibLZWFKMV2bwxCdrtQ, Rbf-bevOSXAMEYIGOuBOsA, AKJT_sVmUas8s0t6WZRuOg, w__A2ZYcrw5O45NnN8K9VA, CYYMsKabae_0X9l10BbMPw, JS2XphrZfmiBM9ajJgJClQ, FJ-QjhVNM4i0r65U9rpe7A, D63u83DEyMqBrxRQTjIKGQ, jBXvP6NriJ0SVEswqrcjXg, cm6IbiJjPggL8d_teoAXKQ, hoAyynbh_tyIdeSBr2AuMA, qfRIbCQggvlKiEH0JW8_nw, e5ceW6TcoRC5pWaD1lyfAg, dTyTxEyg2dR6pALWrMFUDg, 11XaYsHeyZFCQXAWt6u9PQ, vnUf8ZyTeGaANO9ebB67yg, VYHP72JcVGB2nw_6aEHgXA, YHZ4xY5TebitZ3zll1vW6g, foSDXxscTlDt5PSfRpf2Dw, Us-O9wR9UON0oldX8gnFUA, sDq-jAuBbczhDqrdolLZ6w, Ye-c19XRCyV6ToYIINlJvQ, AGAUSs-ZQfI1neBhcFUEsA, AvU4erc4NwAz_27BHlV8BQ, u-A0H3Kob5pZdkRSkyhCLg, R0qRXmPRMJcI6aAscutdZw, dvORMGC7LGaelLNsxxGcug, NSiAF5qWNXC6iMc7BgI8hA, gICpsCfatAJu_ES6O7aR9A, jYVjiuqZJ9fnMpkDWWU7rA, 3o3yOsmCZR66XJeQihOumA, n82iP9q_b6kIVM9PcJji3Q, y_4B5EW0Ir5SI9nPUzAgIQ, 4faxVxozxJFMWdx-OPhSrQ, y4iQ9A1iFpghFi78PxQTdw, bpaOKD58QSZGdW5o9Nrk8g, qZ07LPBXuDcxWFpBgjKAtA, B_Y8rt0fr8kt4lofdCxPQA, 6C0uF8wxKFRrZR9z2IjT-w, CdnswX4shCfg1lH5Ezezuw, PSkgVCllZ-KlWe_OqhCE0w, TMucneembk7mMLP9exxXlQ, 9kOR8lVpM_Hdkw1etcB1cQ, Ce4z38fKzSBM1jz46R0ExQ, 6cSxecxl8ExNiNETr7U7TA, jdk8evf5Mppn-VOQZsfFPA, FIz-k3Uu9ZLezY3AdLkmGQ, MOs_tujoLonbPXX4ZsOp2w, DbHWRzjGJckzWptqJuZEhg, F3y7iOe3cHOEVlUY2vOukQ, JFPGdgPfMC6Zu4FuAyjAuA, A7Om2G9H5EOPvxTxgUvTnA, DTrZNKgYCTD_faCdRhm-JA, W-EnbIo2PO175aHwTOdbgw, 9JndYtE3x5ZFAR0INcFHZg, 0brUr-nHbTKAq-5pg2598w, alfwLOJw976osFry4OThyA, g_WeKlgVUK8i7F9A6rc5qg, -LD8MdWFrAh8Yb2CiEE-NA, XnYSg0dsYGO_0v_HzAqBSA, BMvqXTIzvXq6hGuFDLP-JQ, zsDj9s3LHONDf0EMVMCLBQ, NZrTSmSIL534HPkbm1WFyQ, Zc3tm1EWCd6XvAUw7TUZsA, BrUW18JTpnenaL-iyucmwQ, WmKsjZpbJwDpWB1EDATkHA, EgOiYvJfIjfOxvr8G1SFTQ, 3jwudYzcfS7xOfGyHnQfcQ, JL27BWlvhW9mL_5XdGhCeQ, v3GO1cSNIP7Prn-NjcUv5Q, s69upD14gg4RxvrWllGRHQ, 243eOXPec4ATUski-6ItGA, WFZIMqctBkMzzBV6IV7Pjg, yBMSmlJCmSuKjF3JnUJ0Lg, xkimLhp6hWT3qag69ADYLA, U3pUjfYNZZjmpjVE1tKboA, P0BZEo7qJEoHKjIfYLebNQ, XdEG-HQduQ9sUx3fCvAO3A, _1oZKJYfOhfENjvO7bFcbw, UXsG-deoXa4LvDxT8GLhJw, sDt57MpXpQBUpMco1MeLSw, JPaxP4-kZ5vIaC50Vbq_8w, t-rMm6t3cj4CiGeRuZvqIA, ej6z6ipl3Voysu5C1uf_dA, LxVgtc7hKHjhOdYk160m5Q, 1CvR2ughYrQy982L6uYcIw, gY5d4iGaXpIsKwE_DFqmhQ, HUYjeGOj9aJ8uoBvXWDfHg, rhT8Pb-yr5_ZWV_lihrloQ, mHB_3U1W78-4INSPsJGPXw",
+                "fans": 12,
+                "average_stars": 4.44,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 1,
+                "compliment_cool": 1,
+                "compliment_funny": 1,
+                "compliment_writer": 0,
+                "compliment_photos": 1,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "4-TKASCNK5-XBWdXmeXWbA",
+                "name": "Wawa",
+                "address": "1300  Chestnut St",
+                "city": "Philadelphia",
+                "state": "PA",
+                "postal_code": "19107",
+                "latitude": 39.950533787,
+                "longitude": -75.1619937165,
+                "stars": 2.5,
+                "review_count": 21,
+                "is_open": 0,
+                "attributes": {
+                    "GoodForKids": "True",
+                    "RestaurantsPriceRange2": "1",
+                    "Ambience": "{'touristy': False, 'hipster': False, 'romantic': False, 'divey': False, 'intimate': False, 'trendy': False, 'upscale': False, 'classy': False, 'casual': False}",
+                    "HasTV": "True",
+                    "BusinessAcceptsCreditCards": "True",
+                    "NoiseLevel": "u'average'",
+                    "WiFi": "u'free'",
+                    "RestaurantsTakeOut": "None",
+                    "RestaurantsDelivery": "None",
+                    "BusinessParking": "{'garage': None, 'street': True, 'validated': False, 'lot': False, 'valet': False}",
+                    "GoodForMeal": "{'dessert': False, 'latenight': False, 'lunch': False, 'dinner': False, 'brunch': False, 'breakfast': False}"
+                },
+                "categories": "Food, Coffee & Tea, Convenience Stores, Sandwiches, Restaurants",
+                "hours": {
+                    "Monday": "0:0-0:0",
+                    "Tuesday": "0:0-0:0",
+                    "Wednesday": "0:0-0:0",
+                    "Thursday": "0:0-0:0",
+                    "Friday": "0:0-0:0",
+                    "Saturday": "0:0-0:0",
+                    "Sunday": "0:0-0:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 2.0,
+                "review": "I stopped by this Wawa hoping for a quick bite, but was disappointed by the long wait times and disorganized service. The staff seemed overwhelmed, and the place was quite messy, which took away from the overall experience. Despite the good variety of menu options, the issues with service and cleanliness made it hard to enjoy my visit."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "LY1fw6YZ6jgA8xcPVIZRPw",
+                "item_id": "yvpwN5321mM3x8G2ZiEZmw"
+            },
+            "groundtruth": {
+                "stars": 3.0,
+                "review": "I visited Little Istanbul and found it to be a mixed experience. The Turkish cuisine, particularly the lamb and chicken gyros, was quite flavorful and satisfying, which aligns with my appreciation for high-quality and well-executed dishes. However, the service was somewhat inconsistent; while some staff were friendly, others seemed less attentive. The atmosphere was cozy and welcoming, but the portions were on the smaller side for the price, which I found a bit disappointing. Overall, it's a decent spot, but not quite the standout experience I was hoping for."
+            },
+            "user_info": {
+                "user_id": "LY1fw6YZ6jgA8xcPVIZRPw",
+                "name": "Sophia",
+                "review_count": 5,
+                "yelping_since": "2018-02-09 04:00:53",
+                "useful": 10,
+                "funny": 0,
+                "cool": 2,
+                "elite": "",
+                "friends": "t9e0pFcs53k9Nh7WJUjTUw, RAN-WmZP3jVElzjO4lWXfg, 1enCR2BZDnXnmsqZ8LglHA, woZl3fW6x2-NOWymUxCUDg, 9TP5C-0Mk2NSL8LffNQowg, Uh0M-37CuxJWc_G8vaCY3Q, KiDOUzbzoQolZkDgTsqxfQ, kFrwjwjIKguoBgL8rUMd3w, mb-QKjIRO6siAMpomnZKgg, FqsHwJRTHfJudR0Uql4UBg, AVfwrGG8YPv1czElNnVi-g, pb-3HBjX_WCxHY5F7qrFRw, j3YK91AQ2f_XGHejw96aiQ, 4ajhA3_b5xhaXUBDuVfEXw, XuttKI_zMfyBsLi-sLEFTQ, zvbrFEv6hp_Mtlogmta75A, hrjSgRhqV81jICURN0TPyA, BOb5yKMkBa1Yq6p_PDZuEg",
+                "fans": 0,
+                "average_stars": 3.2,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 1,
+                "compliment_funny": 1,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "yvpwN5321mM3x8G2ZiEZmw",
+                "name": "Little Istanbul",
+                "address": "11728 Bustleton Ave",
+                "city": "Philadelphia",
+                "state": "PA",
+                "postal_code": "19116",
+                "latitude": 40.1198872,
+                "longitude": -75.0180567,
+                "stars": 4.0,
+                "review_count": 36,
+                "is_open": 1,
+                "attributes": {
+                    "Alcohol": "u'none'",
+                    "GoodForKids": "True",
+                    "WheelchairAccessible": "True",
+                    "Ambience": "{'touristy': False, 'hipster': False, 'romantic': False, 'divey': False, 'intimate': False, 'trendy': False, 'upscale': False, 'classy': True, 'casual': False}",
+                    "BusinessParking": "{'garage': None, 'street': True, 'validated': None, 'lot': True, 'valet': False}",
+                    "HasTV": "True",
+                    "RestaurantsReservations": "True",
+                    "WiFi": "u'free'",
+                    "BYOB": "False",
+                    "BikeParking": "False",
+                    "GoodForMeal": "{'dessert': False, 'latenight': False, 'lunch': False, 'dinner': False, 'brunch': False, 'breakfast': False}",
+                    "BusinessAcceptsCreditCards": "True",
+                    "DogsAllowed": "False",
+                    "RestaurantsTableService": "True",
+                    "RestaurantsTakeOut": "True",
+                    "RestaurantsDelivery": "True",
+                    "OutdoorSeating": "False"
+                },
+                "categories": "Turkish, Restaurants",
+                "hours": {
+                    "Monday": "11:0-23:0",
+                    "Tuesday": "11:0-23:0",
+                    "Wednesday": "11:0-23:0",
+                    "Thursday": "11:0-23:0",
+                    "Friday": "11:0-23:0",
+                    "Saturday": "11:0-23:0",
+                    "Sunday": "11:0-23:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 4.0,
+                "review": "I had a wonderful time at Little Istanbul! The lamb gyros were incredibly tender and flavorful, and the lahmajun was a delightful surprise. The service was attentive and friendly, though it did slow down a bit during the rush. Overall, a great Turkish dining experience that I'd recommend to anyone looking for authentic flavors in a cozy setting."
+            }
+        }
+    ]
+}

@@ -1,0 +1,746 @@
+{
+    "type": "simulation",
+    "metrics": {
+        "preference_estimation": 0.94,
+        "review_generation": 0.8666212391236976,
+        "overall_quality": 0.9033106195618488
+    },
+    "data_info": {
+        "evaluated_count": 10,
+        "original_simulation_count": 10,
+        "original_ground_truth_count": 400
+    },
+    "task_info": [
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "wAo7casDFsbUR4O8Vb3u8A",
+                "item_id": "cVoyA9wrdF5E8OroBahxCg"
+            },
+            "groundtruth": {
+                "stars": 2.0,
+                "review": "I had mixed feelings about my experience with Mad Batter Bakery. While the cupcakes and desserts were indeed delicious and beautifully presented, the service was unreliable, which is a big deal for me. The owner, Chelle, was responsive at first but then became uncommunicative, especially when issues arose. This inconsistency and lack of professionalism, particularly for important events, is a significant drawback. I appreciate the free delivery and the reasonable prices, but the reliability issues and unprofessional behavior make it hard to recommend this bakery without reservation."
+            },
+            "user_info": {
+                "user_id": "wAo7casDFsbUR4O8Vb3u8A",
+                "name": "Jan",
+                "review_count": 1,
+                "yelping_since": "2018-05-28 19:34:58",
+                "useful": 4,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "None",
+                "fans": 0,
+                "average_stars": 1.0,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "cVoyA9wrdF5E8OroBahxCg",
+                "name": "Mad Batter Bakery",
+                "address": "",
+                "city": "Tucson",
+                "state": "AZ",
+                "postal_code": "85710",
+                "latitude": 32.2165669,
+                "longitude": -110.8195292,
+                "stars": 3.5,
+                "review_count": 28,
+                "is_open": 1,
+                "attributes": {
+                    "WiFi": "u'no'",
+                    "RestaurantsReservations": "False",
+                    "RestaurantsGoodForGroups": "True",
+                    "WheelchairAccessible": "False",
+                    "BusinessAcceptsCreditCards": "True",
+                    "BusinessAcceptsBitcoin": "False",
+                    "GoodForKids": "True",
+                    "OutdoorSeating": "False",
+                    "HasTV": "False",
+                    "RestaurantsTableService": "False",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': False, 'valet': False}",
+                    "BikeParking": "False",
+                    "RestaurantsDelivery": "True",
+                    "RestaurantsTakeOut": "False",
+                    "Caters": "True",
+                    "Alcohol": "u'none'",
+                    "RestaurantsPriceRange2": "2",
+                    "DogsAllowed": "False"
+                },
+                "categories": "Event Planning & Services, Food, Food Delivery Services, Caterers, Restaurants, Gluten-Free, Patisserie/Cake Shop, Desserts, Cupcakes, Bakeries",
+                "hours": {
+                    "Monday": "0:0-0:0",
+                    "Tuesday": "9:0-17:0",
+                    "Wednesday": "12:0-18:0",
+                    "Thursday": "9:0-17:0",
+                    "Friday": "9:0-17:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 2.0,
+                "review": "I had high hopes for Mad Batter Bakery, especially with the rave reviews about their cupcakes. Unfortunately, my experience was a letdown. The chocolate peanut butter cupcake was decent, but the service was slow and unresponsive, and I had to wait over an hour for my order, which is unacceptable for a busy day. I appreciate the effort, but the inconsistency in service needs serious attention."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "tkSCd4gCwgh2XvDYmPlsPg",
+                "item_id": "T72WVqMPc67-DWCS8R_ASA"
+            },
+            "groundtruth": {
+                "stars": 1.0,
+                "review": "I had a terrible experience with Brighthouse Networks. The service is unreliable, with frequent outages and slow internet speeds. The customer service is a nightmare, with unhelpful representatives and long wait times. I also faced unexpected increases in my bill, and the company failed to honor promotions. It's frustrating to deal with a service provider that doesn't seem to care about their customers. I would strongly advise against using Brighthouse Networks."
+            },
+            "user_info": {
+                "user_id": "tkSCd4gCwgh2XvDYmPlsPg",
+                "name": "Jefri",
+                "review_count": 2,
+                "yelping_since": "2010-12-14 01:00:12",
+                "useful": 1,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "rA9oXjX9JkWxnz58jerwiQ",
+                "fans": 0,
+                "average_stars": 1.0,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "T72WVqMPc67-DWCS8R_ASA",
+                "name": "Brighthouse Networks",
+                "address": "5214 Linebaugh Ave",
+                "city": "Tampa",
+                "state": "FL",
+                "postal_code": "33624",
+                "latitude": 28.0399783,
+                "longitude": -82.5330207,
+                "stars": 1.5,
+                "review_count": 10,
+                "is_open": 1,
+                "attributes": null,
+                "categories": "Professional Services",
+                "hours": null,
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 1.0,
+                "review": "I CAN'T BELIEVE HOW POOR THE SERVICE IS AT BRIGHOUSE NETWORKS!!! I had to wait over TWO HOURS for a technician who didn't even show up, and when I called customer service, they were completely unhelpful and rude. This is unacceptable, and I\u2019m seriously considering switching to another provider!"
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "1q6v24bV-zYk9trWszBB4A",
+                "item_id": "9Ti9wdW4CGlF2b_ZuvtpdQ"
+            },
+            "groundtruth": {
+                "stars": 3.0,
+                "review": "Bar Asia offers a unique dining experience with its modern and chic decor, which I found very appealing. The outdoor seating area is a nice touch, making it a great spot for a casual dinner. However, the service was a bit hit or miss. While some servers were attentive and friendly, others were slow and understaffed, which affected the overall dining experience. The food was fresh and the portions were reasonable, but the prices were a bit steep for what was offered. Overall, it's a decent place to try, but there's room for improvement in service and value."
+            },
+            "user_info": {
+                "user_id": "1q6v24bV-zYk9trWszBB4A",
+                "name": "Sarah",
+                "review_count": 8,
+                "yelping_since": "2014-11-15 13:58:42",
+                "useful": 2,
+                "funny": 1,
+                "cool": 0,
+                "elite": "",
+                "friends": "rUjotRZrQVljbOd4rtAc2Q, -SIN3VzDghh0PelzRE-irQ, 7OVLDLIX-ZFmHhFy-FRqnw",
+                "fans": 0,
+                "average_stars": 3.5,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 1,
+                "compliment_plain": 1,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "9Ti9wdW4CGlF2b_ZuvtpdQ",
+                "name": "Bar Asia",
+                "address": "122 S Howard Ave",
+                "city": "Tampa",
+                "state": "FL",
+                "postal_code": "33606",
+                "latitude": 27.9434541073,
+                "longitude": -82.4828046674,
+                "stars": 3.5,
+                "review_count": 53,
+                "is_open": 0,
+                "attributes": {
+                    "GoodForKids": "True",
+                    "GoodForDancing": "False",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': True, 'valet': False}",
+                    "WiFi": "'free'",
+                    "HappyHour": "True",
+                    "RestaurantsGoodForGroups": "True",
+                    "OutdoorSeating": "True",
+                    "RestaurantsDelivery": "None",
+                    "HasTV": "True",
+                    "Ambience": "{'touristy': False, 'hipster': False, 'romantic': False, 'divey': False, 'intimate': False, 'trendy': False, 'upscale': False, 'classy': False, 'casual': False}",
+                    "RestaurantsTakeOut": "True",
+                    "RestaurantsPriceRange2": "2",
+                    "BusinessAcceptsCreditCards": "True",
+                    "RestaurantsReservations": "True",
+                    "GoodForMeal": "{'dessert': False, 'latenight': False, 'lunch': True, 'dinner': True, 'brunch': False, 'breakfast': False}"
+                },
+                "categories": "Restaurants, Bars, Nightlife, Asian Fusion",
+                "hours": {
+                    "Monday": "11:0-23:0",
+                    "Tuesday": "11:0-23:0",
+                    "Wednesday": "11:0-23:0",
+                    "Thursday": "11:0-1:0",
+                    "Friday": "11:0-1:0",
+                    "Saturday": "11:0-1:0",
+                    "Sunday": "11:0-23:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 4.0,
+                "review": "Visited Bar Asia last night and had a fantastic time! The volcano roll was a standout, fresh and bursting with flavor, and the lemongrass chicken bowl was equally delicious. The staff was super friendly and attentive, making the whole experience even better. The place has a cool vibe, and while the sushi was a bit pricey, the overall value was still good, especially for the quality and atmosphere. Highly recommend for a fun night out!"
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "IXAcl59yp4JyifX9A4KWkw",
+                "item_id": "0-evjpRKnht75t9J3NE8Zw"
+            },
+            "groundtruth": {
+                "stars": 2.0,
+                "review": "Jet Rock Bar and Grill has a few redeeming qualities, such as its reasonable prices and good breakfast options, which align with my preference for affordability. However, the poor service, subpar food quality, and long wait times are significant drawbacks. The staff's inattentiveness and the unappealing menu options, especially for a casual dining bar, are particularly disappointing. While the place is clean and comfortable, the overall experience did not meet my expectations, and I would not recommend it to others."
+            },
+            "user_info": {
+                "user_id": "IXAcl59yp4JyifX9A4KWkw",
+                "name": "Lynn",
+                "review_count": 188,
+                "yelping_since": "2011-11-10 03:19:00",
+                "useful": 512,
+                "funny": 122,
+                "cool": 133,
+                "elite": "2013,2014,2015",
+                "friends": "C8A6Qe39QUOIKb6vD83Zvg, L4f6norK9ivORBuzCqfnFg, Dbc3h9mFAJ6XYUkWJsjpWA, agqCf3e8riY9uvAd0IG74w, _cnkcFIJZS-gf6uCF9eZmQ, 60XFRD-0MSrbNxjIMPHFvQ, zAbk9LczypGpjdb3YXB3vg, 8QkYr9ftTna9oZTcjHH0tA, BxhAvmGn4UzfPLAPoTPqhg, qJ9aD12usV4rHtxEapBS_Q, QOD_2prbRHUEY18OG0UVyg, p7OZx3RIeJPxSM4hP6wqEA, cYxQM_ZkOAFgivpR6P-Npg, 33_ba3krpFtQBJpC2C9KOQ, PHNawOl-z6X3RVYXST5TVQ, OZmiqcylFQ3Jxht-wuyJWQ, T4cflb-H2M5W8_hw1OqAUA, wEE-YMx5pmSuagLtNxMPKA, 8RkMK27RpMHjFuZdidGl1A, QaJbgj6-EQU8N7UjYKqfDw, 52VwCEiFXVcQiCltnAwaRw, 7WOfuNxzKaY_bhgzvE6wiA, Z9knrFNgKEqAcv1t0VDYNQ, uCsTJ2gNlfCizKMZDQG9zg, BkHkEZ6P6qZCyF7L-pXMRQ, eou4ETG8xtrtaRtTqBf8Lg, gnG1C-XU5sPjnWfWzlNt6Q, mqnBG001i8XaJiyijNOCuA, VxaCvv_VbC4k6wewXLw8tA, mZm0lEczbwFLdFreGqd74g, DLBNYnjJ3-lzgsr3AeXhAA, ncvgNeEsAIAuMWYFN2blhg, svKvXGcy2Gbm8tUOocuNWQ, aT0ipN5eUKmPnZmmXYouJA, 8Zocr6jVED5JQEBvqwEBZw, -RGgPpj05cxxcVVq28rIXg, dFiZKonxPWeancwryQe8Ug, wCWp_WaUgelZkDXoREc2iA, JIL-11F8saOkNg5e5FOSsw, MzBQxPzJPR_DCL_TWjTQog, a1SqPdDFe33f9gLWrVF6yw, NoOaVw8YAe4SlgWGLWMY8Q, YgTSl-H3SEM-D1GTrjcIhQ, peG3q2c2sMhSvKoXij4fTQ, 8bw9vD1Bkj8nUdPBUhgpug, -ByQQNRM-FGhAC0gsOJF1A, Bmfo84L4-ExHDQpn-ZNmvQ, 3viWuM6eHyI_Km1fd4UE-w, liymdX-2oYY7jy4py09Vog, EGqM1Zzdm6I3vv1fNvXTgA, fFI3goEBB0ywYNB4qZLu2g, HWGrt1MEXlzZ71NGx0YfkA, 0msRZVxjmRWIWXuiiLcw6g, Ehjg4D6ANqI1fTHsWYw5LA, 6ub5Ok9ahLomzlu6MD3TPw, MIQ5HSYCF22P95Luwxh1gQ, 4TTOknBZuKMXF-z218YQqw, ygxKTez7VxBclwD6TIEOBw, 16xIUxD8TbCJSOrBf7lnbw, eRKEFyUmQD8562fDJHTwIQ, qswKuJB5-JTmdhdPMiBxbg, 84t6jpyclA55TMfMV0X0kA, hhCjb2MKp5ludw3kKrTH8g, 4vavTfDI0A2Dc3xlowx2Rg, i7sZqIPkLWxZ08_wWejNZQ, Lf_0C2LiBc6FZJhSAwHk_A, e4QRzv0d43iq_RaEonqY3A, _6qzYTyQ3lV9DJqoep7_og, ZjPh6VnxV1Twb4bmd6wXdw, YSb8JRyI75M8FkbYWLH4UA, K73tPv89_EWRs_oo8HBn7Q, UGpQAXJ3hG4M_0Vijq6fEA, c37ExETACU9zVWxfdb3F4g, KJjShiD6qnG4WyzRnmKqOw, gPZ-qR6Zc93jWKbTSwuQaQ, AYgZchbVYpc1tsCJjMhnVQ, ZY58g2vAU0wAt8cM26sR1Q, SzAT0j2jvt6vS6TWHylMUw, _NikLf2J8VosVcENf5uVtg, YAnas1lwVMrAhc99_-rufA, f_k-QaIBracdL7BMUoCzdg, eboQt60JSNbZ6fdI5hPlSA, MPFxLd1-ieQ1cRrPQwTklg, BkUBe-6cDaVVhJ3yNRS3jQ, al186jXxeyJye0EOMW4rDA, 0whjB2QtWoyyvVC2MjBTaA, IY87lQQIrnx5pUGD08R2FA",
+                "fans": 14,
+                "average_stars": 3.81,
+                "compliment_hot": 11,
+                "compliment_more": 2,
+                "compliment_profile": 2,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 10,
+                "compliment_plain": 18,
+                "compliment_cool": 20,
+                "compliment_funny": 20,
+                "compliment_writer": 16,
+                "compliment_photos": 2,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "0-evjpRKnht75t9J3NE8Zw",
+                "name": "Jet Rock Bar and Grill",
+                "address": "7250 Tucson Blvd",
+                "city": "Tucson",
+                "state": "AZ",
+                "postal_code": "85756",
+                "latitude": 32.12028,
+                "longitude": -110.937725,
+                "stars": 2.0,
+                "review_count": 11,
+                "is_open": 0,
+                "attributes": {
+                    "RestaurantsDelivery": "False",
+                    "HasTV": "True",
+                    "RestaurantsReservations": "False",
+                    "RestaurantsPriceRange2": "2",
+                    "RestaurantsTakeOut": "True",
+                    "RestaurantsAttire": "'casual'",
+                    "BusinessAcceptsCreditCards": "True",
+                    "Ambience": "{'romantic': False, 'intimate': False, 'touristy': False, 'hipster': False, 'divey': False, 'classy': False, 'trendy': False, 'upscale': False, 'casual': False}",
+                    "NoiseLevel": "u'average'",
+                    "GoodForKids": "False",
+                    "RestaurantsGoodForGroups": "True",
+                    "Alcohol": "'full_bar'",
+                    "Caters": "False",
+                    "WiFi": "'no'",
+                    "OutdoorSeating": "False",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': False, 'valet': False}",
+                    "BikeParking": "False"
+                },
+                "categories": "American (New), Restaurants",
+                "hours": null,
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 2.5,
+                "review": "Visited Jet Rock Bar and Grill during a layover, and let's just say it didn't live up to my expectations. The burger was well-done when I asked for medium, and the fries were soggy and bland. Service was slow, and the staff seemed disinterested, which didn't help the already mediocre dining experience. At least the prices were a bit more reasonable with the airport employee discount, but it's still not worth the hassle."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "dWgnBvdmIvLtk6Ciw9xCEg",
+                "item_id": "RROICJV1SdNKeua8QOSfhA"
+            },
+            "groundtruth": {
+                "stars": 1.0,
+                "review": "I had a terrible experience with Katona James A Sr Roofing. The service was unreliable and unresponsive, which is a huge red flag for me. Jim initially quoted a low price but kept increasing it as the work progressed, leading to significant financial stress. The quality of work was also poor, resulting in further leaks and water damage. His unprofessional behavior, including rude interactions and lack of transparency, made the entire process a nightmare. I cannot recommend this business to anyone."
+            },
+            "user_info": {
+                "user_id": "dWgnBvdmIvLtk6Ciw9xCEg",
+                "name": "Matt",
+                "review_count": 5,
+                "yelping_since": "2017-09-09 19:59:05",
+                "useful": 1,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "None",
+                "fans": 0,
+                "average_stars": 3.4,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "RROICJV1SdNKeua8QOSfhA",
+                "name": "Katona James A Sr Roofing",
+                "address": "4384 Manayunk Ave",
+                "city": "Philadelphia",
+                "state": "PA",
+                "postal_code": "19128",
+                "latitude": 40.0297438,
+                "longitude": -75.2190878,
+                "stars": 2.0,
+                "review_count": 5,
+                "is_open": 1,
+                "attributes": null,
+                "categories": "Home Services, Roofing",
+                "hours": null,
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 1.0,
+                "review": "Absolutely abysmal experience with Katona James A Sr Roofing. Jim promised a fair quote but doubled the price once the job started, and the work was shoddy, causing water damage. Poor communication and unprofessional behavior\u2014avoid at all costs."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "6JcBAl3H_VGT5ipcPrpDOA",
+                "item_id": "vLpLGCbAtuxFzu2ka138aA"
+            },
+            "groundtruth": {
+                "stars": 1.0,
+                "review": "I decided to give Barnet Fair a try, but unfortunately, it didn't meet my expectations. The stylists were praised by others, but my experience was far from positive. My brows were shaped poorly, and the customer service was lacking. I felt rushed and undervalued, and the overall atmosphere didn't make me feel comfortable. Given my past experiences, I won't be returning."
+            },
+            "user_info": {
+                "user_id": "6JcBAl3H_VGT5ipcPrpDOA",
+                "name": "Lisa",
+                "review_count": 2,
+                "yelping_since": "2016-02-16 20:33:24",
+                "useful": 0,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "None",
+                "fans": 0,
+                "average_stars": 2.33,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "vLpLGCbAtuxFzu2ka138aA",
+                "name": "Barnet Fair",
+                "address": "139 N 3rd St",
+                "city": "Philadelphia",
+                "state": "PA",
+                "postal_code": "19106",
+                "latitude": 39.9532548,
+                "longitude": -75.14479,
+                "stars": 5.0,
+                "review_count": 39,
+                "is_open": 1,
+                "attributes": {
+                    "BusinessAcceptsBitcoin": "False",
+                    "BusinessAcceptsCreditCards": "True",
+                    "GoodForKids": "True",
+                    "HairSpecializesIn": "{'straightperms': False, 'coloring': False, 'extensions': False, 'africanamerican': False, 'curly': False, 'kids': False, 'perms': False, 'asian': False}",
+                    "BikeParking": "True",
+                    "WheelchairAccessible": "False",
+                    "ByAppointmentOnly": "False",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': False, 'valet': False}",
+                    "RestaurantsPriceRange2": "3"
+                },
+                "categories": "Beauty & Spas, Hair Salons, Hair Stylists",
+                "hours": {
+                    "Tuesday": "12:0-18:0",
+                    "Wednesday": "10:0-18:0",
+                    "Thursday": "12:0-21:0",
+                    "Friday": "11:0-19:0",
+                    "Saturday": "9:0-16:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 1.0,
+                "review": "WENT THERE FOR A TRIM AND LEFT FEELING LIKE I GOT CHEATED. The stylist didn't listen to a thing I said and cut way too much off. Terrible experience, won't be back."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "meJ9sHOd-fE0jn1rw2nXow",
+                "item_id": "AKtLOAuqcb2GWXuiRW5Www"
+            },
+            "groundtruth": {
+                "stars": 3.0,
+                "review": "Twirls Frozen Yogurt is a place that caught my attention due to its bright and inviting atmosphere. The variety of delicious frozen yogurt flavors, especially the tart and pomegranate raspberry sorbet, is impressive, and the extensive topping selection, including fresh fruits and unique options like butterscotch chips, is a real plus. However, the service can be hit or miss, with some staff being friendly and helpful while others are less attentive. The pricing model, which charges by weight, can be steep, especially if you overfill your cup. Despite these drawbacks, the overall experience is still enjoyable, but there's room for improvement in consistency and value."
+            },
+            "user_info": {
+                "user_id": "meJ9sHOd-fE0jn1rw2nXow",
+                "name": "Jennie",
+                "review_count": 2,
+                "yelping_since": "2009-08-21 04:44:17",
+                "useful": 0,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "rOhFID7CiiH_nTXXDCz1dg, gZN4aYXU2zQVAkS81Eeg4Q, 6A8ZTu4DnM2DSGwEFugYIg, 16NGkckAeMM-OWlt9x3vAw, DdskgToUee4C61rM-_skUw, 1r6ARLFNHNoYcWzysn0KAw, IWg_1s-hS6EE4A-IYrQOsg, Cdiv3cRogulwOsSyxuSPGQ, 7_6xLJmYDSK-DInqH5ZmpA, ML2Q8uY40Wl0GbGwaKJGUg, P-OgAuHYXmduN6JTnyQibw, QWZiRVqVoZ9QARsPNkJGPg, He_QhlQ9NDgOUpmCsrAPiA, 09XbNpJmTbdjKJdLbfog5w, x-LrGPXN7WFX15Qk9B6_YQ, 0ius8DPk6oXOZ5CaRGhtGA, Hnxr9BMfZXtAwdXPvHtFgA, xn4EswtzKdB2Q0ilflOTSA, k0JDot0A3S_Qm_u3BmYkqw, 6Gr83NHZZ6AfX2giTnrq1Q, I-_6IrPs68ozMNITqjPEnA, Ht7-MqG4EMfPWiY0l8dJFw, K5XZ9x9PECVdB3opV053Nw, faF-OZ2Vks9jYX0_L40gdA, zJzJXi5P050nN-EnqZq_1g, me-prkDUc7_cBrpZyB2imQ, MTemPGvWSZPNGwVagm4-qg, kd0C3uyg0IuEO6xscV-YwA, rKHY4Ugk5VovCxDrw5yT_Q, BaVDvTmKrGIcifYfu8bkJg, CN6b7zoJTG5XCc2pJKCRCQ, 7KnQr9W0x163cWgTDUyIrg, m5q4y8UqkX59i5vvXzh80Q, za6nrQpl92nL4ZlmED4VgA, _mz57KV2695z1BTN5HeosQ, FpWbWYTECzCsBM31x85N2Q, AbkFQ6rjFmc7SXvK6v83SA, RX5DGDsOxVFmdN0LJyTCPA, w4kPYGa_2d1fxtHekZ2fog, n6TGJEgiRE8k4K4ZPhXOBg, QSLhVoMOt4NSTF-ssQFwAA, V4KLgLOdKPKLGkOjuUUDNQ, Ff-muRI_Swq03Jg1SC667w, NEjy8mAUwOQUZPwNIWaYdQ, XopRpReWSHH09tX16juGAw, wS4DMUQ8h-2hpIXryf210A, ZVIgWkpCcjpkA-cO9OLQYA, 3koQjEhccBhS1jRtMs1lXg, owpPk3yo9SLDxyQoSRYkLw, SOwX7skWIyZQnmeeod5nLQ, 1qKi_aElbeNODjNL4Nk4MA, VYgSNP89ROCDtc99JOR_0Q, SO5dE3DnQy0LlKDYuvGfsQ, VFTGAx1hgo4kQ41FcbBkRg, ZhMnI5ogi4cmMkNxn81UGQ, eN0oPJu-eBWR53zUBkibNw, tNHCQOJTK8DFsbIYfytdrA, sW32pYfTo5lu2o8xfpBSPA, LecUEcFe5ubfX3rNn_X7wg, 83eCv0LIhEdmbsUa9licWg, e3hEwa_6Qtbiouh809sG8w, Tkt4x40Dhx6tnI56WXmVgg, 34isoJ7RRbN2VAM8ctrXsQ, crKnQBh57vEGYrn0vsqsuw, 0v-STvwT1JaTZnjtYKt0nQ, pwqHnYeNgwg4h9PxahXmzw, Hcys0DunmsguRYes57CSSw, 721TqOW4LTY2HhUz8_XQag, ZpT8Nv8JcXGMdvyGQuPQxA, p26MRbSoXCfE3whrUbaPPg, -0IjgfqFDjbgnU0DiVXCuQ, tqspXOoS19brA2b8fcXhcQ, yvdJv1wReNYdGjV-h_KNkg, vpHRvxQmEAM0H68TFDEtow, -1n152qJQUOGEwQLEGi_-Q, geBxkyZV1OrbJY3eUbYU6Q, r1bOCusTVTmuV-YzEx6n9g, yQKKqL0xgJ9HPuwqgE-a8Q, DCIrSkpTbciHeMnKE3RDbQ, snMTh9NTIVeVtvQRoxsSeQ, p0gOZEPBPphyTcZndv32Fw, 6HVfzXtQIqfpfHi-nYTrXQ, Qv70NowcWqoq8fHBASICTQ, GZk8ruYO8iKztizzo_AMUg, sFQMTzfCmTmLgSfJa7RVew, 9cWkd296ErQtOOj30H90Cw, 4nhfouTS-SIQHEhAcyY0hg, Klk7AYwgw8aikZSNcbiddQ, vsE5EaM_-0QXEu16HIBgXA, byc4gciHiLU21xBH5owo5g, ncmiSL1kbWI5R0Dt7L6RIg, W1es56xEG9oPx44o_0Xa1A, d-gBwTjqatlkWJL_z_kiBg, d_iTMWEs_pv9OvC8fEtoTQ, 6fqnrgOMJSyfP13zzdnCGA, IvvaOBh27NNaaLCAmVneXA, MrpSQNt8fIs9ICFXYkbXiw, GLubLF9HbPNVyJhDXr5k9w, 5NW9ScvW9YXNoIpbJplAmg, A6PAzZcMGaYXS1NUnMB2Zg, KYblk4n01p4PKyd4lhuNpw, s7ASNqC24wKfjQQXEFN5Uw, -e-tQt9o7qGCpJT2_ksr1A, uzL928ZX4BcEr6qYdpwyLw, JpIDVxCISHuv_2Zj5CICVg, YHrj0cLawCIE11hS0dQGzw, PyFyzxXW4QN_TgpHjZcAhw, EDvM525hnST_wdFudOnsJw, Fd6ds9ZytyeF8QZrcEZw7Q, OoAoNDpj4KEIpvTpGbKjEg, -fL2VHDxd4Fp3B4ruymcOA, TeqGKAJO8I6CRA-0x7iLMA, QJD6cdFDQ8Xw31r3w3i4qg, 5dXCWAOgaX7e8sfSCaPBIw, BwRikf6yMkDoHzCw7k7egg, tah1TyH62xuunmtaMpSFXg, 7oefUVCaQOC93YNfy7tJjw, 7o1L7zYkAPm5EANWWl6jqg, hOVEC237yO-XQOqmZDMXtA, UiNOOL7J5BqjTeHGiQqpVQ, RC0rtG-V45DeMSmFjWzlYw, 1EnrvoPLw8Nb57J3kjvkcw, cdjVIrmOnXoATgnenjaweA, l9F5sfPqC8e8dbHSUn7nfA, Bpr-a0Y2sopVQrjh7LvXNA, _MMzTHDRHwlleeXSpWC07Q, Is-DOuFwlQeyJFZGG7hoDg, QJgDHQyjUTCZ7jNPdD1zUg, vfRRqozCiNcQmGyVyI_IXg, QNgq462vC9UfbsrbCvPg4g, i87nxpeLGLVJqiSs4Gdhkw, SyKs0dXDV9laPTQEV2L_gw, DdoL9HW91GAJgIDyUpWsgQ, nSSDYpN_raTxeOLzassUlg, Z0inxFoAnUNKf9pWyDjO4Q, xnwah8pvO-tJF8FiqmGiPQ, 3d69tY_KOj0eH5Pnir3ceA, e1gE_Kt-4-yTbAxGdt_ADQ, 6dUHOzfvZMLP26nb9xkwiw, xek_e2LVX1ZjihF1vob8bw, qtXY83SSn8mU7Cf7Ze2igA, 66Tf8URvvmzMDdG2WCVtRw, -ezII7KZvQ97igiYlgioOQ, aZRf2IxVCl77nIxjoEuGyA, 4SIIBAThpCIsjPiFKt2Q6w, a2e2t82FoeW-a_0FUeyZyQ, CXn9GxJOJ4yeZKZPT-dySQ, IUu28GSMRrtcbFY8Wrkt7w, ja-1J0o_VzV6Iuu1aDHbYA, SuiK5V04cU6QLbHLTIF71g, mz04NNawI3iPRfkMIjhbSg, Z5wt5CfnjzDegssSUPZqnw, b0Am92baPCo9Sexesuzncw, ncbxF_2giLbMb9gZHlebyw, l2BIz8DQMlnkOHO1nNOVhw, lcio1Bhg6Xu5RKZWm_LtNg, Fad-3Ru7Ea81rhhI-jUtSQ, ELKRhqtwffQ-fO-9iM-RoA, OGOpACXZ86A637Kw024d3Q, 6WQYc6dpwAMvr7G-8wT1lA, 8Xm4Avp3o_xWQrpEN1JHHQ, 7sX_jINSB0SOjP5hzy9Dxw, so_2ddvJdCIEXhT0DjEJww, bffeFDJWLdR6rXnnbH543g, qXO1lIecTbms_zX6v_rNkA, W0B5rwLRLA7cNlHHbXZ3yw, NXhVlyB_00YlIi2iz9U4UA, TreL40WL5HqgcglePboCnQ, OA5pOtDVwlZdnH1mssPetg, wjpDEtt3dyv-qISlKWPwKg, Fs3dJRxLpavnbC6EARu3_A, NhbBN_LPcMG2x1FRrH069w, avpgkt3LW_L5vzHrx6fn7A, KMqUMILWdX-DXD3s9jcz0g, FUHqu5_fXsvEN-Hbl5L0kQ, g4mSi99wTo9P2ygc4inKtA, qNojwQbZUMiOUaL5JWQGzA, zcKjp3TkhDlpbJWsu6RhCQ, wj8PQcapKKp99U9mcTOO5A, QclW4JGZq1EhybudBDyyyQ, ZENvSny_GQOxRXXkQ-MPMA, Wy34IS1rH9APWuesolWVLg, OzTTfTDm4AgYXWQ_Dw1wSw, DHXqzK-6aiJUbjlUQvvIjw, toRVeZdU9J4wqRpGqGYhKw, dMqhPJKHkeTBo75G-aQX2w, fXwFYlqCGo1_iAIdah_RGQ, G9lA4ednKjOJeKvaeT55Vg, uSmEevvFHlw_eqobLuPTiw, GXGyMiicXwnRDL4IWJAmpg, E94UcFCISsEgWkFwj74b6Q, 51xaQKqd5QrZW3gOxGjqgA, FKcpi_gE1NsnMtSMzR_UkQ, 5xkZpbXIc40GhXqygd-Bxg, QuwVEhmKMVr1scB9VsApMg, GoM9M3wgtwGVXjb1hzt4MQ, dDa-evyHmTWOVnRAi5IjFw, 4e4GShDk3ksr_VrN_Yj1SA, SDZsBNCJQrOHm26YzeN6eA, BFMNuJF6ZR22_NpaAhOmzw, O88RZx41k-TeG2kaWueLJg, Zl8fw46DcIpbEG_pQCVfDw, NKmXjFSPl_NMnlX0PALCEA, u6rt7G0p8WEzT1TeYzwwiA, 6LB92JD_s39uI4ealUcAqA, eWg60K6hPMI02CNHogV_Vw, JHaNMqi5bGw0akaxbVjCrw, XOzBcWdKVFWstW1rUgAHVA, pF0TEi8MnLNYt-yR3R88iA, JtR4ob2M6eHSYyYdVKchgw, mrOgZOr-DBaNQDPEY_QzAw, 2O5MkNRp7NbdGBVycLIF1g, MEA0guONJ9bjr3-NQ9p3qw, pxfnXc1aq_2OR_awNZffNw, aO7PH7tOuJ-3D4hA5fKmCw, Rmx6mTKPP_l-pLE4pSzqAg, FK4Y4Sk1Ti3cBbUPDljuMw, 1saimMJscb_vvtV7NoocIw, Vd2ViC0siPmk34JVZUmDYg, qCOBpWE_KiVTZuNDstSXvg, X02YNLa3Iofzwv5Le6QeYQ, hcSvzPf2JGtxPO1dCvwrZA, xb8_pd7IbJ_cYlc5MR6YvQ, ygWyhfPNjxVNAWxbsU-geQ, -ra8widc9nRTfSux77Qg6g, lk7sk0BQS1fon23riUccXw, KG78XBguCuAHZ0KXt81YBg, Uwfkgj4ymSXmH2bWjnpGcA, CTOqGtqCiY4GfJFE-mmUAA, dxF4kmFg1_FPMM1fqWkRXg, 1f4FkWXLafsW-yylrw8Piw, 64SVwEg1qZz6L6fhaNhe7Q, LpDBMjZN9YdYx0QylKkBAg, qXdkxTPri8Q-65RQz9Wh1Q, 9meWBltH47QM6WqxFuB4jg, kkvkfqWYlD6k1-ZjM6lOog, ebyOPMgHWTmiigNJqxLtgA, eHtCI38EMovo5EuHnqrH2A, CVz7uTJuCTWHsDvXPqSg-w, Uet4-Dzw5dh80U81XrXPOw, fHpnHzgVWlneJT1FnHpoKg, jlU1OcjF0V34SKOUsz_J6A, jXlYt3KgSjq6csXJ_VyKIA, rv1HuNh4VsE5lWNLbA2UiQ, 4W3FSfOhF4CUgTghiZb3Bw, aO7PgMRCp_B44T7QFogRsQ, j2HtvLZzKG2y2ryeywp6UA",
+                "fans": 0,
+                "average_stars": 4.0,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "AKtLOAuqcb2GWXuiRW5Www",
+                "name": "Twirls Frozen Yogurt ",
+                "address": "3587 E Broadway Blvd, Ste 115",
+                "city": "Tucson",
+                "state": "AZ",
+                "postal_code": "85716",
+                "latitude": 32.2219894,
+                "longitude": -110.9163421,
+                "stars": 3.5,
+                "review_count": 108,
+                "is_open": 0,
+                "attributes": {
+                    "WiFi": "u'free'",
+                    "BusinessAcceptsCreditCards": "True",
+                    "BikeParking": "True",
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': True, 'valet': False}",
+                    "RestaurantsTakeOut": "True",
+                    "WheelchairAccessible": "True",
+                    "RestaurantsPriceRange2": "1",
+                    "Caters": "False"
+                },
+                "categories": "Ice Cream & Frozen Yogurt, Food",
+                "hours": {
+                    "Monday": "11:0-22:0",
+                    "Tuesday": "11:0-22:0",
+                    "Wednesday": "11:0-22:0",
+                    "Thursday": "11:0-22:0",
+                    "Friday": "11:0-22:0",
+                    "Saturday": "11:0-23:0",
+                    "Sunday": "11:0-23:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 4.0,
+                "review": "Twirls Frozen Yogurt is a gem! The flavors are delicious and creamy, especially the pomegranate raspberry. The staff was super friendly and the place was clean and inviting, perfect for a sweet treat with friends!"
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "ScHwaxyOrnZZsk66S4NHrA",
+                "item_id": "Flut-RAHgxOwe_4FlkqGSQ"
+            },
+            "groundtruth": {
+                "stars": 4.0,
+                "review": "I had a great experience renting an RV from Cruise America Motorhome Rental & Sales. The staff, especially Hank, were incredibly helpful and made the entire process smooth and stress-free. The RV was clean, well-maintained, and comfortable, which made our trip enjoyable. The prices were also reasonable, and the check-in and check-out processes were efficient. While I did hear about some maintenance issues from other customers, my experience was overwhelmingly positive. I would definitely consider renting from them again in the future."
+            },
+            "user_info": {
+                "user_id": "ScHwaxyOrnZZsk66S4NHrA",
+                "name": "Lynn",
+                "review_count": 2,
+                "yelping_since": "2013-12-09 17:42:54",
+                "useful": 1,
+                "funny": 0,
+                "cool": 0,
+                "elite": "",
+                "friends": "None",
+                "fans": 0,
+                "average_stars": 3.0,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "Flut-RAHgxOwe_4FlkqGSQ",
+                "name": "Cruise America Motorhome Rental & Sales",
+                "address": "3101 E Prince Rd",
+                "city": "Tucson",
+                "state": "AZ",
+                "postal_code": "85716",
+                "latitude": 32.2726091,
+                "longitude": -110.9264738,
+                "stars": 4.5,
+                "review_count": 6,
+                "is_open": 1,
+                "attributes": {
+                    "BusinessAcceptsCreditCards": "True",
+                    "WiFi": "u'free'"
+                },
+                "categories": "RV Rental, Hotels & Travel, Automotive, Truck Rental",
+                "hours": {
+                    "Monday": "8:0-17:0",
+                    "Tuesday": "8:0-17:0",
+                    "Wednesday": "8:0-17:0",
+                    "Thursday": "8:0-17:0",
+                    "Friday": "8:0-17:0",
+                    "Saturday": "8:0-14:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 4.0,
+                "review": "My recent visit to Cruise America Motorhome Rental & Sales was a pleasant experience. The staff, especially Hank, were incredibly helpful and professional, ensuring that all my questions were answered thoroughly. The RV was in great condition, clean, and everything worked perfectly, making our trip smooth and enjoyable. While the lack of parking on-site was a minor inconvenience, the overall service and attention to detail made up for it."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "FzTqrbKr-Bxle-eL2rNPbg",
+                "item_id": "KrKQChZ1hwHHVaUK9Zc-Ag"
+            },
+            "groundtruth": {
+                "stars": 3.0,
+                "review": "I visited Iron Hill Brewery & Restaurant and had a mixed experience. The atmosphere is clean and welcoming, and the staff was friendly and attentive, which I appreciated. The food was decent, with some standout dishes like the buffalo wings and pretzel sticks. However, the prices were a bit steep, and I felt that some of the portions were on the smaller side, which didn't provide the best value for money. While it's a good spot for a casual night out, I wouldn't say it's worth the higher prices for the quality of food and service received."
+            },
+            "user_info": {
+                "user_id": "FzTqrbKr-Bxle-eL2rNPbg",
+                "name": "Bruce",
+                "review_count": 29,
+                "yelping_since": "2015-07-17 12:00:59",
+                "useful": 19,
+                "funny": 0,
+                "cool": 4,
+                "elite": "",
+                "friends": "None",
+                "fans": 0,
+                "average_stars": 2.56,
+                "compliment_hot": 0,
+                "compliment_more": 0,
+                "compliment_profile": 0,
+                "compliment_cute": 0,
+                "compliment_list": 0,
+                "compliment_note": 0,
+                "compliment_plain": 0,
+                "compliment_cool": 0,
+                "compliment_funny": 0,
+                "compliment_writer": 0,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "KrKQChZ1hwHHVaUK9Zc-Ag",
+                "name": "Iron Hill Brewery & Restaurant",
+                "address": "1150 Market St",
+                "city": "Philadelphia",
+                "state": "PA",
+                "postal_code": "19107",
+                "latitude": 39.9515764639,
+                "longitude": -75.1596684381,
+                "stars": 4.0,
+                "review_count": 324,
+                "is_open": 1,
+                "attributes": {
+                    "DogsAllowed": "False",
+                    "BusinessAcceptsCreditCards": "True",
+                    "RestaurantsPriceRange2": "2",
+                    "Alcohol": "u'full_bar'",
+                    "HappyHour": "True",
+                    "RestaurantsReservations": "True",
+                    "RestaurantsTableService": "True",
+                    "RestaurantsGoodForGroups": "True",
+                    "ByAppointmentOnly": "False",
+                    "RestaurantsAttire": "u'casual'",
+                    "HasTV": "True",
+                    "RestaurantsTakeOut": "True",
+                    "GoodForMeal": "{'dessert': False, 'latenight': False, 'lunch': False, 'dinner': True, 'brunch': False, 'breakfast': False}",
+                    "OutdoorSeating": "True",
+                    "WiFi": "u'free'",
+                    "Ambience": "{'touristy': False, 'hipster': False, 'romantic': False, 'divey': False, 'intimate': False, 'trendy': True, 'upscale': False, 'classy': True, 'casual': True}",
+                    "GoodForKids": "True",
+                    "BusinessParking": "{u'valet': False, u'garage': None, u'street': True, u'lot': False, u'validated': None}",
+                    "NoiseLevel": "u'average'",
+                    "RestaurantsDelivery": "True"
+                },
+                "categories": "Food, Breweries, Restaurants, American (Traditional), Brewpubs",
+                "hours": {
+                    "Monday": "11:30-21:0",
+                    "Tuesday": "11:30-21:0",
+                    "Wednesday": "11:30-21:0",
+                    "Thursday": "11:30-21:0",
+                    "Friday": "11:30-23:0",
+                    "Saturday": "11:30-23:0",
+                    "Sunday": "11:30-21:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 3.0,
+                "review": "The atmosphere at Iron Hill Brewery & Restaurant is indeed attractive, and the beer selection is impressive, especially the \"Philly Special\" IPA. However, the prime rib was a bit bland and overpriced, and the service, while generally friendly, was a tad slow during our visit."
+            }
+        },
+        {
+            "task": {
+                "description": "This is a simulation task. \n            You are a simulation agent that simulates a user's rating and review with an item. \n            There is a user with id and an item with id. ",
+                "user_id": "JkSiLxs14OOaD8hATWR-PQ",
+                "item_id": "L-f8TzrPaOztNMz7xikbNA"
+            },
+            "groundtruth": {
+                "stars": 5.0,
+                "review": "Family Eyecare at Westchase is an exceptional optometry practice that truly stands out. The staff, particularly Dr. Mertzlufft, are incredibly knowledgeable, friendly, and attentive, making the entire experience delightful. The office is clean and well-maintained, and they offer convenient hours, including Saturdays, which is a huge plus. The only potential downside could be the parking lot, but it's managed well and didn't detract from my positive visit. Highly recommend!"
+            },
+            "user_info": {
+                "user_id": "JkSiLxs14OOaD8hATWR-PQ",
+                "name": "R",
+                "review_count": 69,
+                "yelping_since": "2007-08-09 18:38:03",
+                "useful": 124,
+                "funny": 64,
+                "cool": 72,
+                "elite": "",
+                "friends": "ZdHzLUqnIO4fo-4AL6B2sw, lXc9XMKpR3JLYLp2aqv7Qw, MB9jJHWFCUrprJC9DDH3GA, HTF_usgx0qDZXVZ4jaclIw, 8CF_I51V_yYP9icFFIMuNA, L2g6vS1GDfqLEpiDOFfCkA, TjDPkhRuTioPrJLtmYbDtw, _v-L_chcj5iz1LD-5OlMeA, ITa3vh5ERI90G_WP4SmGUQ, qVc8ODYU5SZjKXVBgXdI7w, gkN988HqhViBw122RHgA_g, ddEIS8ZSFOvfQbPQnnM_3A, 6RcETsNYFZ68coz93i5MsA, I4qfkITMnCYmnra9O-u0aw, FTq3jm-l8fTY2mn-KHR5Mg, XV1pUmZKYoka9a651zyfUQ, q8OdcTdl_VEsw-zL8Vwrqw, oBmd3hZiICxr_z_T52aGGA, cF4MBwsuN6AJvo75GPSQ8w, G1iz9H7tDdMNjUc7Ndu7OQ, CSvRdjGCIVTU0lOLOJdjlA, VCORv150AG88TvDrKvZBcw, 5vFtD3aPe9o8xYaFd7d7eg, uYW7wen5WOYoM-uYfr0ZtQ, ubSB7GY2pnIUJNgbSJzfzQ, ExAgwnQT065eUDO9UHLpUA, eGGHS-WVrSi1b1sHBnRpKQ",
+                "fans": 6,
+                "average_stars": 3.79,
+                "compliment_hot": 8,
+                "compliment_more": 5,
+                "compliment_profile": 1,
+                "compliment_cute": 1,
+                "compliment_list": 0,
+                "compliment_note": 3,
+                "compliment_plain": 5,
+                "compliment_cool": 8,
+                "compliment_funny": 8,
+                "compliment_writer": 5,
+                "compliment_photos": 0,
+                "source": "yelp"
+            },
+            "item_info": {
+                "item_id": "L-f8TzrPaOztNMz7xikbNA",
+                "name": "Family Eyecare At Westchase",
+                "address": "12311 W Linebaugh Ave",
+                "city": "Tampa",
+                "state": "FL",
+                "postal_code": "33626",
+                "latitude": 28.0565974,
+                "longitude": -82.6281314,
+                "stars": 5.0,
+                "review_count": 5,
+                "is_open": 1,
+                "attributes": {
+                    "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': True, 'valet': False}",
+                    "BikeParking": "False",
+                    "BusinessAcceptsCreditCards": "True",
+                    "ByAppointmentOnly": "True",
+                    "RestaurantsPriceRange2": "2"
+                },
+                "categories": "Health & Medical, Sporting Goods, Eyewear & Opticians, Medical Supplies, Outdoor Gear, Shopping, Optometrists",
+                "hours": {
+                    "Monday": "10:0-19:0",
+                    "Tuesday": "8:30-17:0",
+                    "Wednesday": "8:30-17:0",
+                    "Thursday": "8:30-17:0",
+                    "Friday": "8:30-17:0"
+                },
+                "source": "yelp",
+                "type": "business"
+            },
+            "model_output": {
+                "stars": 4.5,
+                "review": "I had to squint a bit harder to read the menu at my favorite hoagie spot, so I decided it was high time for an eye exam. Family Eyecare at Westchase was a breath of fresh air\u2014Dr. Mertzlufft was thorough and the staff were super friendly and helpful with my insurance questions. The place was spotless, and they even had some stylish frames that didn\u2019t break the bank. Definitely a solid choice if you\u2019re looking to keep your peepers in tip-top shape!"
+            }
+        }
+    ]
+}
